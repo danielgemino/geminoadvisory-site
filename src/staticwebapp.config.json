@@ -1,0 +1,21 @@
+{ 
+  "routes": [ 
+    {"route": "/es", "redirect": "/es/", "statusCode": 301}, 
+    {"route": "/en", "redirect": "/en/", "statusCode": 301}, 
+    {"route": "/pt-br", "redirect": "/pt-br/", "statusCode": 301} 
+  ], 
+  "navigationFallback": { 
+    "rewrite": "/es/index.html", 
+    "exclude": ["/assets/*", "/*.css", "/*.js", "/*.png", "/*.jpg", "/*.pdf"] 
+  }, 
+  "responseOverrides": { 
+    "404": {"rewrite": "/es/404.html"} 
+  }, 
+  "globalHeaders": { 
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload", 
+    "X-Content-Type-Options": "nosniff", 
+    "X-Frame-Options": "DENY", 
+    "Referrer-Policy": "strict-origin-when-cross-origin" 
+  } 
+} 
+ 

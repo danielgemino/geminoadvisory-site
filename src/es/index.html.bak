@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gemino Advisory — Strategic Risk & Compliance</title>
+
+  <link rel="stylesheet" href="/shared/styles.css" />
+
+  <!-- SEO (hreflang) -->
+  <link rel="alternate" hreflang="es" href="https://www.geminoadvisory.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://www.geminoadvisory.com/en/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://www.geminoadvisory.com/pt-br/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.geminoadvisory.com/" />
+</head>
+
+<body>
+<header>
+  <div class="brand">
+    <img src="/assets/img/logo.png" alt="Gemino Advisory" />
+    <div>
+      <div class="brand-name">Gemino Advisory</div>
+      <div class="brand-tagline">Strategic Risk & Compliance</div>
+    </div>
+  </div>
+
+  <nav class="main-nav">
+    <a href="/es/">Home</a>
+    <a href="/es/about.html">About Us</a>
+    <a href="/es/servicios.html">Servicios</a>
+    <a href="/es/recursos.html">Recursos</a>
+    <a href="/es/contacto.html">Contacto</a>
+  </nav>
+
+  <div class="lang-switch">
+    <a href="/es/" id="lang-es">🇪🇸</a>
+    <a href="/en/" id="lang-en">🇺🇸</a>
+    <a href="/pt-br/" id="lang-pt">🇧🇷</a>
+  </div>
+</header>
+
+<!-- BLOQUE 1: Hero en 2 columnas -->
+<section class="hero hero-split">
+  <div class="hero-left">
+    <h1>Estructuramos la confianza en entornos complejos.</h1>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="mailto:daniel@geminoadvisory.com">Contactar</a>
+      <a class="btn btn-secondary" href="/es/contacto.html">Agendar 15 min (próximamente)</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <p>
+      Gemino Advisory apoya a organizaciones e inversionistas a navegar el riesgo regulatorio, operativo y relacional en mercados emergentes.
+    </p>
+    <p>
+      Nuestro enfoque integra cumplimiento, estructuración estratégica e inteligencia de riesgos en un único marco de decisión.
+    </p>
+  </div>
+</section>
+
+<!-- BLOQUE 2: Line of Services + tarjetas -->
+<section class="section">
+  <h2 class="section-title">Líneas de servicio</h2>
+
+  <p class="section-intro">
+    Trabajamos con organizaciones que enfrentan complejidad regulatoria, operativa y relacional.<br />
+    Asesoría estratégica frente a riesgos regulatorios, operativos y relacionales.
+  </p>
+
+  <div class="grid grid-squares">
+    <div class="card card-square">
+      <h3>Diagnóstico de Cumplimiento y Exposición Regulatoria</h3>
+      <p><b>Objetivo:</b> Proporcionar a la organización una visión clara, estructurada y accionable de su nivel actual de cumplimiento frente a marcos regulatorios aplicables, incluyendo riesgos de exposición, brechas críticas y prioridades de acción.</p>
+    </div>
+
+    <div class="card card-square">
+      <h3>Preparación y Adaptación a Nuevas Exigencias Regulatorias</h3>
+      <p><b>Objetivo:</b> Acompañar a la organización en la transición estructurada hacia el cumplimiento de nuevas leyes, regulaciones o requerimientos supervisores.</p>
+    </div>
+
+    <div class="card card-square">
+      <h3>Diseño y Fortalecimiento del Marco de Cumplimiento (AML/CFT)</h3>
+      <p><b>Objetivo:</b> Diseñar o robustecer el sistema de cumplimiento de la organización bajo un enfoque basado en riesgo, alineado a estándares internacionales y exigencias locales.</p>
+    </div>
+
+    <div class="card card-square">
+      <h3>Gobierno, Cultura y Gestión Integral de Riesgos de Cumplimiento</h3>
+      <p><b>Objetivo:</b> Integrar el cumplimiento dentro del modelo de gobierno corporativo y la cultura organizacional, asegurando sostenibilidad y efectividad en el tiempo.</p>
+    </div>
+  
+
+  <div class="after-services-card">
+  <p>
+    Gemino Advisory opera en la intersección de la inteligencia regulatoria, la estrategia de negocio y la estructuración de riesgos.<br />
+    Apoyamos la toma de decisiones en entornos donde el cumplimiento, la ejecución operativa y la alineación de partes interesadas deben abordarse simultáneamente.
+  </p>
+  <p class="closing-line">Donde existe complejidad, la estructura se vuelve crítica.</p>
+</div>
+
+</div>
+
+  </section>
+
+<footer>
+  daniel@geminoadvisory.com · Guatemala | Centroamérica | Estados Unidos
+</footer>
+
+<script src="/shared/lang.js"></script>
+</body>
+</html>
+
+
