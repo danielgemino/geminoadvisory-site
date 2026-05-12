@@ -1,25 +1,41 @@
-﻿<!doctype html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gemino Advisory</title>
+  <title>Gemino Advisory - Redirecting...</title>
 
   <script>
     (function () {
+      // 1. Detectamos el idioma del navegador
       var lang = (navigator.language || navigator.userLanguage || "es").toLowerCase();
+      
+      // 2. Definimos la ruta de destino según el idioma
+      var targetPath = "/es/"; // Por defecto español
+      
+      if (lang.startsWith("pt")) {
+        targetPath = "/pt-br/";
+      } else if (lang.startsWith("en")) {
+        targetPath = "/en/";
+      }
 
-      if (lang.startsWith("pt")) { window.location.replace("/pt-br/"); return; }
-      if (lang.startsWith("en")) { window.location.replace("/en/"); return; }
-
-      window.location.replace("/es/");
+      // 3. Verificamos que NO estemos ya en la ruta de destino para evitar bucles infinitos
+      if (window.location.pathname !== targetPath) {
+        window.location.replace(targetPath);
+      }
     })();
   </script>
 
-  <!-- Fallback si JS está bloqueado -->
-  <meta http-equiv="refresh" content="0; url=/es/" />
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/es/" />
+  </noscript>
+
+  <style>
+    /* Un toque de estilo simple mientras carga */
+    body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #555; }
+  </style>
 </head>
 <body>
-  Redirecting...
+  <p>Redirecting... / Redireccionando...</p>
 </body>
 </html>
