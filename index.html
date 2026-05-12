@@ -1,41 +1,49 @@
-﻿<!DOCTYPE html>
-<html lang="es">
+﻿<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gemino Advisory - Redirecting...</title>
+  <title>Gemino Advisory</title>
+
+  <!-- Fallback si JavaScript está bloqueado (default ES) -->
+  <meta http-equiv="refresh" content="0; url=/es/" />
 
   <script>
     (function () {
-      // 1. Detectamos el idioma del navegador
+      // 1) Si el usuario ya eligió un idioma antes, respétalo
+      try {
+        var saved = localStorage.getItem("ga_lang");
+        if (saved === "es") { window.location.replace("/es/"); return; }
+        if (saved === "en") { window.location.replace("/en/"); return; }
+        if (saved === "pt") { window.location.replace("/pt-br/"); return; }
+      } catch (e) {}
+
+      // 2) Detectar idioma del navegador (prioriza PT-BR, luego EN, si no ES)
       var lang = (navigator.language || navigator.userLanguage || "es").toLowerCase();
-      
-      // 2. Definimos la ruta de destino según el idioma
-      var targetPath = "/es/"; // Por defecto español
-      
+
+      // Portugués (Brasil) o portugués general → PT-BR
       if (lang.startsWith("pt")) {
-        targetPath = "/pt-br/";
-      } else if (lang.startsWith("en")) {
-        targetPath = "/en/";
+        try { localStorage.setItem("ga_lang", "pt"); } catch (e) {}
+        window.location.replace("/pt-br/");
+        return;
       }
 
-      // 3. Verificamos que NO estemos ya en la ruta de destino para evitar bucles infinitos
-      if (window.location.pathname !== targetPath) {
-        window.location.replace(targetPath);
+      // Inglés → EN
+      if (lang.startsWith("en")) {
+        try { localStorage.setItem("ga_lang", "en"); } catch (e) {}
+        window.location.replace("/en/");
+        return;
       }
+
+      // Default → ES
+      try { localStorage.setItem("ga_lang", "es"); } catch (e) {}
+      window.location.replace("/es/");
     })();
   </script>
-
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=/es/" />
-  </noscript>
-
-  <style>
-    /* Un toque de estilo simple mientras carga */
-    body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #555; }
-  </style>
 </head>
+
 <body>
-  <p>Redirecting... / Redireccionando...</p>
+  Redirecting…
 </body>
 </html>
+
