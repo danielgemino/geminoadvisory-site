@@ -1,47 +1,103 @@
-﻿<!doctype html> 
-<html lang="es"> 
-<head> 
-  <meta charset="utf-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <title>Gemino Advisory — Coming soon</title> 
-  <link rel="stylesheet" href="/shared/styles.css" /> 
-</head> 
-<body> 
-<header> 
-  <div class="brand"> 
-    <img src="/assets/img/logo.png" alt="Gemino Advisory" /> 
-    <div> 
-      <div style="font-weight:800;color:var(--blue)">Gemino Advisory</div> 
-      <div style="font-size:12px;color:var(--gray)">Strategic Risk & Compliance</div> 
-    </div> 
-  </div> 
-  <nav> 
-    <a href="/es/">Home</a> 
-    <a href="/es/about.html">About Us</a> 
-    <a href="/es/servicios.html">Servicios</a> 
-    <a href="/es/recursos.html">Recursos</a> 
-    <a href="/es/contacto.html">Contacto</a> 
-  </nav> 
-  <div class="lang-switch"> 
-    <a href="/es/" id="lang-es">🇪🇸</a> 
-    <a href="/en/" id="lang-en">🇺🇸</a> 
-    <a href="/pt-br/" id="lang-pt">🇧🇷</a> 
-  </div> 
-</header> 
- 
-<section class="coming"> 
-  <h1>Coming soon</h1> 
-  <p>Esta página estará disponible próximamente.</p> 
-  <p>Mientras tanto, escribe a <b>daniel@geminoadvisory.com</b></p> 
-  <a class="btn btn-primary" href="mailto:daniel@geminoadvisory.com">Contactar</a> 
-</section> 
- 
-<footer> 
-  daniel@geminoadvisory.com · Guatemala | Central America | United States 
-</footer> 
- 
-<script src="/shared/lang.js"></script> 
-</body> 
-</html> 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Gemino Advisory</title>
 
+  <link rel="stylesheet" href="/shared/styles.css" />
+  <style>
+    .wrap{max-width:1100px;margin:0 auto;padding:18px 18px 60px;}
+    .logo{display:flex;justify-content:center;padding:8px 0 10px;}
+    .logo img{height:56px;}
+    .hero{text-align:center;padding:8px 0 18px;}
+    .hero h1{margin:0;font-size:32px;color:#0b1f3b;font-weight:800;}
+    .hero p{margin:8px auto 0;max-width:72ch;color:#334155;line-height:1.6;}
+    .cards{display:grid;grid-template-columns:1fr;gap:16px;margin-top:10px;}
+    @media(min-width:980px){.cards{grid-template-columns:1fr 1fr 1fr;gap:18px;}}
+    .card{border:1px solid #e7edf6;border-radius:14px;background:#fff;box-shadow:0 12px 30px rgba(11,31,59,0.06);
+      padding:18px 18px 16px;min-height:235px;display:flex;flex-direction:column;justify-content:space-between;}
+    .top{display:flex;gap:12px;align-items:flex-start;}
+    .icon{width:46px;height:46px;border-radius:999px;background:#f4f7fb;border:1px solid #edf2f7;display:flex;align-items:center;justify-content:center;font-size:20px;flex:0 0 46px;}
+    .card h3{margin:0;font-size:18px;color:#0b1f3b;font-weight:800;}
+    .card p{margin:8px 0 0;color:#334155;line-height:1.55;}
+    .btnrow{display:flex;justify-content:center;margin-top:14px;}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid #0b1f3b;color:#0b1f3b;background:#fff;}
+    .btn-ink{background:#0b1f3b;color:#fff;border-color:#0b1f3b;}
+    .btn-gold{background:#C9A24A;color:#0b1f3b;border-color:#C9A24A;}
+    .form{max-width:980px;margin:26px auto 0;padding-top:14px;}
+    .forms-frame{width:100%;height:660px;border:0;border-radius:12px;background:#fff;box-shadow:0 8px 18px rgba(11,31,59,0.06);}
+    .helper{font-size:12px;color:#5b6b83;margin-top:10px;line-height:1.4;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">
+      <img src="/logo.png" alt="Gemino Advisory" />
+    </div>
 
+    <div class="hero">
+      <h1>We’re here to help</h1>
+      <p>Choose the best way to get in touch with us.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="top">
+          <div class="icon">✉️</div>
+          <div>
+            <h3>Send us an email</h3>
+            <p>Direct email — for clients who already know what they need.</p>
+            <p><b>info@geminoadvisory.com</b></p>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn btn-ink" href="mailto:info@geminoadvisory.com">Send Email</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="top">
+          <div class="icon">📝</div>
+          <div>
+            <h3>Contact us</h3>
+            <p>Strategic form — helps filter and understand the need before the first approach.</p>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn" href="#contact-form">Fill out the form</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="top">
+          <div class="icon">📅</div>
+          <div>
+            <h3>Book 15 min meeting</h3>
+            <p>Low friction, elegant, professional. Schedule a 15-minute intro call.</p>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn btn-gold" target="_blank" rel="noopener"
+             href="https://outlook.office.com/bookwithme/user/d9f0ab6ccf0042cd847b85be2c7ce034@geminoadvisory.com?anonymous&ismsaljsauthenabled&ep=plink">
+            Book now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="form" id="contact-form">
+      <h2 style="color:#0b1f3b;margin:0 0 8px;">Contact us</h2>
+      <p style="margin:0 0 14px;color:#334155;">(We’ll add the Microsoft Form here.)</p>
+
+      <!-- Replace the iframe src when you create your Form -->
+      <iframe class="forms-frame"
+              src="PASTE_FORMS_EMBED_SRC_HERE"
+              loading="lazy"></iframe>
+
+      <div class="helper">Paste the Forms embed URL into the iframe src above.</div>
+    </div>
+  </div>
+</body>
+</html>
+``
