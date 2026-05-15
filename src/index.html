@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
@@ -8,6 +8,7 @@
   <style>
     :root {
       --navy: #0B1F3B;
+      --navy-2: #07172c;
       --gold: #C6A75E;
       --text: #1f2933;
       --light: #f7f4ee;
@@ -15,11 +16,7 @@
       --border: #e5e2dc;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: Arial, sans-serif;
@@ -70,7 +67,7 @@
       align-items: center;
       border-bottom: 3px solid var(--gold);
       background:
-        linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.92) 42%, rgba(255,255,255,0.2) 70%),
+        linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.93) 42%, rgba(255,255,255,0.2) 72%),
         url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80");
       background-size: cover;
       background-position: right center;
@@ -81,10 +78,13 @@
       padding: 70px 0;
     }
 
+    .small-line, .section-line {
+      background: var(--gold);
+    }
+
     .small-line {
       width: 48px;
       height: 3px;
-      background: var(--gold);
       margin-bottom: 24px;
     }
 
@@ -93,9 +93,7 @@
       margin-bottom: 24px;
     }
 
-    .gold {
-      color: var(--gold);
-    }
+    .gold { color: var(--gold); }
 
     .hero p {
       font-size: 22px;
@@ -111,15 +109,12 @@
       border-radius: 6px;
       font-weight: bold;
       transition: 0.2s ease;
+      border: 0;
     }
 
-    .btn:hover {
-      background: #b29148;
-    }
+    .btn:hover { background: #b29148; }
 
-    section {
-      padding: 70px 0;
-    }
+    section { padding: 70px 0; }
 
     .section-title {
       text-align: center;
@@ -130,7 +125,6 @@
     .section-line {
       width: 48px;
       height: 2px;
-      background: var(--gold);
       margin: 0 auto 40px;
     }
 
@@ -146,11 +140,9 @@
       border-right: 1px solid var(--border);
     }
 
-    .focus-card:last-child {
-      border-right: none;
-    }
+    .focus-card:last-child { border-right: none; }
 
-    .icon {
+    .icon-circle {
       width: 72px;
       height: 72px;
       border-radius: 50%;
@@ -158,8 +150,17 @@
       color: white;
       display: grid;
       place-items: center;
-      font-size: 30px;
       margin: 0 auto 24px;
+    }
+
+    .icon-circle svg {
+      width: 34px;
+      height: 34px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .focus-card h3 {
@@ -169,6 +170,7 @@
 
     .values {
       background: var(--light);
+      padding: 54px 0;
     }
 
     .values-grid {
@@ -183,14 +185,21 @@
       border-right: 1px solid #ddd1bd;
     }
 
-    .value-card:last-child {
-      border-right: none;
-    }
+    .value-card:last-child { border-right: none; }
 
     .value-icon {
       color: var(--gold);
-      font-size: 38px;
       margin-bottom: 12px;
+    }
+
+    .value-icon svg {
+      width: 42px;
+      height: 42px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .value-card h3 {
@@ -198,9 +207,82 @@
       margin-bottom: 10px;
     }
 
-    .contact {
-      background: var(--white);
+    .founder {
+      background: linear-gradient(135deg, var(--navy-2), #1d252f);
+      color: white;
     }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .founder-photo-wrap {
+      border: 1px solid var(--gold);
+      padding: 18px;
+    }
+
+    .founder-photo {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .founder-label {
+      color: var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .founder h2 {
+      color: white;
+      font-size: clamp(38px, 5vw, 56px);
+      margin-bottom: 6px;
+    }
+
+    .founder-role {
+      color: var(--gold);
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+
+    .founder-text {
+      max-width: 620px;
+      font-size: 17px;
+      margin-bottom: 18px;
+      color: #f2f2f2;
+    }
+
+    .linkedin-btn {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid var(--gold);
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .linkedin-btn svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    .linkedin-btn span {
+      display: block;
+      font-weight: normal;
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    .contact { background: var(--white); }
 
     .contact-subtitle {
       text-align: center;
@@ -237,8 +319,17 @@
       color: var(--navy);
       display: grid;
       place-items: center;
-      font-size: 38px;
       flex-shrink: 0;
+    }
+
+    .email-icon svg {
+      width: 38px;
+      height: 38px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .email-link {
@@ -256,15 +347,18 @@
     }
 
     footer {
-      background: var(--light);
+      background: var(--navy);
+      color: white;
       text-align: center;
       padding: 34px 0;
-      border-top: 1px solid var(--border);
     }
 
     footer .brand {
+      color: white;
       font-size: 30px;
     }
+
+    footer .tagline { color: white; }
 
     footer p {
       font-size: 14px;
@@ -282,6 +376,7 @@
 
       .focus-grid,
       .values-grid,
+      .founder-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -302,9 +397,9 @@
         text-align: center;
       }
 
-      .brand {
-        font-size: 34px;
-      }
+      .brand { font-size: 34px; }
+
+      .founder-grid { gap: 34px; }
     }
   </style>
 </head>
@@ -337,19 +432,25 @@
 
         <div class="focus-grid">
           <div class="focus-card">
-            <div class="icon">◇</div>
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
+            </div>
             <h3>Asesoría en Riesgos</h3>
             <p>Gestión integral de riesgos para proteger lo que más importa y tomar mejores decisiones.</p>
           </div>
 
           <div class="focus-card">
-            <div class="icon">☑</div>
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M9 13l2 2 4-5"></path></svg>
+            </div>
             <h3>Cumplimiento</h3>
             <p>Soluciones de cumplimiento robustas que mantienen a tu organización alineada y preparada para auditorías.</p>
           </div>
 
           <div class="focus-card">
-            <div class="icon">◎</div>
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="10" cy="7" r="4"></circle><path d="M21 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
             <h3>Soporte Estratégico</h3>
             <p>Acompañamiento que empodera a tu equipo y fortalece la toma de decisiones a largo plazo.</p>
           </div>
@@ -361,27 +462,69 @@
       <div class="container">
         <div class="values-grid">
           <div class="value-card">
-            <div class="value-icon">♢</div>
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2l6 10-6 10-6-10 6-10z"></path></svg>
+            </div>
             <h3>Independiente</h3>
             <p>Objetividad y criterio imparcial en cada recomendación.</p>
           </div>
 
           <div class="value-card">
-            <div class="value-icon">▣</div>
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12"></rect><path d="M9 9h6v6H9z"></path></svg>
+            </div>
             <h3>Con experiencia</h3>
             <p>Conocimiento profundo en industrias y marcos regulatorios.</p>
           </div>
 
           <div class="value-card">
-            <div class="value-icon">◇</div>
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"></path><path d="M3 12l4-4 4 4"></path><path d="M21 12l-4-4-4 4"></path></svg>
+            </div>
             <h3>Colaborativo</h3>
             <p>Trabajamos contigo, no por ti.</p>
           </div>
 
           <div class="value-card">
-            <div class="value-icon">◎</div>
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M18 6l3-3"></path></svg>
+            </div>
             <h3>Enfocado en resultados</h3>
             <p>Centrados en lograr impactos reales y sostenibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder">
+      <div class="container">
+        <div class="founder-grid">
+          <div class="founder-photo-wrap">
+            <img class="founder-photo" src="profile.jpg" alt="Daniel Gemino, fundador de Gemino Advisory">
+          </div>
+
+          <div>
+            <div class="founder-label">Perfil del Fundador</div>
+            <h2>Daniel Gemino</h2>
+            <div class="founder-role">Director & Fundador</div>
+
+            <p class="founder-text">
+              Más de 15 años de experiencia en gestión de riesgos, cumplimiento y auditoría, acompañando a organizaciones a fortalecer su resiliencia, cumplir con estándares exigentes y tomar decisiones con confianza.
+            </p>
+
+            <p class="founder-text">
+              Mi compromiso es simple: aportar claridad, estrategia y resultados que generen valor real y sostenible.
+            </p>
+
+            <a class="linkedin-btn" href="https://www.linkedin.com/in/daniel-gemino" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.1c.5-1 1.9-2.5 4.1-2.5 4.4 0 5.2 2.9 5.2 6.7V24h-4v-8.5c0-2 0-4.6-2.8-4.6s-3.2 2.2-3.2 4.5V24H8V8z"/>
+              </svg>
+              <div>
+                Conecta conmigo en LinkedIn
+                <span>linkedin.com/in/daniel-gemino</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -395,7 +538,9 @@
 
         <div class="contact-grid">
           <div class="contact-card email-card">
-            <div class="email-icon">✉</div>
+            <div class="email-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
+            </div>
             <div>
               <h3>Envíame un correo</h3>
               <p>Si tienes alguna pregunta o consulta, escríbeme y te responderé lo antes posible.</p>
