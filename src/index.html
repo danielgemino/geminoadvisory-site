@@ -1,38 +1,426 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gemino Advisory</title>
+  <title>Gemino Advisory | Strategic Risk & Compliance</title>
 
-  <script>
-    (function () {
-      var lang = (navigator.language || navigator.userLanguage || "es").toLowerCase();
+  <style>
+    :root {
+      --navy: #0B1F3B;
+      --gold: #C6A75E;
+      --text: #1f2933;
+      --light: #f7f4ee;
+      --white: #ffffff;
+      --border: #e5e2dc;
+    }
 
-      if (lang.startsWith("pt")) { window.location.replace("/pt-br/"); return; }
-      if (lang.startsWith("en")) { window.location.replace("/en/"); return; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      window.location.replace("/es/");
-    })();
-  </script>
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
 
-  <!-- Fallback si JS está bloqueado -->
-  <meta http-equiv="refresh" content="0; url=/es/" />
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 32px 0 10px;
+    }
+
+    .brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 44px;
+      color: var(--navy);
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 16px;
+      margin-top: 4px;
+      color: #333;
+    }
+
+    .gold-line {
+      width: 110px;
+      height: 2px;
+      background: var(--gold);
+      margin: 8px auto 0;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid var(--gold);
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.92) 42%, rgba(255,255,255,0.2) 70%),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: right center;
+    }
+
+    .hero-content {
+      max-width: 560px;
+      padding: 70px 0;
+    }
+
+    .small-line {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 68px);
+      margin-bottom: 24px;
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #b29148;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .section-line {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 40px;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .focus-card {
+      padding: 20px 28px;
+      border-right: 1px solid var(--border);
+    }
+
+    .focus-card:last-child {
+      border-right: none;
+    }
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 30px;
+      margin: 0 auto 24px;
+    }
+
+    .focus-card h3 {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    .values {
+      background: var(--light);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+
+    .value-card {
+      padding: 20px;
+      border-right: 1px solid #ddd1bd;
+    }
+
+    .value-card:last-child {
+      border-right: none;
+    }
+
+    .value-icon {
+      color: var(--gold);
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .value-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-subtitle {
+      text-align: center;
+      margin-bottom: 34px;
+      font-size: 18px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 42px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      background: white;
+    }
+
+    .email-card {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .email-icon {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: var(--light);
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      font-size: 38px;
+      flex-shrink: 0;
+    }
+
+    .email-link {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 16px;
+    }
+
+    .form-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: var(--light);
+      text-align: center;
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    footer .brand {
+      font-size: 30px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        background:
+          linear-gradient(90deg, rgba(255,255,255,0.96), rgba(255,255,255,0.86)),
+          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .focus-grid,
+      .values-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .focus-card,
+      .value-card {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .focus-card:last-child,
+      .value-card:last-child {
+        border-bottom: none;
+      }
+
+      .email-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .brand {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  Redirecting...
+
+  <header>
+    <div class="brand">Gemino Advisory</div>
+    <div class="gold-line"></div>
+    <div class="tagline">Strategic Risk & Compliance</div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="small-line"></div>
+          <h1>Tu aliado en riesgo y cumplimiento de <span class="gold">excelencia.</span></h1>
+          <p>Asesoría independiente. Soluciones prácticas. Impacto medible.</p>
+          <a class="btn" href="#contacto">Contáctame</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">En qué me enfoco</h2>
+        <div class="section-line"></div>
+
+        <div class="focus-grid">
+          <div class="focus-card">
+            <div class="icon">◇</div>
+            <h3>Asesoría en Riesgos</h3>
+            <p>Gestión integral de riesgos para proteger lo que más importa y tomar mejores decisiones.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="icon">☑</div>
+            <h3>Cumplimiento</h3>
+            <p>Soluciones de cumplimiento robustas que mantienen a tu organización alineada y preparada para auditorías.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="icon">◎</div>
+            <h3>Soporte Estratégico</h3>
+            <p>Acompañamiento que empodera a tu equipo y fortalece la toma de decisiones a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="container">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">♢</div>
+            <h3>Independiente</h3>
+            <p>Objetividad y criterio imparcial en cada recomendación.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">▣</div>
+            <h3>Con experiencia</h3>
+            <p>Conocimiento profundo en industrias y marcos regulatorios.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">◇</div>
+            <h3>Colaborativo</h3>
+            <p>Trabajamos contigo, no por ti.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">◎</div>
+            <h3>Enfocado en resultados</h3>
+            <p>Centrados en lograr impactos reales y sostenibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Hablemos</h2>
+        <div class="section-line"></div>
+        <p class="contact-subtitle">Estoy aquí para escucharte y ayudarte.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card email-card">
+            <div class="email-icon">✉</div>
+            <div>
+              <h3>Envíame un correo</h3>
+              <p>Si tienes alguna pregunta o consulta, escríbeme y te responderé lo antes posible.</p>
+              <a class="email-link" href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Contáctame</h3>
+            <p>Completa el formulario y me pondré en contacto contigo.</p>
+            <a class="btn form-button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUN1lBQ1ZFRTI0MTNSTlBaN0tIUkVVNUkyTy4u" target="_blank" rel="noopener">
+              Abrir formulario
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="brand">Gemino Advisory</div>
+    <div class="tagline">Strategic Risk & Compliance</div>
+    <p>© 2026 Gemino Advisory. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
-# Ve a la carpeta del repo local (si ya lo clonaste)
-cd path/to/geminoadvisory-site
-
-# Crea la carpeta src si no existe y mueve el archivo
-mkdir -p src
-mv /ruta/local/index.html src/index.html
-
-# Añade, commit y push
-git add src/index.html
-git commit -m "Add src/index.html for Azure Static Web Apps"
-git push origin main
-
-
