@@ -205,6 +205,73 @@
       margin-bottom: 10px;
     }
 
+    .insights {
+      background: var(--white);
+      padding: 72px 0;
+    }
+
+    .insights-intro {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+      font-size: 18px;
+      color: #4b5563;
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .insight-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 34px;
+      background: white;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 280px;
+    }
+
+    .insight-label {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .insight-card h3 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .insight-card p {
+      margin-bottom: 24px;
+      color: #4b5563;
+    }
+
+    .secondary-btn {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.2s ease;
+      width: fit-content;
+    }
+
+    .secondary-btn:hover {
+      background: var(--gold);
+      color: white;
+    }
+
     .founder {
       background: linear-gradient(135deg, var(--navy-2), #1d252f);
       color: white;
@@ -353,15 +420,9 @@
       padding: 34px 0;
     }
 
-    .footer-logo {
-      width: min(320px, 80%);
-      height: auto;
-      filter: brightness(0) invert(1);
-    }
-
     footer p {
       font-size: 14px;
-      margin-top: 12px;
+      margin-top: 0;
     }
 
     @media (max-width: 850px) {
@@ -384,7 +445,8 @@
       .focus-grid,
       .values-grid,
       .founder-grid,
-      .contact-grid {
+      .contact-grid,
+      .insights-grid {
         grid-template-columns: 1fr;
       }
 
@@ -525,17 +587,59 @@
       </div>
     </section>
 
+    <section class="insights">
+      <div class="container">
+        <h2 class="section-title">Ideas y ejemplos de trabajo</h2>
+        <div class="section-line"></div>
+
+        <p class="insights-intro">
+          Una selección de artículos y materiales de referencia que muestran cómo traduzco riesgo,
+          cumplimiento y estrategia en análisis claros, prácticos y accionables.
+        </p>
+
+        <div class="insights-grid">
+          <div class="insight-card">
+            <div>
+              <div class="insight-label">Artículo destacado</div>
+              <h3>Cumplimiento, inversión y confianza</h3>
+              <p>
+                Una reflexión sobre cómo el cumplimiento puede convertirse en una herramienta
+                de confianza, inversión y sostenibilidad institucional.
+              </p>
+            </div>
+            <a class="secondary-btn" href="https://www.linkedin.com/pulse/cumplimiento-inversi%25C3%25B3n-y-confianza-una-conversaci%25C3%25B3n-que-daniel-gemino-w02ve" target="_blank" rel="noopener">
+              Leer artículo
+            </a>
+          </div>
+
+          <div class="insight-card">
+            <div>
+              <div class="insight-label">Ejemplo de entregable</div>
+              <h3>Risk Memo — Ejemplo general</h3>
+              <p>
+                Ejemplo de análisis ejecutivo para estructurar riesgos, impactos, controles
+                y recomendaciones de forma clara y accionable.
+              </p>
+            </div>
+            <a class="secondary-btn" href="insights/risk-memo-general-gemino-advisory.pdf" target="_blank" rel="noopener">
+              Ver memo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="founder">
       <div class="container">
         <div class="founder-grid">
           <div class="founder-photo-wrap">
-            <img class="founder-photo" src="profile.png" alt="Daniel Gemino, fundador de Gemino Advisory">
+            <img class="founder-photo" src="profile.png" alt="Daniel Gemino, director principal de Gemino Advisory">
           </div>
 
           <div>
-            <div class="founder-label">Perfil del Fundador</div>
+            <div class="founder-label">Sobre Daniel Gemino</div>
             <h2>Daniel Gemino</h2>
-            <div class="founder-role">Director & Fundador</div>
+            <div class="founder-role">Director Principal</div>
 
             <p class="founder-text">
               Más de 10 años de experiencia en gestión de riesgos, cumplimiento y auditoría, acompañando a organizaciones a fortalecer su resiliencia, cumplir con estándares exigentes y tomar decisiones con confianza.
@@ -594,8 +698,8 @@
   </main>
 
   <footer>
-  <p>© 2026 Gemino Advisory. Todos los derechos reservados.</p>
-</footer>
+    <p>© 2026 Gemino Advisory. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
