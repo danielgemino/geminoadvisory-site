@@ -1,155 +1,275 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gemino Advisory | Strategic Risk & Compliance</title>
+  <title>Gemino Advisory | Strategic Risk & Compliance Advisory</title>
+  <meta name="description" content="Gemino Advisory provides strategic risk, governance, compliance, and institutional readiness advisory services for organizations pursuing sustainable growth." />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY8FPNHZR7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JY8FPNHZR7');
+  </script>
 
   <style>
     :root {
       --navy: #0B1F3B;
       --navy-2: #07172c;
       --gold: #C6A75E;
+      --gold-2: #b29148;
       --text: #1f2933;
+      --muted: #5b6470;
       --light: #f7f4ee;
       --white: #ffffff;
       --border: #e5e2dc;
+      --shadow: 0 18px 40px rgba(11, 31, 59, 0.10);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background: var(--white);
       line-height: 1.6;
     }
 
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
       font-family: Georgia, "Times New Roman", serif;
       color: var(--navy);
       line-height: 1.1;
+      font-weight: 700;
     }
+
+    a { color: inherit; }
 
     .container {
       width: min(1120px, 90%);
       margin: auto;
     }
 
-    header {
-      text-align: center;
-      padding: 24px 0 18px;
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 86px;
+      gap: 26px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 12px;
+      min-width: 220px;
+      cursor: pointer;
+    }
+
+    .brand img {
+      width: min(270px, 48vw);
+      height: auto;
+      display: block;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      border-bottom-color: var(--gold);
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 4px;
       background: white;
     }
 
-    .main-logo {
-      width: min(540px, 88%);
-      height: auto;
+    .lang-switch button {
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+      cursor: pointer;
     }
 
+    .lang-switch button.active {
+      background: var(--navy);
+      color: white;
+    }
+
+    .page { display: none; }
+    .page.active { display: block; }
+
     .hero {
-      min-height: 560px;
+      min-height: 640px;
       display: flex;
       align-items: center;
       border-bottom: 3px solid var(--gold);
       background:
-        linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.94) 42%, rgba(255,255,255,0.35) 72%),
-        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80");
+        linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.95) 45%, rgba(255,255,255,0.38) 76%),
+        url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80");
       background-size: cover;
       background-position: right center;
     }
 
-    .hero-content {
-      max-width: 760px;
-      padding: 90px 0;
+    .hero-content { max-width: 760px; padding: 96px 0; }
+
+    .eyebrow {
+      color: var(--gold);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      margin-bottom: 16px;
     }
 
     .small-line {
-      width: 48px;
+      width: 54px;
       height: 3px;
       background: var(--gold);
       margin-bottom: 24px;
     }
 
-    h1 {
-      font-size: clamp(52px, 7vw, 86px);
-      margin-bottom: 24px;
-    }
-
-    .gold {
-      color: var(--gold);
-    }
+    h1 { font-size: clamp(48px, 7vw, 82px); margin-bottom: 24px; }
+    .gold { color: var(--gold); }
 
     .hero p {
-      font-size: 22px;
-      margin-bottom: 28px;
+      max-width: 620px;
+      font-size: 21px;
+      margin-bottom: 30px;
+      color: #2f3945;
     }
+
+    .btn-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 
     .btn {
       display: inline-block;
       background: var(--gold);
       color: white;
       text-decoration: none;
-      padding: 14px 28px;
+      padding: 14px 26px;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 800;
       transition: 0.2s ease;
-      border: 0;
+      border: 1px solid var(--gold);
+      cursor: pointer;
     }
 
-    .btn:hover {
-      background: #b29148;
+    .btn:hover { background: var(--gold-2); border-color: var(--gold-2); }
+
+    .secondary-btn {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 6px;
+      font-weight: 800;
+      transition: 0.2s ease;
+      background: rgba(255,255,255,0.78);
+      cursor: pointer;
     }
 
-    section {
-      padding: 70px 0;
-    }
+    .secondary-btn:hover { background: var(--gold); color: white; }
+
+    section { padding: 74px 0; }
 
     .section-title {
       text-align: center;
-      font-size: 34px;
+      font-size: clamp(32px, 4vw, 46px);
       margin-bottom: 12px;
     }
 
-    .section-line {
-      width: 48px;
-      height: 2px;
-      background: var(--gold);
-      margin: 0 auto 40px;
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 18px;
     }
 
-    .focus-grid {
+    .section-line {
+      width: 52px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 38px;
+    }
+
+    .focus-grid, .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 26px;
+    }
+
+    .focus-card, .service-card, .resource-card, .contact-card, .principle-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.04);
+    }
+
+    .focus-card, .service-card {
+      padding: 34px 28px;
       text-align: center;
     }
 
-    .focus-card {
-      padding: 20px 28px;
-      border-right: 1px solid var(--border);
-    }
-
-    .focus-card:last-child {
-      border-right: none;
-    }
-
     .icon-circle {
-      width: 72px;
-      height: 72px;
+      width: 76px;
+      height: 76px;
       border-radius: 50%;
       background: var(--navy);
       color: white;
       display: grid;
       place-items: center;
-      margin: 0 auto 24px;
+      margin: 0 auto 22px;
+      border: 3px solid var(--gold);
     }
 
-    .icon-circle svg {
+    .gold-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+    }
+
+    .icon-circle svg, .gold-icon svg, .mini-icon svg, .social svg {
       width: 34px;
       height: 34px;
       stroke: currentColor;
@@ -159,561 +279,783 @@
       stroke-linejoin: round;
     }
 
-    .focus-card h3 {
+    .focus-card h3, .service-card h3, .resource-card h3 {
       font-size: 24px;
-      margin-bottom: 14px;
+      margin-bottom: 13px;
     }
 
-    .values {
-      background: var(--light);
-      padding: 54px 0;
+    .focus-card p, .service-card p, .resource-card p {
+      color: var(--muted);
     }
 
-    .values-grid {
+    .lead-magnet {
+      background: linear-gradient(135deg, var(--navy), var(--navy-2));
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lead-magnet::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      border: 1px solid rgba(198,167,94,0.22);
+    }
+
+    .lead-grid {
+      position: relative;
+      z-index: 1;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
-      text-align: center;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 48px;
+      align-items: center;
     }
 
-    .value-card {
-      padding: 20px;
-      border-right: 1px solid #ddd1bd;
+    .lead-magnet h2 {
+      color: white;
+      font-size: clamp(34px, 5vw, 54px);
+      margin-bottom: 18px;
     }
 
-    .value-card:last-child {
-      border-right: none;
+    .lead-magnet p {
+      color: #edf2f7;
+      font-size: 18px;
+      margin-bottom: 18px;
     }
 
-    .value-icon {
+    .lead-label {
       color: var(--gold);
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 13px;
       margin-bottom: 12px;
     }
 
-    .value-icon svg {
-      width: 42px;
-      height: 42px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 1.7;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .value-card h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .insights {
-      background: var(--white);
-      padding: 72px 0;
-    }
-
-    .insights-intro {
-      max-width: 760px;
-      margin: 0 auto 38px;
-      text-align: center;
-      font-size: 18px;
-      color: #4b5563;
-    }
-
-    .insights-grid {
+    .check-list {
+      list-style: none;
+      margin: 22px 0 28px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
+      gap: 10px;
     }
 
-    .insight-card {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 34px;
+    .check-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    .lead-visual {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(198,167,94,0.32);
+      border-radius: 18px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .pdf-card {
       background: white;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
+      color: var(--navy);
+      min-height: 270px;
+      border-radius: 8px;
+      padding: 28px 22px;
+      box-shadow: var(--shadow);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 280px;
+      border-bottom: 8px solid var(--gold);
     }
 
-    .insight-label {
-      color: var(--gold);
-      font-weight: bold;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
-    }
+    .pdf-card img { width: 74px; height: auto; }
+    .pdf-card h3 { font-size: 26px; }
 
-    .insight-card h3 {
-      font-size: 26px;
-      margin-bottom: 14px;
-    }
-
-    .insight-card p {
-      margin-bottom: 24px;
-      color: #4b5563;
-    }
-
-    .secondary-btn {
-      display: inline-block;
-      border: 1px solid var(--gold);
+    .qr-card {
+      background: white;
+      border-radius: 12px;
       color: var(--navy);
-      text-decoration: none;
-      padding: 12px 22px;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: 0.2s ease;
-      width: fit-content;
+      padding: 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
     }
 
-    .secondary-btn:hover {
-      background: var(--gold);
-      color: white;
-    }
-
-    .founder {
-      background: linear-gradient(135deg, var(--navy-2), #1d252f);
-      color: white;
-    }
-
-    .founder-grid {
+    .qr-placeholder {
+      width: 132px;
+      height: 132px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
+      place-items: center;
+      margin: 0 auto 12px;
+      font-weight: 900;
+      color: var(--gold);
+    }
+
+    .about-hero, .services-hero, .contact-hero {
+      background: linear-gradient(135deg, #ffffff 0%, #f7f4ee 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 82px 0;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
       align-items: center;
     }
 
-    .founder-photo-wrap {
+    .about-photo-wrap {
       border: 1px solid var(--gold);
-      padding: 18px;
+      padding: 16px;
+      background: white;
+      box-shadow: var(--shadow);
     }
 
-    .founder-photo {
-      width: 100%;
-      display: block;
-      object-fit: cover;
+    .about-photo { width: 100%; display: block; }
+
+    .about-copy h1, .services-hero h1, .contact-hero h1 {
+      font-size: clamp(42px, 6vw, 64px);
+      margin-bottom: 20px;
     }
 
-    .founder-label {
+    .about-copy p, .services-hero p, .contact-hero p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .principle-card {
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .mini-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--navy);
       color: var(--gold);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(20px, 2.2vw, 24px);
-      font-weight: 500;
-      letter-spacing: 0.08em;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+    }
+
+    .principle-card h3 { font-size: 22px; margin-bottom: 8px; }
+    .principle-card p { color: var(--muted); }
+
+    .resources { background: var(--light); }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+
+    .resource-card { padding: 34px; }
+
+    .resource-label {
+      color: var(--gold);
+      font-weight: 900;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 13px;
       margin-bottom: 12px;
     }
 
-    .founder h2 {
+    .cta-band {
+      background: var(--navy);
       color: white;
-      font-size: clamp(38px, 5vw, 56px);
-      margin-bottom: 6px;
+      padding: 44px 0;
     }
 
-    .founder-role {
-      color: var(--gold);
-      margin-bottom: 24px;
-      font-size: 18px;
-    }
-
-    .founder-text {
-      max-width: 620px;
-      font-size: 19px;
-      margin-bottom: 18px;
-      color: #f2f2f2;
-    }
-
-    .linkedin-btn {
-      margin-top: 18px;
-      display: inline-flex;
+    .cta-row {
+      display: flex;
       align-items: center;
-      gap: 12px;
-      border: 1px solid var(--gold);
-      color: white;
-      text-decoration: none;
-      padding: 14px 18px;
-      border-radius: 6px;
-      font-weight: bold;
+      justify-content: space-between;
+      gap: 24px;
     }
 
-    .linkedin-btn svg {
-      width: 24px;
-      height: 24px;
-      fill: white;
-    }
-
-    .linkedin-btn span {
-      display: block;
-      font-weight: normal;
-      font-size: 13px;
-      color: #ddd;
-    }
-
-    .contact {
-      background: var(--white);
-    }
-
-    .contact-subtitle {
-      text-align: center;
-      margin-bottom: 34px;
-      font-size: 18px;
-    }
+    .cta-row h2 { color: white; font-size: 32px; margin-bottom: 6px; }
+    .cta-row p { color: #e8edf3; }
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1.35fr;
-      gap: 28px;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
       align-items: stretch;
     }
 
-    .contact-card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 42px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.04);
-      background: white;
-    }
+    .contact-card { padding: 34px; }
+    .contact-card h3 { font-size: 26px; margin-bottom: 14px; }
+    .contact-card p { color: var(--muted); }
 
-    .email-card {
-      display: flex;
-      gap: 26px;
-      align-items: center;
-    }
-
-    .email-icon {
-      width: 86px;
-      height: 86px;
-      border-radius: 50%;
-      background: var(--light);
-      color: var(--navy);
+    .contact-form {
       display: grid;
-      place-items: center;
-      flex-shrink: 0;
+      gap: 14px;
+      margin-top: 22px;
     }
 
-    .email-icon svg {
-      width: 38px;
-      height: 38px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .email-link {
-      color: var(--gold);
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 16px;
-    }
-
-    .form-button {
+    .contact-form input, .contact-form textarea {
       width: 100%;
-      text-align: center;
-      margin-top: 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 13px 14px;
+      font: inherit;
+      color: var(--text);
+    }
+
+    .contact-form textarea { min-height: 130px; resize: vertical; }
+
+    .contact-list {
+      display: grid;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--navy);
+    }
+
+    .contact-item a {
+      color: var(--gold);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .map-band {
+      background: linear-gradient(135deg, var(--navy-2), var(--navy));
+      color: white;
+      padding: 62px 0;
+    }
+
+    .map-band h2 {
+      color: white;
+      font-size: clamp(32px, 4vw, 44px);
+      margin-bottom: 12px;
+    }
+
+    .map-band p {
+      max-width: 640px;
+      color: #e8edf3;
     }
 
     footer {
       background: var(--navy);
       color: white;
-      text-align: center;
       padding: 34px 0;
     }
 
-    footer p {
-      font-size: 14px;
-      margin-top: 0;
+    .footer-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
-    @media (max-width: 850px) {
+    .footer-logo {
+      width: 220px;
+      filter: brightness(0) invert(1);
+      opacity: 0.96;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a, .social {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.94;
+      cursor: pointer;
+    }
+
+    .social-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .social {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 50%;
+    }
+
+    .social:hover { background: rgba(255,255,255,0.10); }
+
+    .copyright {
+      font-size: 13px;
+      color: #d7dee7;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
       .hero {
         background:
-          linear-gradient(90deg, rgba(255,255,255,0.96), rgba(255,255,255,0.86)),
-          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80");
+          linear-gradient(90deg, rgba(255,255,255,0.96), rgba(255,255,255,0.88)),
+          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80");
         background-size: cover;
         background-position: center;
       }
 
-      h1 {
-        font-size: clamp(42px, 12vw, 64px);
-      }
-
-      .hero-content {
-        padding: 70px 0;
-      }
-
-      .focus-grid,
-      .values-grid,
-      .founder-grid,
-      .contact-grid,
-      .insights-grid {
+      .focus-grid, .services-grid, .lead-grid, .split-grid, .principles-grid, .resources-grid, .contact-grid, .lead-visual {
         grid-template-columns: 1fr;
       }
 
-      .focus-card,
-      .value-card {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .focus-card:last-child,
-      .value-card:last-child {
-        border-bottom: none;
-      }
-
-      .email-card {
+      .cta-row {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
       }
 
-      .founder-grid {
-        gap: 34px;
-      }
+      h1 { font-size: clamp(42px, 12vw, 62px); }
+      .hero-content { padding: 72px 0; }
     }
   </style>
 </head>
 
 <body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" onclick="showPage('home')" aria-label="Gemino Advisory home">
+        <img src="logo.png" alt="Gemino Advisory Logo">
+      </a>
 
-  <header>
-    <img src="logo.png" alt="Gemino Advisory Logo" class="main-logo">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a data-nav="home" onclick="showPage('home')" data-en="Home" data-es="Inicio">Home</a>
+        <a data-nav="about" onclick="showPage('about')" data-en="About Us" data-es="Nosotros">About Us</a>
+        <a data-nav="services" onclick="showPage('services')" data-en="Services" data-es="Servicios">Services</a>
+        <a data-nav="contact" onclick="showPage('contact')" data-en="Contact Us" data-es="Contacto">Contact Us</a>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button id="lang-en" onclick="setLanguage('en')">EN</button>
+          <button id="lang-es" onclick="setLanguage('es')">ES</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
-
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <div class="small-line"></div>
-          <h1>Tu aliado en riesgo y cumplimiento de <span class="gold">excelencia.</span></h1>
-          <p>Asesoría independiente. Soluciones prácticas. Impacto medible.</p>
-          <a class="btn" href="#contacto">Contáctame</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2 class="section-title">En qué me enfoco</h2>
-        <div class="section-line"></div>
-
-        <div class="focus-grid">
-          <div class="focus-card">
-            <div class="icon-circle">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path>
-              </svg>
+    <div id="home" class="page active">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="small-line"></div>
+            <h1 data-en="Strategic clarity. Stronger decisions. Sustainable growth." data-es="Claridad estratégica. Mejores decisiones. Crecimiento sostenible.">Strategic clarity. Stronger decisions. Sustainable growth.</h1>
+            <p data-en="We help organizations strengthen governance, manage risk, and achieve regulatory confidence to access capital, create value, and grow responsibly." data-es="Ayudamos a las organizaciones a fortalecer la gobernanza, gestionar riesgos y generar confianza regulatoria para acceder a capital, crear valor y crecer responsablemente.">We help organizations strengthen governance, manage risk, and achieve regulatory confidence to access capital, create value, and grow responsibly.</p>
+            <div class="btn-row">
+              <a class="btn" onclick="showPage('services')" data-en="Explore Services" data-es="Ver Servicios">Explore Services</a>
+              <a class="secondary-btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUMFpITVdYV0FTMEVRTEJIOFJWQklEQlVOWC4u&origin=QRCode" target="_blank" rel="noopener" data-en="Take the Readiness Check" data-es="Realizar evaluación">Take the Readiness Check</a>
             </div>
-            <h3>Asesoría en Riesgos</h3>
-            <p>Gestión integral de riesgos para proteger lo que más importa y tomar mejores decisiones.</p>
-          </div>
-
-          <div class="focus-card">
-            <div class="icon-circle">
-              <svg viewBox="0 0 24 24">
-                <path d="M7 3h8l4 4v14H7z"></path>
-                <path d="M15 3v5h5"></path>
-                <path d="M9 13l2 2 4-5"></path>
-              </svg>
-            </div>
-            <h3>Cumplimiento</h3>
-            <p>Soluciones de cumplimiento robustas que mantienen a tu organización alineada y preparada para auditorías.</p>
-          </div>
-
-          <div class="focus-card">
-            <div class="icon-circle">
-              <svg viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path>
-                <circle cx="10" cy="7" r="4"></circle>
-                <path d="M21 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3>Soporte Estratégico</h3>
-            <p>Acompañamiento que empodera a tu equipo y fortalece la toma de decisiones a largo plazo.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="values">
-      <div class="container">
-        <div class="values-grid">
-          <div class="value-card">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2l6 10-6 10-6-10 6-10z"></path>
-              </svg>
-            </div>
-            <h3>Independiente</h3>
-            <p>Objetividad y criterio imparcial en cada recomendación.</p>
-          </div>
+      <section>
+        <div class="container">
+          <h2 class="section-title" data-en="Our Focus Areas" data-es="Áreas de Enfoque">Our Focus Areas</h2>
+          <div class="section-line"></div>
 
-          <div class="value-card">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24">
-                <rect x="6" y="6" width="12" height="12"></rect>
-                <path d="M9 9h6v6H9z"></path>
-              </svg>
-            </div>
-            <h3>Con experiencia</h3>
-            <p>Conocimiento profundo en industrias y marcos regulatorios.</p>
-          </div>
-
-          <div class="value-card">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M8 12l3 3 5-6"></path>
-                <path d="M3 12l4-4 4 4"></path>
-                <path d="M21 12l-4-4-4 4"></path>
-              </svg>
-            </div>
-            <h3>Colaborativo</h3>
-            <p>Trabajamos contigo, no por ti.</p>
-          </div>
-
-          <div class="value-card">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="8"></circle>
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M18 6l3-3"></path>
-              </svg>
-            </div>
-            <h3>Enfocado en resultados</h3>
-            <p>Centrados en lograr impactos reales y sostenibles.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="insights">
-      <div class="container">
-        <h2 class="section-title">Ideas y ejemplos de trabajo</h2>
-        <div class="section-line"></div>
-
-        <p class="insights-intro">
-          Una selección de artículos y materiales de referencia que muestran cómo traduzco riesgo,
-          cumplimiento y estrategia en análisis claros, prácticos y accionables.
-        </p>
-
-        <div class="insights-grid">
-          <div class="insight-card">
-            <div>
-              <div class="insight-label">Artículo destacado</div>
-              <h3>Cumplimiento, inversión y confianza</h3>
-              <p>
-                Una reflexión sobre cómo el cumplimiento puede convertirse en una herramienta
-                de confianza, inversión y sostenibilidad institucional.
-              </p>
-            </div>
-            <a class="secondary-btn" href="https://www.linkedin.com/pulse/cumplimiento-inversi%25C3%25B3n-y-confianza-una-conversaci%25C3%25B3n-que-daniel-gemino-w02ve" target="_blank" rel="noopener">
-              Leer artículo
-            </a>
-          </div>
-
-          <div class="insight-card">
-            <div>
-              <div class="insight-label">Ejemplo de entregable</div>
-              <h3>Risk Memo — Ejemplo general</h3>
-              <p>
-                Ejemplo de análisis ejecutivo para estructurar riesgos, impactos, controles
-                y recomendaciones de forma clara y accionable.
-              </p>
-            </div>
-            <a class="secondary-btn" href="insights/risk-memo-general-gemino-advisory.pdf" target="_blank" rel="noopener">
-              Ver memo
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="founder">
-      <div class="container">
-        <div class="founder-grid">
-          <div class="founder-photo-wrap">
-            <img class="founder-photo" src="profile.png" alt="Daniel Gemino, director principal de Gemino Advisory">
-          </div>
-
-          <div>
-            <div class="founder-label">Liderazgo</div>
-            <h2>Daniel Gemino</h2>
-            <div class="founder-role">Director Principal</div>
-
-            <p class="founder-text">
-              Gemino Advisory nace de la experiencia directa de su fundador asesorando a la alta dirección en entornos regulatorios complejos.
-            </p> 
-<p class="founder-text">
-              Con más de una década en banca internacional y consultoría de primer nivel, lidera personalmente los proyectos estratégicos de la firma, integrando riesgo, cumplimiento y estrategia con estándares globales y una ejecución práctica.
-            </p>
-            <p class="founder-text">
-              “Mi compromiso es simple: aportar claridad, estrategia y resultados que generen valor real y sostenible.”
-            </p>
-
-            <a class="linkedin-btn" href="https://www.linkedin.com/in/daniel-gemino" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.1c.5-1 1.9-2.5 4.1-2.5 4.4 0 5.2 2.9 5.2 6.7V24h-4v-8.5c0-2 0-4.6-2.8-4.6s-3.2 2.2-3.2 4.5V24H8V8z"/>
-              </svg>
-              <div>
-                Conecta conmigo en LinkedIn
-                <span>linkedin.com/in/daniel-gemino</span>
+          <div class="focus-grid">
+            <div class="focus-card">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg>
               </div>
-            </a>
+              <h3 data-en="Governance" data-es="Gobernanza">Governance</h3>
+              <p data-en="Strengthening boards, policies, and organizational structures to support accountability and transparency." data-es="Fortalecimiento de estructuras, políticas y mecanismos de supervisión para apoyar la rendición de cuentas y la transparencia.">Strengthening boards, policies, and organizational structures to support accountability and transparency.</p>
+            </div>
+
+            <div class="focus-card">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M10 2h4l1 4 3 2 4-1 2 3-3 3v3l3 3-2 3-4-1-3 2-1 4h-4l-1-4-3-2-4 1-2-3 3-3v-3l-3-3 2-3 4 1 3-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3 data-en="Risk Management" data-es="Gestión de Riesgos">Risk Management</h3>
+              <p data-en="Identifying, assessing, and mitigating risks that could affect objectives, reputation, financing, or execution." data-es="Identificación, evaluación y mitigación de riesgos que pueden afectar objetivos, reputación, financiamiento o ejecución.">Identifying, assessing, and mitigating risks that could affect objectives, reputation, financing, or execution.</p>
+            </div>
+
+            <div class="focus-card">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M9 13l2 2 4-5"></path></svg>
+              </div>
+              <h3 data-en="Compliance" data-es="Cumplimiento">Compliance</h3>
+              <p data-en="Designing and enhancing compliance programs aligned with regulatory expectations and business realities." data-es="Diseño y fortalecimiento de programas de cumplimiento alineados con expectativas regulatorias y realidades del negocio.">Designing and enhancing compliance programs aligned with regulatory expectations and business realities.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact" id="contacto">
-      <div class="container">
-        <h2 class="section-title">Hablemos</h2>
-        <div class="section-line"></div>
-        <p class="contact-subtitle">Estoy aquí para escucharte y ayudarte.</p>
+      <section class="lead-magnet">
+        <div class="container lead-grid">
+          <div>
+            <div class="lead-label">Institutional Readiness Check™</div>
+            <h2 data-en="Is your organization ready for institutional financing?" data-es="¿Está su empresa preparada para financiamiento institucional?">Is your organization ready for institutional financing?</h2>
+            <p data-en="Take our 3–5 minute executive assessment and receive a preliminary readiness classification across seven key institutional pillars." data-es="Complete una evaluación ejecutiva de 3–5 minutos y reciba una clasificación preliminar de preparación institucional en siete pilares clave.">Take our 3–5 minute executive assessment and receive a preliminary readiness classification across seven key institutional pillars.</p>
+            <ul class="check-list">
+              <li data-en="Free executive assessment" data-es="Evaluación ejecutiva sin costo">Free executive assessment</li>
+              <li data-en="3–5 minutes to complete" data-es="3–5 minutos para completar">3–5 minutes to complete</li>
+              <li data-en="Optional 30-minute executive review" data-es="Revisión ejecutiva opcional de 30 minutos">Optional 30-minute executive review</li>
+            </ul>
+            <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUMFpITVdYV0FTMEVRTEJIOFJWQklEQlVOWC4u&origin=QRCode" target="_blank" rel="noopener" data-en="Take the Assessment" data-es="Realizar Evaluación">Take the Assessment</a>
+          </div>
 
-        <div class="contact-grid">
-          <div class="contact-card email-card">
-            <div class="email-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 6h16v12H4z"></path>
-                <path d="M4 7l8 6 8-6"></path>
-              </svg>
+          <div class="lead-visual">
+            <div class="pdf-card">
+              <img src="Icon Gemino Advisory.png" alt="Gemino Advisory icon">
+              <h3>Institutional Readiness Check™</h3>
+              <p data-en="A practical executive tool for governance, risk, control, and financing readiness." data-es="Una herramienta ejecutiva para evaluar gobernanza, riesgo, control y preparación para financiamiento.">A practical executive tool for governance, risk, control, and financing readiness.</p>
             </div>
-            <div>
-              <h3>Envíame un correo</h3>
-              <p>Si tienes alguna pregunta o consulta, escríbeme y te responderé lo antes posible.</p>
-              <a class="email-link" href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
+            <div class="qr-card">
+              <div class="qr-placeholder">QR</div>
+              <strong data-en="Scan or click to start" data-es="Escanee o haga clic para iniciar">Scan or click to start</strong>
+              <p data-en="Assessment link opens in Microsoft Forms." data-es="La evaluación abre en Microsoft Forms.">Assessment link opens in Microsoft Forms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources">
+        <div class="container">
+          <h2 class="section-title" data-en="Insights & Resources" data-es="Ideas y Recursos">Insights & Resources</h2>
+          <div class="section-line"></div>
+
+          <div class="resources-grid">
+            <div class="resource-card">
+              <div class="resource-label" data-en="Sample Downloads" data-es="Descargas de Ejemplo">Sample Downloads</div>
+              <h3 data-en="Practical tools and templates" data-es="Herramientas y plantillas prácticas">Practical tools and templates</h3>
+              <p data-en="Access sample frameworks, checklists, and reference materials." data-es="Acceda a ejemplos de marcos, listas de verificación y materiales de referencia.">Access sample frameworks, checklists, and reference materials.</p>
+              <br><a class="secondary-btn" onclick="showPage('services')" data-en="View Resources" data-es="Ver Recursos">View Resources</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-label" data-en="Articles & Insights" data-es="Artículos e Ideas">Articles & Insights</div>
+              <h3 data-en="Thought leadership on risk and governance" data-es="Perspectivas sobre riesgo y gobernanza">Thought leadership on risk and governance</h3>
+              <p data-en="Explore analysis on compliance, institutional trust, and sustainable growth." data-es="Explore análisis sobre cumplimiento, confianza institucional y crecimiento sostenible.">Explore analysis on compliance, institutional trust, and sustainable growth.</p>
+              <br><a class="secondary-btn" onclick="showPage('services')" data-en="Read Articles" data-es="Leer Artículos">Read Articles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="about" class="page">
+      <section class="about-hero">
+        <div class="container split-grid">
+          <div class="about-photo-wrap">
+            <img class="about-photo" src="profile.png" alt="Daniel Gemino, Principal Director of Gemino Advisory">
+          </div>
+
+          <div class="about-copy">
+            <div class="eyebrow" data-en="About Us" data-es="Nosotros">About Us</div>
+            <h1 data-en="Independent advice. Strategic impact." data-es="Asesoría independiente. Impacto estratégico.">Independent advice. Strategic impact.</h1>
+            <p data-en="Gemino Advisory is a boutique advisory firm focused on helping organizations strengthen governance, manage risk, and navigate complex compliance expectations with clarity and discipline." data-es="Gemino Advisory es una firma boutique de asesoría enfocada en ayudar a las organizaciones a fortalecer su gobernanza, gestionar riesgos y navegar expectativas de cumplimiento con claridad y disciplina.">Gemino Advisory is a boutique advisory firm focused on helping organizations strengthen governance, manage risk, and navigate complex compliance expectations with clarity and discipline.</p>
+            <p data-en="The firm was founded by Daniel Gemino, a governance, compliance, and financial crime risk advisor with more than a decade of experience in international banking, Big Four consulting, and highly regulated environments." data-es="La firma fue fundada por Daniel Gemino, asesor en gobernanza, cumplimiento y riesgo de delitos financieros, con más de una década de experiencia en banca internacional, consultoría Big Four y entornos altamente regulados.">The firm was founded by Daniel Gemino, a governance, compliance, and financial crime risk advisor with more than a decade of experience in international banking, Big Four consulting, and highly regulated environments.</p>
+            <a class="secondary-btn" href="https://www.linkedin.com/in/daniel-gemino" target="_blank" rel="noopener" data-en="Connect with the Founder" data-es="Conectar con el Fundador">Connect with the Founder</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="section-title" data-en="How We Work" data-es="Cómo Trabajamos">How We Work</h2>
+          <div class="section-line"></div>
+
+          <div class="principles-grid">
+            <div class="principle-card">
+              <div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M18 6l3-3"></path></svg></div>
+              <div>
+                <h3 data-en="Purpose" data-es="Propósito">Purpose</h3>
+                <p data-en="To help organizations convert governance, risk, and compliance into institutional trust and sustainable growth." data-es="Ayudar a las organizaciones a convertir la gobernanza, el riesgo y el cumplimiento en confianza institucional y crecimiento sostenible.">To help organizations convert governance, risk, and compliance into institutional trust and sustainable growth.</p>
+              </div>
+            </div>
+
+            <div class="principle-card">
+              <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg></div>
+              <div>
+                <h3 data-en="Approach" data-es="Enfoque">Approach</h3>
+                <p data-en="Practical, structured, and tailored advisory work aligned with business realities and stakeholder expectations." data-es="Asesoría práctica, estructurada y adaptada a la realidad del negocio y las expectativas de terceros.">Practical, structured, and tailored advisory work aligned with business realities and stakeholder expectations.</p>
+              </div>
+            </div>
+
+            <div class="principle-card">
+              <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.2L5.5 20l2-7L2 9h7z"></path></svg></div>
+              <div>
+                <h3 data-en="Commitment" data-es="Compromiso">Commitment</h3>
+                <p data-en="Integrity, independence, confidentiality, and a strong focus on actionable results." data-es="Integridad, independencia, confidencialidad y enfoque en resultados accionables.">Integrity, independence, confidentiality, and a strong focus on actionable results.</p>
+              </div>
+            </div>
+
+            <div class="principle-card">
+              <div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20"></path><path d="M12 2a15 15 0 0 0 0 20"></path></svg></div>
+              <div>
+                <h3 data-en="Perspective" data-es="Perspectiva">Perspective</h3>
+                <p data-en="Global standards with local understanding for organizations operating in complex environments." data-es="Estándares globales con entendimiento local para organizaciones que operan en entornos complejos.">Global standards with local understanding for organizations operating in complex environments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="services" class="page">
+      <section class="services-hero">
+        <div class="container">
+          <div class="eyebrow" data-en="Our Services" data-es="Servicios">Our Services</div>
+          <h1 data-en="Comprehensive solutions for risk, compliance, and growth." data-es="Soluciones integrales para riesgo, cumplimiento y crecimiento.">Comprehensive solutions for risk, compliance, and growth.</h1>
+          <p data-en="We partner with organizations to build stronger foundations, navigate complexity, and prepare for institutional financing, investment, and sustainable expansion." data-es="Acompañamos a organizaciones para construir bases más sólidas, navegar complejidad y prepararse para financiamiento institucional, inversión y expansión sostenible.">We partner with organizations to build stronger foundations, navigate complexity, and prepare for institutional financing, investment, and sustainable expansion.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="10" cy="7" r="4"></circle><path d="M21 21v-2a4 4 0 0 0-3-3.87"></path></svg></div>
+              <h3 data-en="Governance & Organization" data-es="Gobernanza y Organización">Governance & Organization</h3>
+              <p data-en="Governance structures, roles, responsibilities, decision-making frameworks, and board effectiveness." data-es="Estructuras de gobernanza, roles, responsabilidades, marcos de decisión y efectividad directiva.">Governance structures, roles, responsibilities, decision-making frameworks, and board effectiveness.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg></div>
+              <h3 data-en="Risk Management" data-es="Gestión de Riesgos">Risk Management</h3>
+              <p data-en="Risk assessments, mitigation strategies, controls, and executive risk reporting." data-es="Evaluaciones de riesgo, estrategias de mitigación, controles y reportes ejecutivos.">Risk assessments, mitigation strategies, controls, and executive risk reporting.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M9 13l2 2 4-5"></path></svg></div>
+              <h3 data-en="Compliance & Regulatory" data-es="Cumplimiento y Regulación">Compliance & Regulatory</h3>
+              <p data-en="Compliance program design, policy development, regulatory readiness, and control enhancement." data-es="Diseño de programas de cumplimiento, desarrollo de políticas, preparación regulatoria y fortalecimiento de controles.">Compliance program design, policy development, regulatory readiness, and control enhancement.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-8"></path><path d="M22 20H2"></path></svg></div>
+              <h3 data-en="Internal Controls" data-es="Controles Internos">Internal Controls</h3>
+              <p data-en="Process improvement, approval workflows, segregation of duties, and documentation of controls." data-es="Mejora de procesos, flujos de aprobación, segregación de funciones y documentación de controles.">Process improvement, approval workflows, segregation of duties, and documentation of controls.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M3 7h7l2 2h9v10H3z"></path></svg></div>
+              <h3 data-en="Corporate Documentation" data-es="Documentación Corporativa">Corporate Documentation</h3>
+              <p data-en="Corporate governance documents, policies, procedures, and due diligence readiness support." data-es="Documentos de gobernanza corporativa, políticas, procedimientos y preparación para debida diligencia.">Corporate governance documents, policies, procedures, and due diligence readiness support.</p>
+            </div>
+
+            <div class="service-card">
+              <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path></svg></div>
+              <h3 data-en="Financing Readiness" data-es="Preparación para Financiamiento">Financing Readiness</h3>
+              <p data-en="Preparation for financing, investment, lender review, and institutional due diligence." data-es="Preparación para financiamiento, inversión, revisión bancaria y debida diligencia institucional.">Preparation for financing, investment, lender review, and institutional due diligence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources">
+        <div class="container">
+          <h2 class="section-title" data-en="Downloads & Insights" data-es="Descargas e Ideas">Downloads & Insights</h2>
+          <div class="section-line"></div>
+
+          <div class="resources-grid">
+            <div class="resource-card">
+              <div class="resource-label" data-en="Sample Download" data-es="Descarga de Ejemplo">Sample Download</div>
+              <h3>Risk Memo — Sample</h3>
+              <p data-en="A general executive memo example showing how risks, impacts, controls, and recommendations can be structured clearly." data-es="Ejemplo general de memorando ejecutivo que muestra cómo estructurar riesgos, impactos, controles y recomendaciones de forma clara.">A general executive memo example showing how risks, impacts, controls, and recommendations can be structured clearly.</p>
+              <br><a class="secondary-btn" href="insights/risk-memo-general-gemino-advisory.pdf" target="_blank" rel="noopener" data-en="View Memo" data-es="Ver Memo">View Memo</a>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-label" data-en="Featured Article" data-es="Artículo Destacado">Featured Article</div>
+              <h3 data-en="Compliance, investment, and trust" data-es="Cumplimiento, inversión y confianza">Compliance, investment, and trust</h3>
+              <p data-en="A reflection on how compliance can become a tool for institutional trust, investment, and sustainable growth." data-es="Una reflexión sobre cómo el cumplimiento puede convertirse en una herramienta de confianza institucional, inversión y crecimiento sostenible.">A reflection on how compliance can become a tool for institutional trust, investment, and sustainable growth.</p>
+              <br><a class="secondary-btn" href="https://www.linkedin.com/pulse/cumplimiento-inversi%25C3%25B3n-y-confianza-una-conversaci%25C3%25B3n-que-daniel-gemino-w02ve" target="_blank" rel="noopener" data-en="Read Article" data-es="Leer Artículo">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-row">
+          <div>
+            <h2 data-en="Ready to strengthen your organization?" data-es="¿Listo para fortalecer su organización?">Ready to strengthen your organization?</h2>
+            <p data-en="Let’s discuss how Gemino Advisory can support your next stage of growth." data-es="Conversemos sobre cómo Gemino Advisory puede apoyar su próxima etapa de crecimiento.">Let’s discuss how Gemino Advisory can support your next stage of growth.</p>
+          </div>
+          <a class="btn" onclick="showPage('contact')" data-en="Contact Us" data-es="Contacto">Contact Us</a>
+        </div>
+      </section>
+    </div>
+
+    <div id="contact" class="page">
+      <section class="contact-hero">
+        <div class="container">
+          <div class="eyebrow" data-en="Contact Us" data-es="Contacto">Contact Us</div>
+          <h1 data-en="Let’s start a conversation." data-es="Iniciemos una conversación.">Let’s start a conversation.</h1>
+          <p data-en="Tell us about your objectives, concerns, or upcoming review process. We will respond as soon as possible." data-es="Comparta sus objetivos, inquietudes o próximos procesos de revisión. Responderemos lo antes posible.">Tell us about your objectives, concerns, or upcoming review process. We will respond as soon as possible.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h3 data-en="Send us a message" data-es="Envíenos un mensaje">Send us a message</h3>
+            <p data-en="Use the contact form to start a confidential conversation." data-es="Utilice el formulario de contacto para iniciar una conversación confidencial.">Use the contact form to start a confidential conversation.</p>
+
+            <div class="contact-form">
+              <input type="text" data-placeholder-en="Full Name" data-placeholder-es="Nombre completo" placeholder="Full Name" disabled>
+              <input type="text" data-placeholder-en="Company" data-placeholder-es="Empresa" placeholder="Company" disabled>
+              <input type="email" data-placeholder-en="Email" data-placeholder-es="Correo electrónico" placeholder="Email" disabled>
+              <textarea data-placeholder-en="How can we help you?" data-placeholder-es="¿Cómo podemos ayudarle?" placeholder="How can we help you?" disabled></textarea>
+              <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUN1lBQ1ZFRTI0MTNSTlBaN0tIUkVVNUkyTy4u" target="_blank" rel="noopener" data-en="Open Contact Form" data-es="Abrir Formulario de Contacto">Open Contact Form</a>
             </div>
           </div>
 
           <div class="contact-card">
-            <h3>Contáctame</h3>
-            <p>Completa el formulario y me pondré en contacto contigo.</p>
-            <a class="btn form-button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUN1lBQ1ZFRTI0MTNSTlBaN0tIUkVVNUkyTy4u" target="_blank" rel="noopener">
-              Abrir formulario
+            <h3 data-en="Contact Information" data-es="Información de Contacto">Contact Information</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg></div>
+                <div><strong>Email</strong><a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a></div>
+              </div>
+
+              <div class="contact-item">
+                <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></div>
+                <div><strong>LinkedIn</strong><a href="https://www.linkedin.com/company/gemino-advisory/" target="_blank" rel="noopener">Gemino Advisory</a></div>
+              </div>
+
+              <div class="contact-item">
+                <div class="mini-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><path d="M17 7h.01"></path></svg></div>
+                <div><strong>Instagram</strong><a href="https://www.instagram.com/geminoadvisorygt?igsh=MXc0OXpvajg2YTQybQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">@geminoadvisorygt</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-band">
+        <div class="container">
+          <h2 data-en="Global perspective. Local understanding." data-es="Perspectiva global. Entendimiento local.">Global perspective. Local understanding.</h2>
+          <p data-en="Gemino Advisory supports organizations that need practical, independent, and internationally informed risk and compliance advice." data-es="Gemino Advisory apoya a organizaciones que necesitan asesoría práctica, independiente y con perspectiva internacional en riesgo y cumplimiento.">Gemino Advisory supports organizations that need practical, independent, and internationally informed risk and compliance advice.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <img class="footer-logo" src="logo.png" alt="Gemino Advisory Logo">
+        <div class="footer-links">
+          <a onclick="showPage('about')" data-en="About Us" data-es="Nosotros">About Us</a>
+          <a onclick="showPage('services')" data-en="Services" data-es="Servicios">Services</a>
+          <a onclick="showPage('contact')" data-en="Contact Us" data-es="Contacto">Contact Us</a>
+          <div class="social-row">
+            <a class="social" href="https://www.linkedin.com/company/gemino-advisory/" target="_blank" rel="noopener" aria-label="LinkedIn Company">
+              <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8 8h3.8v2.2h.1c.5-1 1.9-2.5 4.1-2.5 4.4 0 5.2 2.9 5.2 6.7V24h-4v-8.5c0-2 0-4.6-2.8-4.6s-3.2 2.2-3.2 4.5V24H8V8z" fill="currentColor" stroke="none"></path></svg>
+            </a>
+            <a class="social" href="https://www.instagram.com/geminoadvisorygt?igsh=MXc0OXpvajg2YTQybQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3"></circle><path d="M17 7h.01"></path></svg>
+            </a>
+            <a class="social" href="mailto:info@geminoadvisory.com" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
             </a>
           </div>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Gemino Advisory. Todos los derechos reservados.</p>
+      <p class="copyright">© 2026 Gemino Advisory. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script>
+    const translations = document.querySelectorAll('[data-en][data-es]');
+    const placeholders = document.querySelectorAll('[data-placeholder-en][data-placeholder-es]');
+    let currentLanguage = 'en';
+
+    function setLanguage(lang) {
+      currentLanguage = lang === 'es' ? 'es' : 'en';
+      document.documentElement.lang = currentLanguage;
+
+      translations.forEach(el => {
+        el.textContent = currentLanguage === 'es' ? el.dataset.es : el.dataset.en;
+      });
+
+      placeholders.forEach(el => {
+        el.placeholder = currentLanguage === 'es' ? el.dataset.placeholderEs : el.dataset.placeholderEn;
+      });
+
+      document.getElementById('lang-en').classList.toggle('active', currentLanguage === 'en');
+      document.getElementById('lang-es').classList.toggle('active', currentLanguage === 'es');
+
+      localStorage.setItem('geminoLanguage', currentLanguage);
+    }
+
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+      const page = document.getElementById(pageId);
+      if (page) page.classList.add('active');
+
+      document.querySelectorAll('[data-nav]').forEach(link => {
+        link.classList.toggle('active', link.dataset.nav === pageId);
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, '', '#' + pageId);
+    }
+
+    function initSite() {
+      const saved = localStorage.getItem('geminoLanguage');
+      const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      const preferred = saved || (browserLang.startsWith('es') ? 'es' : 'en');
+
+      setLanguage(preferred);
+
+      const hash = window.location.hash.replace('#', '');
+      showPage(['home', 'about', 'services', 'contact'].includes(hash) ? hash : 'home');
+    }
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (['home', 'about', 'services', 'contact'].includes(hash)) showPage(hash);
+    });
+
+    initSite();
+  </script>
 </body>
 </html>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JY8FPNHZR7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JY8FPNHZR7');
-</script>
