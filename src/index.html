@@ -206,20 +206,24 @@
 
     .secondary-btn:hover { background: var(--gold); color: white; }
 
+    .dark-secondary {
+      color: white;
+      background: transparent;
+      border-color: rgba(255,255,255,0.55);
+    }
+
+    .dark-secondary:hover {
+      background: white;
+      color: var(--navy);
+      border-color: white;
+    }
+
     section { padding: 74px 0; }
 
     .section-title {
       text-align: center;
       font-size: clamp(32px, 4vw, 46px);
       margin-bottom: 12px;
-    }
-
-    .section-subtitle {
-      max-width: 760px;
-      margin: 0 auto 38px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 18px;
     }
 
     .section-line {
@@ -295,17 +299,6 @@
       overflow: hidden;
     }
 
-    .lead-magnet::after {
-      content: "";
-      position: absolute;
-      right: -80px;
-      top: -80px;
-      width: 360px;
-      height: 360px;
-      border-radius: 50%;
-      border: 1px solid rgba(198,167,94,0.22);
-    }
-
     .lead-grid {
       position: relative;
       z-index: 1;
@@ -374,8 +367,22 @@
       border-bottom: 8px solid var(--gold);
     }
 
-    .pdf-card img { width: 74px; height: auto; }
     .pdf-card h3 { font-size: 26px; }
+
+    .pdf-brand-mark {
+      width: 74px;
+      height: 74px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--gold);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      border: 2px solid var(--gold);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+    }
 
     .qr-card {
       background: white;
@@ -386,17 +393,14 @@
       box-shadow: var(--shadow);
     }
 
-    .qr-placeholder {
+    .qr-img {
       width: 132px;
       height: 132px;
-      background: var(--light);
-      border: 1px solid var(--border);
+      object-fit: cover;
       border-radius: 8px;
-      display: grid;
-      place-items: center;
+      display: block;
       margin: 0 auto 12px;
-      font-weight: 900;
-      color: var(--gold);
+      border: 1px solid var(--border);
     }
 
     .about-hero, .services-hero, .contact-hero {
@@ -576,10 +580,20 @@
       flex-wrap: wrap;
     }
 
-    .footer-logo {
-      width: 220px;
-      filter: brightness(0) invert(1);
-      opacity: 0.96;
+    .footer-brand {
+      display: grid;
+      gap: 2px;
+    }
+
+    .footer-brand strong {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      color: white;
+    }
+
+    .footer-brand span {
+      font-size: 12px;
+      color: #d7dee7;
     }
 
     .footer-links {
@@ -737,17 +751,20 @@
               <li data-en="3–5 minutes to complete" data-es="3–5 minutos para completar">3–5 minutes to complete</li>
               <li data-en="Optional 30-minute executive review" data-es="Revisión ejecutiva opcional de 30 minutos">Optional 30-minute executive review</li>
             </ul>
-            <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUMFpITVdYV0FTMEVRTEJIOFJWQklEQlVOWC4u&origin=QRCode" target="_blank" rel="noopener" data-en="Take the Assessment" data-es="Realizar Evaluación">Take the Assessment</a>
+            <div class="btn-row">
+              <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=VQYcjA8xHkaoXr4Uc0BhUfFVoqUVijRFkdR4IHgH4TRUMFpITVdYV0FTMEVRTEJIOFJWQklEQlVOWC4u&origin=QRCode" target="_blank" rel="noopener" data-en="Take the Assessment" data-es="Realizar Evaluación">Take the Assessment</a>
+              <a class="secondary-btn dark-secondary" href="insights/Institutional%20Readiness%20Check%E2%84%A2.pdf" target="_blank" rel="noopener" data-en="View PDF" data-es="Ver PDF">View PDF</a>
+            </div>
           </div>
 
           <div class="lead-visual">
             <div class="pdf-card">
-              <img src="Icon Gemino Advisory.png" alt="Gemino Advisory icon">
+              <div class="pdf-brand-mark">GA</div>
               <h3>Institutional Readiness Check™</h3>
               <p data-en="A practical executive tool for governance, risk, control, and financing readiness." data-es="Una herramienta ejecutiva para evaluar gobernanza, riesgo, control y preparación para financiamiento.">A practical executive tool for governance, risk, control, and financing readiness.</p>
             </div>
             <div class="qr-card">
-              <div class="qr-placeholder">QR</div>
+              <img class="qr-img" src="insights/QRCode%20for%20Institutional%20Readiness%20Check%E2%84%A2%20(1).png" alt="Institutional Readiness Check QR code">
               <strong data-en="Scan or click to start" data-es="Escanee o haga clic para iniciar">Scan or click to start</strong>
               <p data-en="Assessment link opens in Microsoft Forms." data-es="La evaluación abre en Microsoft Forms.">Assessment link opens in Microsoft Forms.</p>
             </div>
@@ -762,10 +779,10 @@
 
           <div class="resources-grid">
             <div class="resource-card">
-              <div class="resource-label" data-en="Sample Downloads" data-es="Descargas de Ejemplo">Sample Downloads</div>
-              <h3 data-en="Practical tools and templates" data-es="Herramientas y plantillas prácticas">Practical tools and templates</h3>
-              <p data-en="Access sample frameworks, checklists, and reference materials." data-es="Acceda a ejemplos de marcos, listas de verificación y materiales de referencia.">Access sample frameworks, checklists, and reference materials.</p>
-              <br><a class="secondary-btn" onclick="showPage('services')" data-en="View Resources" data-es="Ver Recursos">View Resources</a>
+              <div class="resource-label" data-en="Lead Magnet" data-es="Lead Magnet">Lead Magnet</div>
+              <h3>Institutional Readiness Check™</h3>
+              <p data-en="Download the executive brief or complete the assessment to receive a preliminary readiness classification." data-es="Descargue el executive brief o complete la evaluación para recibir una clasificación preliminar de preparación institucional.">Download the executive brief or complete the assessment to receive a preliminary readiness classification.</p>
+              <br><a class="secondary-btn" href="insights/Institutional%20Readiness%20Check%E2%84%A2.pdf" target="_blank" rel="noopener" data-en="View PDF" data-es="Ver PDF">View PDF</a>
             </div>
 
             <div class="resource-card">
@@ -795,47 +812,6 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="container">
-          <h2 class="section-title" data-en="How We Work" data-es="Cómo Trabajamos">How We Work</h2>
-          <div class="section-line"></div>
-
-          <div class="principles-grid">
-            <div class="principle-card">
-              <div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="3"></circle><path d="M18 6l3-3"></path></svg></div>
-              <div>
-                <h3 data-en="Purpose" data-es="Propósito">Purpose</h3>
-                <p data-en="To help organizations convert governance, risk, and compliance into institutional trust and sustainable growth." data-es="Ayudar a las organizaciones a convertir la gobernanza, el riesgo y el cumplimiento en confianza institucional y crecimiento sostenible.">To help organizations convert governance, risk, and compliance into institutional trust and sustainable growth.</p>
-              </div>
-            </div>
-
-            <div class="principle-card">
-              <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg></div>
-              <div>
-                <h3 data-en="Approach" data-es="Enfoque">Approach</h3>
-                <p data-en="Practical, structured, and tailored advisory work aligned with business realities and stakeholder expectations." data-es="Asesoría práctica, estructurada y adaptada a la realidad del negocio y las expectativas de terceros.">Practical, structured, and tailored advisory work aligned with business realities and stakeholder expectations.</p>
-              </div>
-            </div>
-
-            <div class="principle-card">
-              <div class="mini-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.2L5.5 20l2-7L2 9h7z"></path></svg></div>
-              <div>
-                <h3 data-en="Commitment" data-es="Compromiso">Commitment</h3>
-                <p data-en="Integrity, independence, confidentiality, and a strong focus on actionable results." data-es="Integridad, independencia, confidencialidad y enfoque en resultados accionables.">Integrity, independence, confidentiality, and a strong focus on actionable results.</p>
-              </div>
-            </div>
-
-            <div class="principle-card">
-              <div class="mini-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15 15 0 0 1 0 20"></path><path d="M12 2a15 15 0 0 0 0 20"></path></svg></div>
-              <div>
-                <h3 data-en="Perspective" data-es="Perspectiva">Perspective</h3>
-                <p data-en="Global standards with local understanding for organizations operating in complex environments." data-es="Estándares globales con entendimiento local para organizaciones que operan en entornos complejos.">Global standards with local understanding for organizations operating in complex environments.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
     <div id="services" class="page">
@@ -855,31 +831,26 @@
               <h3 data-en="Governance & Organization" data-es="Gobernanza y Organización">Governance & Organization</h3>
               <p data-en="Governance structures, roles, responsibilities, decision-making frameworks, and board effectiveness." data-es="Estructuras de gobernanza, roles, responsabilidades, marcos de decisión y efectividad directiva.">Governance structures, roles, responsibilities, decision-making frameworks, and board effectiveness.</p>
             </div>
-
             <div class="service-card">
               <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6l7-3z"></path></svg></div>
               <h3 data-en="Risk Management" data-es="Gestión de Riesgos">Risk Management</h3>
               <p data-en="Risk assessments, mitigation strategies, controls, and executive risk reporting." data-es="Evaluaciones de riesgo, estrategias de mitigación, controles y reportes ejecutivos.">Risk assessments, mitigation strategies, controls, and executive risk reporting.</p>
             </div>
-
             <div class="service-card">
               <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v5h5"></path><path d="M9 13l2 2 4-5"></path></svg></div>
               <h3 data-en="Compliance & Regulatory" data-es="Cumplimiento y Regulación">Compliance & Regulatory</h3>
               <p data-en="Compliance program design, policy development, regulatory readiness, and control enhancement." data-es="Diseño de programas de cumplimiento, desarrollo de políticas, preparación regulatoria y fortalecimiento de controles.">Compliance program design, policy development, regulatory readiness, and control enhancement.</p>
             </div>
-
             <div class="service-card">
               <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10"></path><path d="M10 20V4"></path><path d="M16 20v-8"></path><path d="M22 20H2"></path></svg></div>
               <h3 data-en="Internal Controls" data-es="Controles Internos">Internal Controls</h3>
               <p data-en="Process improvement, approval workflows, segregation of duties, and documentation of controls." data-es="Mejora de procesos, flujos de aprobación, segregación de funciones y documentación de controles.">Process improvement, approval workflows, segregation of duties, and documentation of controls.</p>
             </div>
-
             <div class="service-card">
               <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M3 7h7l2 2h9v10H3z"></path></svg></div>
               <h3 data-en="Corporate Documentation" data-es="Documentación Corporativa">Corporate Documentation</h3>
               <p data-en="Corporate governance documents, policies, procedures, and due diligence readiness support." data-es="Documentos de gobernanza corporativa, políticas, procedimientos y preparación para debida diligencia.">Corporate governance documents, policies, procedures, and due diligence readiness support.</p>
             </div>
-
             <div class="service-card">
               <div class="gold-icon"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"></path><path d="M14 7h7v7"></path></svg></div>
               <h3 data-en="Financing Readiness" data-es="Preparación para Financiamiento">Financing Readiness</h3>
@@ -981,7 +952,10 @@
   <footer>
     <div class="container">
       <div class="footer-row">
-        <img class="footer-logo" src="logo.png" alt="Gemino Advisory Logo">
+        <div class="footer-brand">
+          <strong>Gemino Advisory</strong>
+          <span>Strategic Risk & Compliance</span>
+        </div>
         <div class="footer-links">
           <a onclick="showPage('about')" data-en="About Us" data-es="Nosotros">About Us</a>
           <a onclick="showPage('services')" data-en="Services" data-es="Servicios">Services</a>
@@ -1006,10 +980,9 @@
   <script>
     const translations = document.querySelectorAll('[data-en][data-es]');
     const placeholders = document.querySelectorAll('[data-placeholder-en][data-placeholder-es]');
-    let currentLanguage = 'en';
 
     function setLanguage(lang) {
-      currentLanguage = lang === 'es' ? 'es' : 'en';
+      const currentLanguage = lang === 'es' ? 'es' : 'en';
       document.documentElement.lang = currentLanguage;
 
       translations.forEach(el => {
@@ -1022,7 +995,6 @@
 
       document.getElementById('lang-en').classList.toggle('active', currentLanguage === 'en');
       document.getElementById('lang-es').classList.toggle('active', currentLanguage === 'es');
-
       localStorage.setItem('geminoLanguage', currentLanguage);
     }
 
