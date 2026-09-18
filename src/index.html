@@ -58,6 +58,7 @@
       <div class="lang-toggle" role="group" aria-label="Idioma / Language">
         <button type="button" class="lang-btn active" id="langEs" data-lang-btn="es">ES</button>
         <button type="button" class="lang-btn" id="langEn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" id="langPt" data-lang-btn="pt">PT</button>
       </div>
       <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
@@ -70,6 +71,7 @@
   <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
     <button type="button" class="lang-btn active" id="langEsM" data-lang-btn="es">ES</button>
     <button type="button" class="lang-btn" id="langEnM" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" id="langPtM" data-lang-btn="pt">PT</button>
   </div>
   <a href="/servicios/" data-i18n="nav.services">Servicios</a>
   <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
@@ -106,7 +108,7 @@
   <!-- REGULATORY BANNER -->
   <div class="reg-banner">
     <div class="container">
-      <span class="status-pill" data-i18n="reg.status"><span class="dot" aria-hidden="true"></span>Vigente</span>
+      <span class="status-pill" data-i18n-html="reg.status"><span class="dot" aria-hidden="true"></span>Vigente</span>
       <p data-i18n-html="reg.text"><strong>Decreto 15-2026</strong> ya está vigente — entró en vigor el 17 de septiembre de 2026. La evaluación mutua de GAFILAT (Ronda 5, en sitio en 2027) medirá efectividad real, no solo la existencia de políticas.</p>
       <a href="#risk-memo" data-i18n="reg.link">Ver Risk Memo Express — 48 horas →</a>
     </div>
@@ -401,49 +403,15 @@
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
-  }
-})();
-</script>
-<script>
-(function(){
-  var I18N = {
+GeminoI18N.init({
   "es": {
-    "nav.aria": "Navegación principal",
-    "nav.openmenu": "Abrir menú",
-    "footer.arialabel": "Enlaces de pie de página",
     "hero.h1": "El valor de una evaluación no lo determina quien la encarga.<br/>Lo determina quien la lee.",
-    "reg.status": "Vigente",
+    "reg.status": "<span class=\"dot\" aria-hidden=\"true\"></span>Vigente",
     "reg.text": "<strong>Decreto 15-2026</strong> ya está vigente — entró en vigor el 17 de septiembre de 2026. La evaluación mutua de GAFILAT (Ronda 5, en sitio en 2027) medirá efectividad real, no solo la existencia de políticas.",
     "layers.caption": "Operar en la tercera capa —con muestreo y testing, no solo revisión documental— es el diferenciador técnico de Gemino Advisory, y proviene de experiencia directa en <strong>Quality Assurance en banca internacional y firmas Big Four</strong>.",
     "svc.independence": "<strong>Principio de independencia.</strong> Gemino Advisory no evalúa la efectividad de un marco de cumplimiento diseñado por la propia firma. Sobre un mismo perímetro se contrata diseño (Línea 3) o evaluación independiente (Línea 4) — nunca ambas. Esta regla se declara antes de la contratación y protege el valor probatorio del informe frente a terceros.",
-    "footer.addr": "Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br/>Ciudad de Guatemala, Guatemala",
-    "skip.link": "Saltar al contenido",
-    "nav.services": "Servicios",
-    "nav.ddqr": "Metodología DDQR™",
-    "nav.resources": "Recursos",
-    "nav.why": "Diferenciadores",
-    "nav.founder": "Fundador",
-    "nav.contact": "Contacto",
-    "nav.cta": "Agendar diagnóstico",
     "hero.eyebrow": "Asesoría independiente · Riesgo, gobernanza y cumplimiento ALD/CFT",
     "hero.lead": "Gemino Advisory es la firma boutique independiente que ayuda a bancos, financieras, aseguradoras y grupos corporativos en Guatemala y Centroamérica a demostrar —con evidencia, no solo con políticas— que su programa de cumplimiento funciona.",
     "hero.cta1": "Agendar diagnóstico ejecutivo →",
@@ -546,21 +514,9 @@
     "closing.telefono": "Teléfono",
     "closing.btn1": "Escribir a Gemino Advisory",
     "closing.btn2": "Seguir en LinkedIn",
-    "closing.line": "Confidencial · Senior · Independiente.",
-    "footer.copyright": "© 2026 Gemino Advisory. Todos los derechos reservados.",
-    "footer.disclaimer": "Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes."
+    "closing.line": "Confidencial · Senior · Independiente."
   },
   "en": {
-    "nav.services": "Services",
-    "nav.ddqr": "DDQR™ Methodology",
-    "nav.resources": "Resources",
-    "nav.why": "Differentiators",
-    "nav.founder": "Founder",
-    "nav.contact": "Contact",
-    "nav.cta": "Schedule Assessment",
-    "nav.aria": "Main navigation",
-    "nav.openmenu": "Open menu",
-    "skip.link": "Skip to content",
     "hero.eyebrow": "Independent advisory · Risk, governance and AML/CFT compliance",
     "hero.h1": "The value of an assessment isn't determined by who commissions it.<br>It's determined by who reads it.",
     "hero.lead": "Gemino Advisory is the independent boutique firm that helps banks, financial institutions, insurers and corporate groups in Guatemala and Central America demonstrate — with evidence, not just policies — that their compliance program works.",
@@ -572,7 +528,7 @@
     "hero.stat2.v": "no conflicts of interest",
     "hero.stat3.k": "Guatemala & Central America",
     "hero.stat3.v": "local regulatory and cultural context",
-    "reg.status": "In effect",
+    "reg.status": "<span class=\"dot\" aria-hidden=\"true\"></span>In effect",
     "reg.text": "<strong>Decree 15-2026</strong> is now in effect — it entered into force on September 17, 2026. GAFILAT's mutual evaluation (Round 5, on-site in 2027) will measure real effectiveness, not just the existence of policies.",
     "reg.link": "See the 48-Hour Risk Memo Express →",
     "value.eyebrow": "Principle",
@@ -668,50 +624,119 @@
     "closing.telefono": "Phone",
     "closing.btn1": "Write to Gemino Advisory",
     "closing.btn2": "Follow on LinkedIn",
-    "closing.line": "Confidential · Senior · Independent.",
-    "footer.addr": "Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Guatemala City, Guatemala",
-    "footer.arialabel": "Footer links",
-    "footer.copyright": "© 2026 Gemino Advisory. All rights reserved.",
-    "footer.disclaimer": "Content for informational purposes only; it does not constitute legal advice. For confidentiality reasons, we do not publish client names."
+    "closing.line": "Confidential · Senior · Independent."
+  },
+  "pt": {
+    "hero.eyebrow": "Assessoria independente · Risco, governança e compliance PLD/FT",
+    "hero.h1": "O valor de uma avaliação não é determinado por quem a encomenda.<br>É determinado por quem a lê.",
+    "hero.lead": "A Gemino Advisory é a butique independente que ajuda bancos, financeiras, seguradoras e grupos corporativos na Guatemala e na América Central a demonstrar — com evidências, não apenas políticas — que seu programa de compliance funciona.",
+    "hero.cta1": "Agendar diagnóstico executivo →",
+    "hero.cta2": "Conhecer a metodologia DDQR™",
+    "hero.stat1.k": "+10 anos",
+    "hero.stat1.v": "em bancos internacionais e Big Four",
+    "hero.stat2.k": "100% independente",
+    "hero.stat2.v": "sem conflitos de interesse",
+    "hero.stat3.k": "Guatemala e América Central",
+    "hero.stat3.v": "contexto regulatório e cultural local",
+    "reg.status": "<span class=\"dot\" aria-hidden=\"true\"></span>Em vigor",
+    "reg.text": "<strong>O Decreto 15-2026</strong> já está em vigor — entrou em vigor em 17 de setembro de 2026. A avaliação mútua do GAFILAT (Rodada 5, in loco em 2027) medirá efetividade real, não apenas a existência de políticas.",
+    "reg.link": "Ver o Risk Memo Express — 48 horas →",
+    "value.eyebrow": "Princípio",
+    "value.quote": "«O valor de uma avaliação de efetividade não é definido por quem a encomenda: é definido por quem a lê.»",
+    "value.support": "Uma autoavaliação e uma avaliação independente podem ser tecnicamente idênticas e valer coisas completamente diferentes. O que um banco, um supervisor, um avaliador internacional ou o próprio órgão de administração compra não é a análise: é o julgamento de alguém sem incentivo para suavizá-lo.",
+    "layers.h2": "Três perguntas. A maioria do mercado responde apenas uma.",
+    "layers.sub": "A avaliação mútua do GAFILAT mede a terceira camada. A maioria das revisões disponíveis no mercado local para na primeira e a chama de \"compliance\".",
+    "layers.th1": "Camada",
+    "layers.th2": "Pergunta que responde",
+    "layers.th3": "Natureza do trabalho",
+    "layers.r1.a": "1 · Existência",
+    "layers.r1.b": "O manual e as políticas estão redigidos e aprovados pelo órgão competente?",
+    "layers.r1.c": "Revisão documental",
+    "layers.r2.a": "2 · Implementação",
+    "layers.r2.b": "O controle existe na operação, e não apenas no documento?",
+    "layers.r2.c": "Walkthrough de processos e entrevistas",
+    "layers.r3.a": "3 · Efetividade operacional",
+    "layers.r3.b": "Foi executado, sobre qual população, com que evidência, e capturou o que deveria capturar?",
+    "layers.r3.c": "Amostragem, testes, reexecução, taxa de exceção",
+    "layers.caption": "Atuar na terceira camada — com amostragem e testes, não apenas revisão documental — é o diferencial técnico da Gemino Advisory, proveniente de experiência direta em <strong>Quality Assurance em bancos internacionais e firmas Big Four</strong>.",
+    "svc.h2": "Seis linhas de serviço. Um mesmo padrão.",
+    "svc.sub": "Análise baseada em risco, entregáveis de nível executivo e independência técnica em cada projeto — modular e adaptável ao nível de maturidade de cada organização.",
+    "svc.jumplink": "Ver as seis linhas em detalhe →",
+    "svc.jumplink.detail": "Ver detalhe completo →",
+    "svc1.h": "Diagnóstico de Compliance e Exposição Regulatória",
+    "svc1.p": "Determina o que o Artigo 3 exige e em quanto tempo, antes de comprometer um escopo maior.",
+    "svc2.h": "Preparação e Adaptação a Novas Exigências Regulatórias",
+    "svc2.p": "Roadmap de implementação proporcional ao tamanho real da sua organização — não um modelo genérico de setor.",
+    "svc3.h": "Desenho e Fortalecimento do Marco PLD/FT",
+    "svc3.p": "Manual, matriz de controles e governança sob uma abordagem baseada em risco. Um de dois caminhos em relação à Linha 4 — nunca ambos.",
+    "svc4.h": "Avaliação Independente e Efetividade do Sistema de Compliance",
+    "svc4.p": "A efetividade não se declara: se demonstra. Amostragem estatística, testes e reexecução independente sobre extrações completas — linha principal da firma.",
+    "svc5.h": "Governança, Cultura e Gestão Integral de Riscos",
+    "svc5.p": "Reporte à alta administração e capacitação do órgão de administração — compliance integrado ao negócio, não uma função isolada.",
+    "svc6.h": "Acesso a Financiamento e Relacionamento com Terceiros",
+    "svc6.p": "O dossiê que responde ao que pergunta um banco, um investidor ou um organismo multilateral que não aceita autodeclaração.",
+    "svc.flagship.pill": "Produto de entrada",
+    "svc.flagship.h": "Risk Memo Express — 48 horas",
+    "svc.flagship.p": "Memorando executivo de risco, pronto para o conselho, bancos correspondentes ou investidores, entregue em dois dias úteis.",
+    "svc.flagship.btn": "Solicitar o Risk Memo Express",
+    "svc.independence": "<strong>Princípio de independência.</strong> A Gemino Advisory não avalia a efetividade de um marco de compliance desenhado pela própria firma. Sobre o mesmo perímetro, contrata-se desenho (Linha 3) ou avaliação independente (Linha 4) — nunca ambos. Esta regra é declarada antes da contratação e protege o valor probatório do relatório perante terceiros.",
+    "ddqr.eyebrow": "Metodologia proprietária",
+    "ddqr.h2": "DDQR™ — Avaliação independente da qualidade de programas de devida diligência",
+    "ddqr.sub": "Porque ter políticas não é suficiente. É preciso demonstrar que funcionam.",
+    "ddqr.s1.k": "6 semanas",
+    "ddqr.s1.v": "Duração estimada do piloto",
+    "ddqr.s2.k": "5 + 40",
+    "ddqr.s2.v": "Dimensões e critérios de qualidade",
+    "ddqr.s3.k": "100%",
+    "ddqr.s3.v": "Independente, sem conflitos",
+    "ddqr.s4.k": "+10 anos",
+    "ddqr.s4.v": "Em bancos internacionais e QA",
+    "ddqr.ctatransition": "O processo completo, os cinco entregáveis e o cronograma detalhado estão na página da metodologia.",
+    "ddqr.ctabtn": "Agendar diagnóstico executivo de 30 min →",
+    "ddqr.jumplink": "Ver metodologia completa →",
+    "why.h2": "Por que a Gemino Advisory",
+    "why1.h": "Experiência internacional",
+    "why1.p": "Mais de 10 anos em compliance, QA e gestão de riscos em bancos globais.",
+    "why2.h": "Abordagem independente",
+    "why2.p": "Avaliação objetiva, sem conflitos de interesse, 100% focada na qualidade.",
+    "why3.h": "Melhores práticas globais",
+    "why3.p": "Metodologia baseada em padrões de QA de bancos internacionais e expectativas regulatórias.",
+    "why4.h": "Conhecimento local LATAM e Guatemala",
+    "why4.p": "Entendemos o contexto regulatório, cultural e operacional da região.",
+    "why.idealfor": "Ideal para",
+    "why.sector1": "Bancos",
+    "why.sector2": "Cooperativas e Financeiras",
+    "why.sector3": "Seguradoras",
+    "why.sector4": "Corretoras e Fiduciárias",
+    "why.sector5": "Empresas de Serviços",
+    "why.sector6": "Incorporadoras e Imobiliárias",
+    "founder.h2": "Liderada pessoalmente pelo seu fundador",
+    "founder.sub": "Um modelo enxuto e sênior: sem camadas intermediárias entre sua organização e quem assina o parecer técnico.",
+    "founder.role": "Diretor e Consultor Principal",
+    "founder.chip2": "Big Four e bancos internacionais",
+    "founder.chip3": "Espanhol · Inglês · Português",
+    "founder.quote": "«Não se trata de ter políticas, e sim de demonstrar que funcionam.»",
+    "founder.quoteattr": "— Daniel Gemino, Diretor e Consultor Principal",
+    "founder.jumplink": "Ver perfil e trajetória completa →",
+    "res.h2": "Recursos",
+    "res.sub": "Material de referência para conhecer o padrão de trabalho antes da primeira reunião.",
+    "res1.h": "Risk Memo — Exemplo",
+    "res1.p": "Um memorando executivo real de duas páginas: o formato exato que um conselho, um banco ou um investidor recebe.",
+    "res.btnemail": "Solicitar por e-mail",
+    "res2.p": "Avaliação executiva de 3–5 minutos que classifica o nível de preparação institucional da sua organização.",
+    "res2.btn": "Solicitar o diagnóstico",
+    "res3.h": "Artigos e notas técnicas",
+    "res3.p": "Análises sobre o Decreto 15-2026, o GAFILAT e a relação entre compliance, investimento e confiança institucional.",
+    "res3.btn": "Ler os artigos →",
+    "closing.h2": "Conheça a qualidade real do seu programa.",
+    "closing.p": "Agende seu diagnóstico executivo de 30 minutos, sem compromisso.",
+    "closing.correo": "E-mail",
+    "closing.telefono": "Telefone",
+    "closing.btn1": "Escrever para a Gemino Advisory",
+    "closing.btn2": "Seguir no LinkedIn",
+    "closing.line": "Confidencial · Sênior · Independente."
   }
-};
-
-  function applyLang(lang){
-    if(!I18N[lang]) lang = 'es';
-    var dict = I18N[lang];
-    document.documentElement.setAttribute('lang', lang);
-
-    document.querySelectorAll('[data-i18n]').forEach(function(el){
-      var key = el.getAttribute('data-i18n');
-      if(!(key in dict)) return;
-      var attrName = el.getAttribute('data-i18n-attr');
-      if(attrName){
-        el.setAttribute(attrName, dict[key]);
-      } else {
-        el.textContent = dict[key];
-      }
-    });
-
-    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
-      var key = el.getAttribute('data-i18n-html');
-      if(key in dict) el.innerHTML = dict[key];
-    });
-
-    document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
-      var active = btn.getAttribute('data-lang-btn') === lang;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-    });
-  }
-
-  ['langEs','langEn','langEsM','langEnM'].forEach(function(id){
-    var btn = document.getElementById(id);
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      applyLang(btn.getAttribute('data-lang-btn'));
-    });
-  });
-})();
+});
 </script>
 </body>
 </html>

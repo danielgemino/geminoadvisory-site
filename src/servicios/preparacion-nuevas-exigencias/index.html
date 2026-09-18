@@ -16,118 +16,128 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/servicios/">Servicios</a></p>
-      <p class="eyebrow">Línea 02 · Servicios</p>
-      <h1>Preparación y Adaptación a Nuevas Exigencias Regulatorias</h1>
-      <p class="lead">El Decreto 15-2026 no llegó a actualizar un formulario: derogó dos leyes de una vez y unificó lavado de dinero, financiamiento del terrorismo y financiamiento de la proliferación en un solo régimen, vigente desde el 17 de septiembre de 2026.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/servicios/" data-i18n="nav.services">Servicios</a></p>
+      <p class="eyebrow" data-i18n="svcprep.eyebrow">Línea 02 · Servicios</p>
+      <h1 data-i18n="svcprep.h1">Preparación y Adaptación a Nuevas Exigencias Regulatorias</h1>
+      <p class="lead" data-i18n="svcprep.lead">El Decreto 15-2026 no llegó a actualizar un formulario: derogó dos leyes de una vez y unificó lavado de dinero, financiamiento del terrorismo y financiamiento de la proliferación en un solo régimen, vigente desde el 17 de septiembre de 2026.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="max-width:780px;">Si la respuesta del diagnóstico fue "sí, soy Persona Obligada" —o "todavía no, pero pronto"— ¿qué hay que construir, en qué orden y con qué fecha límite?</p>
+      <p class="lead" style="max-width:780px;" data-i18n="svcprep.intro">Si la respuesta del diagnóstico fue "sí, soy Persona Obligada" —o "todavía no, pero pronto"— ¿qué hay que construir, en qué orden y con qué fecha límite?</p>
 
       <div class="divider"></div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Incluye</h3>
+          <h3 data-i18n="svc.includes">Incluye</h3>
           <ul class="diamond">
-            <li>Determinación formal de condición de Persona Obligada frente al Art. 3 (cuatro agrupaciones: entidades supervisadas por la SIB; actividades financieras no supervisadas; actividades comerciales y de servicios/APNFD; profesionales universitarios y notarios)</li>
-            <li>Interpretación regulatoria aplicada al modelo de negocio específico — no una plantilla de sector</li>
-            <li>Diseño de roadmap de cumplimiento y definición de la estructura mínima requerida (Oficial de Cumplimiento, políticas, controles)</li>
-            <li>Preparación para registro, supervisión o inspección</li>
+            <li data-i18n="svcprep.inc1">Determinación formal de condición de Persona Obligada frente al Art. 3 (cuatro agrupaciones: entidades supervisadas por la SIB; actividades financieras no supervisadas; actividades comerciales y de servicios/APNFD; profesionales universitarios y notarios)</li>
+            <li data-i18n="svcprep.inc2">Interpretación regulatoria aplicada al modelo de negocio específico — no una plantilla de sector</li>
+            <li data-i18n="svcprep.inc3">Diseño de roadmap de cumplimiento y definición de la estructura mínima requerida (Oficial de Cumplimiento, políticas, controles)</li>
+            <li data-i18n="svcprep.inc4">Preparación para registro, supervisión o inspección</li>
           </ul>
         </div>
         <div class="card">
-          <h3>No incluye</h3>
+          <h3 data-i18n="svc.excludes">No incluye</h3>
           <ul class="diamond">
-            <li>Diseño detallado de manuales, matrices o políticas — eso es la Línea 3</li>
-            <li>Determinación vinculante ante la autoridad: la conclusión es técnica, no una resolución administrativa</li>
-            <li>Implementación operativa de los controles definidos en el roadmap</li>
+            <li data-i18n="svcprep.exc1">Diseño detallado de manuales, matrices o políticas — eso es la Línea 3</li>
+            <li data-i18n="svcprep.exc2">Determinación vinculante ante la autoridad: la conclusión es técnica, no una resolución administrativa</li>
+            <li data-i18n="svcprep.exc3">Implementación operativa de los controles definidos en el roadmap</li>
           </ul>
         </div>
       </div>
 
       <div class="spec-block" style="margin-top:2.2rem;">
-        <span class="k">Metodología</span>
-        <p>Se analiza el modelo de negocio frente al Art. 3, se documenta la interpretación normativa aplicada, y se traduce la brecha en un modelo objetivo de cumplimiento (Target Operating Model) con responsables y fechas.</p>
+        <span class="k" data-i18n="svc.methodology">Metodología</span>
+        <p data-i18n="svcprep.method">Se analiza el modelo de negocio frente al Art. 3, se documenta la interpretación normativa aplicada, y se traduce la brecha en un modelo objetivo de cumplimiento (Target Operating Model) con responsables y fechas.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Entregables</span>
-        <p>Roadmap regulatorio de implementación, documento de interpretación normativa aplicada, modelo objetivo de cumplimiento (Target Operating Model) y checklist de readiness para supervisión.</p>
+        <span class="k" data-i18n="svc.deliverables">Entregables</span>
+        <p data-i18n="svcprep.deliv">Roadmap regulatorio de implementación, documento de interpretación normativa aplicada, modelo objetivo de cumplimiento (Target Operating Model) y checklist de readiness para supervisión.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Para quién es</span>
-        <p>Empresas que confirmaron —o sospechan— su condición de Persona Obligada y necesitan una ruta ordenada hacia el cumplimiento, antes de que la exigencia llegue como hallazgo de un supervisor.</p>
+        <span class="k" data-i18n="svc.forwhom">Para quién es</span>
+        <p data-i18n="svcprep.forwhom">Empresas que confirmaron —o sospechan— su condición de Persona Obligada y necesitan una ruta ordenada hacia el cumplimiento, antes de que la exigencia llegue como hallazgo de un supervisor.</p>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:.5rem;">Referencia rápida — ocho obligaciones núcleo del Decreto 15-2026</h2>
-      <p class="lead" style="font-size:.94rem;margin-bottom:1.2rem;">Tomado directamente del texto oficial (Diario de Centro América, 17 de junio de 2026). No sustituye asesoría legal; orienta la conversación inicial.</p>
+      <h2 style="font-size:1.25rem;margin-bottom:.5rem;" data-i18n="svcprep.tableh2">Referencia rápida — ocho obligaciones núcleo del Decreto 15-2026</h2>
+      <p class="lead" style="font-size:.94rem;margin-bottom:1.2rem;" data-i18n="svcprep.tablesub">Tomado directamente del texto oficial (Diario de Centro América, 17 de junio de 2026). No sustituye asesoría legal; orienta la conversación inicial.</p>
       <div class="table-wrap">
       <table class="layers">
-        <thead><tr><th style="width:26%;">Obligación</th><th style="width:14%;">Referencia</th><th>Contenido</th></tr></thead>
+        <thead><tr><th style="width:26%;" data-i18n="svcprep.th1">Obligación</th><th style="width:14%;" data-i18n="svcprep.th2">Referencia</th><th data-i18n="svcprep.th3">Contenido</th></tr></thead>
         <tbody>
-          <tr><td><strong>Inscripción ante la IVE</strong></td><td>Art. 5</td><td>Obligatoria; no inscribirse no exime del resto de las obligaciones.</td></tr>
-          <tr><td><strong>Gestión de riesgo</strong></td><td>Arts. 8–11</td><td>Identificar, evaluar y mitigar el riesgo LD/FT/FPADM por cliente, geografía, canal y producto.</td></tr>
-          <tr><td><strong>Manual de prevención</strong></td><td>Art. 12</td><td>Debe estar aprobado por el órgano de dirección superior.</td></tr>
-          <tr><td><strong>Evaluación independiente</strong></td><td>Art. 15</td><td>Revisión anual de la efectividad del programa, vía auditoría interna o auditores especializados de elección.</td></tr>
-          <tr><td><strong>Oficial de Cumplimiento</strong></td><td>Arts. 16–18</td><td>De alta gerencia, independiente, único enlace con la IVE.</td></tr>
-          <tr><td><strong>Debida diligencia y beneficiario final</strong></td><td>Arts. 21–27</td><td>Umbral del 15%; prohibición de cuentas anónimas; medidas reforzadas para PEP.</td></tr>
-          <tr><td><strong>Monitoreo y reportes</strong></td><td>Arts. 28–31</td><td>Reporte de operaciones sospechosas y registro diario de efectivo ≥ US$10,000.</td></tr>
-          <tr><td><strong>Conservación de registros</strong></td><td>Art. 34</td><td>Mínimo cinco años.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r1.a">Inscripción ante la IVE</strong></td><td>Art. 5</td><td data-i18n="svcprep.r1.c">Obligatoria; no inscribirse no exime del resto de las obligaciones.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r2.a">Gestión de riesgo</strong></td><td>Arts. 8–11</td><td data-i18n="svcprep.r2.c">Identificar, evaluar y mitigar el riesgo LD/FT/FPADM por cliente, geografía, canal y producto.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r3.a">Manual de prevención</strong></td><td>Art. 12</td><td data-i18n="svcprep.r3.c">Debe estar aprobado por el órgano de dirección superior.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r4.a">Evaluación independiente</strong></td><td>Art. 15</td><td data-i18n="svcprep.r4.c">Revisión anual de la efectividad del programa, vía auditoría interna o auditores especializados de elección.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r5.a">Oficial de Cumplimiento</strong></td><td>Arts. 16–18</td><td data-i18n="svcprep.r5.c">De alta gerencia, independiente, único enlace con la IVE.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r6.a">Debida diligencia y beneficiario final</strong></td><td>Arts. 21–27</td><td data-i18n="svcprep.r6.c">Umbral del 15%; prohibición de cuentas anónimas; medidas reforzadas para PEP.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r7.a">Monitoreo y reportes</strong></td><td>Arts. 28–31</td><td data-i18n="svcprep.r7.c">Reporte de operaciones sospechosas y registro diario de efectivo ≥ US$10,000.</td></tr>
+          <tr><td><strong data-i18n="svcprep.r8.a">Conservación de registros</strong></td><td>Art. 34</td><td data-i18n="svcprep.r8.c">Mínimo cinco años.</td></tr>
         </tbody>
       </table>
       </div>
       <div class="independence-note gold">
-        <p>El incumplimiento se sanciona con multa de <strong>US$500 a US$300,000</strong> (Art. 66). Si la Persona Obligada dificultó que la Intendencia de Verificación Especial conociera los hechos, la multa se duplica o se calcula sobre el <strong>20% del monto de las transacciones relacionadas</strong> —lo que resulte mayor— (Art. 67).</p>
+        <p data-i18n-html="svcprep.sanction">El incumplimiento se sanciona con multa de <strong>US$500 a US$300,000</strong> (Art. 66). Si la Persona Obligada dificultó que la Intendencia de Verificación Especial conociera los hechos, la multa se duplica o se calcula sobre el <strong>20% del monto de las transacciones relacionadas</strong> —lo que resulte mayor— (Art. 67).</p>
       </div>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-outline-navy" href="/servicios/">Ver las otras líneas</a>
-      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20hoja%20de%20ruta%20regulatoria">Solicitar hoja de ruta regulatoria</a>
+        <a class="btn btn-outline-navy" href="/servicios/" data-i18n="svc.otherlines">Ver las otras líneas</a>
+      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20hoja%20de%20ruta%20regulatoria" data-i18n="svcprep.cta">Solicitar hoja de ruta regulatoria</a>
       </div>
     </div>
   </section>
@@ -139,45 +149,145 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "svcprep.eyebrow": "Línea 02 · Servicios",
+    "svcprep.h1": "Preparación y Adaptación a Nuevas Exigencias Regulatorias",
+    "svcprep.lead": "El Decreto 15-2026 no llegó a actualizar un formulario: derogó dos leyes de una vez y unificó lavado de dinero, financiamiento del terrorismo y financiamiento de la proliferación en un solo régimen, vigente desde el 17 de septiembre de 2026.",
+    "svcprep.intro": "Si la respuesta del diagnóstico fue \"sí, soy Persona Obligada\" —o \"todavía no, pero pronto\"— ¿qué hay que construir, en qué orden y con qué fecha límite?",
+    "svcprep.inc1": "Determinación formal de condición de Persona Obligada frente al Art. 3 (cuatro agrupaciones: entidades supervisadas por la SIB; actividades financieras no supervisadas; actividades comerciales y de servicios/APNFD; profesionales universitarios y notarios)",
+    "svcprep.inc2": "Interpretación regulatoria aplicada al modelo de negocio específico — no una plantilla de sector",
+    "svcprep.inc3": "Diseño de roadmap de cumplimiento y definición de la estructura mínima requerida (Oficial de Cumplimiento, políticas, controles)",
+    "svcprep.inc4": "Preparación para registro, supervisión o inspección",
+    "svcprep.exc1": "Diseño detallado de manuales, matrices o políticas — eso es la Línea 3",
+    "svcprep.exc2": "Determinación vinculante ante la autoridad: la conclusión es técnica, no una resolución administrativa",
+    "svcprep.exc3": "Implementación operativa de los controles definidos en el roadmap",
+    "svcprep.method": "Se analiza el modelo de negocio frente al Art. 3, se documenta la interpretación normativa aplicada, y se traduce la brecha en un modelo objetivo de cumplimiento (Target Operating Model) con responsables y fechas.",
+    "svcprep.deliv": "Roadmap regulatorio de implementación, documento de interpretación normativa aplicada, modelo objetivo de cumplimiento (Target Operating Model) y checklist de readiness para supervisión.",
+    "svcprep.forwhom": "Empresas que confirmaron —o sospechan— su condición de Persona Obligada y necesitan una ruta ordenada hacia el cumplimiento, antes de que la exigencia llegue como hallazgo de un supervisor.",
+    "svcprep.tableh2": "Referencia rápida — ocho obligaciones núcleo del Decreto 15-2026",
+    "svcprep.tablesub": "Tomado directamente del texto oficial (Diario de Centro América, 17 de junio de 2026). No sustituye asesoría legal; orienta la conversación inicial.",
+    "svcprep.th1": "Obligación",
+    "svcprep.th2": "Referencia",
+    "svcprep.th3": "Contenido",
+    "svcprep.r1.a": "Inscripción ante la IVE",
+    "svcprep.r1.c": "Obligatoria; no inscribirse no exime del resto de las obligaciones.",
+    "svcprep.r2.a": "Gestión de riesgo",
+    "svcprep.r2.c": "Identificar, evaluar y mitigar el riesgo LD/FT/FPADM por cliente, geografía, canal y producto.",
+    "svcprep.r3.a": "Manual de prevención",
+    "svcprep.r3.c": "Debe estar aprobado por el órgano de dirección superior.",
+    "svcprep.r4.a": "Evaluación independiente",
+    "svcprep.r4.c": "Revisión anual de la efectividad del programa, vía auditoría interna o auditores especializados de elección.",
+    "svcprep.r5.a": "Oficial de Cumplimiento",
+    "svcprep.r5.c": "De alta gerencia, independiente, único enlace con la IVE.",
+    "svcprep.r6.a": "Debida diligencia y beneficiario final",
+    "svcprep.r6.c": "Umbral del 15%; prohibición de cuentas anónimas; medidas reforzadas para PEP.",
+    "svcprep.r7.a": "Monitoreo y reportes",
+    "svcprep.r7.c": "Reporte de operaciones sospechosas y registro diario de efectivo ≥ US$10,000.",
+    "svcprep.r8.a": "Conservación de registros",
+    "svcprep.r8.c": "Mínimo cinco años.",
+    "svcprep.sanction": "El incumplimiento se sanciona con multa de <strong>US$500 a US$300,000</strong> (Art. 66). Si la Persona Obligada dificultó que la Intendencia de Verificación Especial conociera los hechos, la multa se duplica o se calcula sobre el <strong>20% del monto de las transacciones relacionadas</strong> —lo que resulte mayor— (Art. 67).",
+    "svcprep.cta": "Solicitar hoja de ruta regulatoria"
+  },
+  en: {
+    "svcprep.eyebrow": "Line 02 · Services",
+    "svcprep.h1": "Preparation and Adaptation to New Regulatory Requirements",
+    "svcprep.lead": "Decree 15-2026 didn't just update a form: it repealed two laws at once and unified money laundering, terrorist financing, and proliferation financing into a single regime, in effect since September 17, 2026.",
+    "svcprep.intro": "If the diagnostic's answer was \"yes, I am an Obligated Person\" — or \"not yet, but soon\" — what needs to be built, in what order, and by what deadline?",
+    "svcprep.inc1": "Formal determination of Obligated Person status under Article 3 (four groupings: entities supervised by the SIB; unsupervised financial activities; commercial and services activities/DNFBPs; university professionals and notaries)",
+    "svcprep.inc2": "Regulatory interpretation applied to the specific business model — not a sector template",
+    "svcprep.inc3": "Design of a compliance roadmap and definition of the minimum required structure (Compliance Officer, policies, controls)",
+    "svcprep.inc4": "Preparation for registration, supervision, or inspection",
+    "svcprep.exc1": "Detailed design of manuals, matrices, or policies — that's Line 3",
+    "svcprep.exc2": "Binding determination before the authority: the conclusion is technical, not an administrative ruling",
+    "svcprep.exc3": "Operational implementation of the controls defined in the roadmap",
+    "svcprep.method": "The business model is analyzed against Article 3, the applied regulatory interpretation is documented, and the gap is translated into a Target Operating Model with owners and dates.",
+    "svcprep.deliv": "Regulatory implementation roadmap, applied regulatory interpretation document, Target Operating Model, and a supervision-readiness checklist.",
+    "svcprep.forwhom": "Companies that have confirmed — or suspect — their status as an Obligated Person and need an orderly path to compliance, before the requirement arrives as a supervisor's finding.",
+    "svcprep.tableh2": "Quick reference — eight core obligations under Decree 15-2026",
+    "svcprep.tablesub": "Taken directly from the official text (Diario de Centro América, June 17, 2026). It does not substitute for legal advice; it guides the initial conversation.",
+    "svcprep.th1": "Obligation",
+    "svcprep.th2": "Reference",
+    "svcprep.th3": "Content",
+    "svcprep.r1.a": "Registration with the IVE",
+    "svcprep.r1.c": "Mandatory; failing to register does not exempt an entity from the remaining obligations.",
+    "svcprep.r2.a": "Risk management",
+    "svcprep.r2.c": "Identify, assess, and mitigate ML/TF/PWMD financing risk by client, geography, channel, and product.",
+    "svcprep.r3.a": "Prevention manual",
+    "svcprep.r3.c": "Must be approved by the senior governing body.",
+    "svcprep.r4.a": "Independent evaluation",
+    "svcprep.r4.c": "Annual review of the program's effectiveness, via internal audit or specialized auditors of choice.",
+    "svcprep.r5.a": "Compliance Officer",
+    "svcprep.r5.c": "Senior management level, independent, sole liaison with the IVE.",
+    "svcprep.r6.a": "Due diligence and beneficial ownership",
+    "svcprep.r6.c": "15% threshold; prohibition of anonymous accounts; enhanced measures for PEPs.",
+    "svcprep.r7.a": "Monitoring and reporting",
+    "svcprep.r7.c": "Suspicious transaction reporting and daily logging of cash transactions ≥ US$10,000.",
+    "svcprep.r8.a": "Recordkeeping",
+    "svcprep.r8.c": "Minimum five years.",
+    "svcprep.sanction": "Non-compliance is sanctioned with a fine of <strong>US$500 to US$300,000</strong> (Art. 66). If the Obligated Person hindered the Special Verification Intendancy's ability to learn the facts, the fine is doubled or calculated on <strong>20% of the amount of the related transactions</strong> — whichever is greater — (Art. 67).",
+    "svcprep.cta": "Request a regulatory roadmap"
+  },
+  pt: {
+    "svcprep.eyebrow": "Linha 02 · Serviços",
+    "svcprep.h1": "Preparação e Adaptação a Novas Exigências Regulatórias",
+    "svcprep.lead": "O Decreto 15-2026 não veio apenas atualizar um formulário: revogou duas leis de uma só vez e unificou lavagem de dinheiro, financiamento do terrorismo e financiamento da proliferação em um único regime, em vigor desde 17 de setembro de 2026.",
+    "svcprep.intro": "Se a resposta do diagnóstico foi \"sim, sou Pessoa Obrigada\" — ou \"ainda não, mas em breve\" — o que é preciso construir, em que ordem e com qual prazo?",
+    "svcprep.inc1": "Determinação formal da condição de Pessoa Obrigada frente ao Art. 3 (quatro agrupamentos: entidades supervisionadas pela SIB; atividades financeiras não supervisionadas; atividades comerciais e de serviços/APNFD; profissionais universitários e notários)",
+    "svcprep.inc2": "Interpretação regulatória aplicada ao modelo de negócio específico — não um modelo genérico de setor",
+    "svcprep.inc3": "Desenho do roadmap de compliance e definição da estrutura mínima exigida (Oficial de Compliance, políticas, controles)",
+    "svcprep.inc4": "Preparação para registro, supervisão ou inspeção",
+    "svcprep.exc1": "Desenho detalhado de manuais, matrizes ou políticas — isso é a Linha 3",
+    "svcprep.exc2": "Determinação vinculante perante a autoridade: a conclusão é técnica, não uma decisão administrativa",
+    "svcprep.exc3": "Implementação operacional dos controles definidos no roadmap",
+    "svcprep.method": "Analisa-se o modelo de negócio frente ao Art. 3, documenta-se a interpretação normativa aplicada, e traduz-se a lacuna em um modelo-alvo de compliance (Target Operating Model) com responsáveis e prazos.",
+    "svcprep.deliv": "Roadmap regulatório de implementação, documento de interpretação normativa aplicada, modelo-alvo de compliance (Target Operating Model) e checklist de prontidão para supervisão.",
+    "svcprep.forwhom": "Empresas que confirmaram — ou suspeitam de — sua condição de Pessoa Obrigada e precisam de uma rota ordenada rumo ao compliance, antes que a exigência chegue como achado de um supervisor.",
+    "svcprep.tableh2": "Referência rápida — oito obrigações núcleo do Decreto 15-2026",
+    "svcprep.tablesub": "Retirado diretamente do texto oficial (Diario de Centro América, 17 de junho de 2026). Não substitui aconselhamento jurídico; orienta a conversa inicial.",
+    "svcprep.th1": "Obrigação",
+    "svcprep.th2": "Referência",
+    "svcprep.th3": "Conteúdo",
+    "svcprep.r1.a": "Inscrição perante a IVE",
+    "svcprep.r1.c": "Obrigatória; não se inscrever não isenta do restante das obrigações.",
+    "svcprep.r2.a": "Gestão de risco",
+    "svcprep.r2.c": "Identificar, avaliar e mitigar o risco de LD/FT/FPADM por cliente, geografia, canal e produto.",
+    "svcprep.r3.a": "Manual de prevenção",
+    "svcprep.r3.c": "Deve ser aprovado pelo órgão de administração superior.",
+    "svcprep.r4.a": "Avaliação independente",
+    "svcprep.r4.c": "Revisão anual da efetividade do programa, por meio de auditoria interna ou auditores especializados de escolha.",
+    "svcprep.r5.a": "Oficial de Compliance",
+    "svcprep.r5.c": "De alta gerência, independente, único elo com a IVE.",
+    "svcprep.r6.a": "Devida diligência e beneficiário final",
+    "svcprep.r6.c": "Limite de 15%; proibição de contas anônimas; medidas reforçadas para PEP.",
+    "svcprep.r7.a": "Monitoramento e relatórios",
+    "svcprep.r7.c": "Reporte de operações suspeitas e registro diário de dinheiro em espécie ≥ US$10.000.",
+    "svcprep.r8.a": "Conservação de registros",
+    "svcprep.r8.c": "Mínimo de cinco anos.",
+    "svcprep.sanction": "O descumprimento é sancionado com multa de <strong>US$500 a US$300.000</strong> (Art. 66). Se a Pessoa Obrigada dificultou que a Intendência de Verificação Especial tomasse conhecimento dos fatos, a multa é duplicada ou calculada sobre <strong>20% do valor das transações relacionadas</strong> — o que for maior — (Art. 67).",
+    "svcprep.cta": "Solicitar roteiro regulatório"
   }
-})();
+});
 </script>
 
 </body>

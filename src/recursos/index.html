@@ -16,47 +16,57 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / Recursos</p>
-      <p class="eyebrow">Recursos</p>
-      <h1>Recursos y pensamiento técnico</h1>
-      <p class="lead">Análisis de autoría propia sobre el Decreto 15-2026, GAFILAT y la relación entre cumplimiento, inversión y confianza institucional.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <span data-i18n="nav.resources">Recursos</span></p>
+      <p class="eyebrow" data-i18n="nav.resources">Recursos</p>
+      <h1 data-i18n="rec.h1">Recursos y pensamiento técnico</h1>
+      <p class="lead" data-i18n="rec.lead">Análisis de autoría propia sobre el Decreto 15-2026, GAFILAT y la relación entre cumplimiento, inversión y confianza institucional.</p>
     </div>
   </div>
 
@@ -64,14 +74,14 @@
     <div class="container">
       <div class="res-idx-grid grid-2" style="margin-bottom:2.6rem;">
         <div class="res-card">
-          <h3>Más allá de ser "Persona Obligada"</h3>
-          <p>Por qué la prevención de lavado fortalece el crecimiento, la reputación y la sostenibilidad empresarial. Insight Paper, Guatemala, junio de 2026.</p>
-          <a class="btn btn-outline-navy" href="#articulo-persona-obligada">Leer artículo completo →</a>
+          <h3 data-i18n="rec.card1h">Más allá de ser "Persona Obligada"</h3>
+          <p data-i18n="rec.card1p">Por qué la prevención de lavado fortalece el crecimiento, la reputación y la sostenibilidad empresarial. Insight Paper, Guatemala, junio de 2026.</p>
+          <a class="btn btn-outline-navy" href="#articulo-persona-obligada" data-i18n="rec.readmore">Leer artículo completo →</a>
         </div>
         <div class="res-card">
-          <h3>Cumplimiento, inversión y confianza</h3>
-          <p>Una conversación que Guatemala ya está lista para tener. Artículo técnico de autoría propia.</p>
-          <a class="btn btn-outline-navy" href="#articulo-cumplimiento-inversion">Leer artículo completo →</a>
+          <h3 data-i18n="rec.card2h">Cumplimiento, inversión y confianza</h3>
+          <p data-i18n="rec.card2p">Una conversación que Guatemala ya está lista para tener. Artículo técnico de autoría propia.</p>
+          <a class="btn btn-outline-navy" href="#articulo-cumplimiento-inversion" data-i18n="rec.readmore">Leer artículo completo →</a>
         </div>
       </div>
 
@@ -79,115 +89,115 @@
 
       <!-- ARTÍCULO 1 -->
       <div class="article" id="articulo-persona-obligada" style="margin-bottom:2.6rem;">
-        <h3>Más allá de ser "persona obligada"<br><span style="font-size:.95rem;color:var(--ink-soft);font-weight:400;">Por qué la prevención de lavado también es una decisión empresarial</span></h3>
+        <h3 data-i18n-html="art1.h3">Más allá de ser "persona obligada"<br><span style="font-size:.95rem;color:var(--ink-soft);font-weight:400;">Por qué la prevención de lavado también es una decisión empresarial</span></h3>
 
-        <h4>Introducción</h4>
-        <p>El mismo día en que Guatemala aprobó su nueva ley antilavado, tuve la oportunidad de escuchar una conversación entre profesionales del sector asegurador sobre los cambios regulatorios que se avecinan. La discusión era técnica, legítima y necesaria. Sin embargo, hubo un punto que me llamó especialmente la atención: buena parte de la preocupación giraba alrededor de una pregunta central: ¿Soy o no soy persona obligada?</p>
-        <p>La pregunta es importante. Tiene consecuencias legales, operativas y regulatorias. Define deberes formales, reportes, manuales, controles, supervisión y posibles sanciones. Pero también puede convertirse en una trampa conceptual si reduce toda la conversación sobre prevención de lavado de dinero a una única conclusión: "si no soy persona obligada, entonces no tengo nada de qué preocuparme". Esa lectura es incompleta.</p>
-        <p>No todos los negocios son "personas obligadas" en sentido legal. Pero todos los negocios pueden estar expuestos, directa o indirectamente, a riesgos de lavado de dinero, financiamiento del terrorismo, corrupción, fraude, contrabando, evasión fiscal, uso de estructuras opacas o incorporación de capitales de origen ilícito en la economía formal.</p>
-        <p>La prevención de lavado no debería entenderse únicamente como una obligación regulatoria. También es una práctica de protección empresarial, reputacional y económica. En un mercado cada vez más conectado, la pregunta no debería ser solamente "¿estoy obligado por ley?", sino también qué tan preparado se está para gestionar la exposición al riesgo.</p>
+        <h4 data-i18n="art1.introh">Introducción</h4>
+        <p data-i18n="art1.p1">El mismo día en que Guatemala aprobó su nueva ley antilavado, tuve la oportunidad de escuchar una conversación entre profesionales del sector asegurador sobre los cambios regulatorios que se avecinan. La discusión era técnica, legítima y necesaria. Sin embargo, hubo un punto que me llamó especialmente la atención: buena parte de la preocupación giraba alrededor de una pregunta central: ¿Soy o no soy persona obligada?</p>
+        <p data-i18n="art1.p2">La pregunta es importante. Tiene consecuencias legales, operativas y regulatorias. Define deberes formales, reportes, manuales, controles, supervisión y posibles sanciones. Pero también puede convertirse en una trampa conceptual si reduce toda la conversación sobre prevención de lavado de dinero a una única conclusión: "si no soy persona obligada, entonces no tengo nada de qué preocuparme". Esa lectura es incompleta.</p>
+        <p data-i18n="art1.p3">No todos los negocios son "personas obligadas" en sentido legal. Pero todos los negocios pueden estar expuestos, directa o indirectamente, a riesgos de lavado de dinero, financiamiento del terrorismo, corrupción, fraude, contrabando, evasión fiscal, uso de estructuras opacas o incorporación de capitales de origen ilícito en la economía formal.</p>
+        <p data-i18n="art1.p4">La prevención de lavado no debería entenderse únicamente como una obligación regulatoria. También es una práctica de protección empresarial, reputacional y económica. En un mercado cada vez más conectado, la pregunta no debería ser solamente "¿estoy obligado por ley?", sino también qué tan preparado se está para gestionar la exposición al riesgo.</p>
 
         <div class="independence-note gold">
-          <p>No todos los negocios son "personas obligadas" en sentido legal, pero todos pueden estar expuestos a riesgos de lavado de dinero. La pregunta estratégica no es solo "¿estoy obligado?", sino <strong>"¿qué tan preparado estoy para gestionar mi exposición al riesgo?"</strong></p>
+          <p data-i18n-html="art1.note1">No todos los negocios son "personas obligadas" en sentido legal, pero todos pueden estar expuestos a riesgos de lavado de dinero. La pregunta estratégica no es solo "¿estoy obligado?", sino <strong>"¿qué tan preparado estoy para gestionar mi exposición al riesgo?"</strong></p>
         </div>
 
-        <h4>1. La pregunta correcta no es solo "¿soy persona obligada?"</h4>
-        <p>En Guatemala, como en muchos países, la figura de persona obligada cumple una función esencial: identificar a los sectores que, por su actividad, tamaño, naturaleza o exposición, deben implementar medidas específicas de prevención, monitoreo, reporte y debida diligencia. Esa clasificación es necesaria. Permite ordenar el sistema, asignar responsabilidades y establecer mecanismos de supervisión. Pero el riesgo de lavado de dinero no se limita únicamente a las actividades formalmente reguladas.</p>
-        <p>El dinero ilícito no busca entrar únicamente por bancos o aseguradoras. Busca entrar por donde existan oportunidades: compra de bienes, inversión en proyectos, contratación de servicios, adquisición de activos, estructuras societarias, intermediarios, operaciones en efectivo, facturación irregular, relaciones comerciales poco transparentes o negocios con débil capacidad de verificación.</p>
-        <p>Por eso, aun cuando una empresa no esté formalmente clasificada como persona obligada, puede enfrentar riesgos reales si no cuenta con criterios mínimos para identificar quién está detrás de una operación, de dónde provienen los fondos, cuál es la lógica económica de una transacción o qué señales de alerta deberían detener una relación comercial. La diferencia es importante: ser persona obligada define un deber legal específico; estar expuesto al riesgo define una responsabilidad empresarial.</p>
+        <h4 data-i18n="art1.h4_1">1. La pregunta correcta no es solo "¿soy persona obligada?"</h4>
+        <p data-i18n="art1.s1p1">En Guatemala, como en muchos países, la figura de persona obligada cumple una función esencial: identificar a los sectores que, por su actividad, tamaño, naturaleza o exposición, deben implementar medidas específicas de prevención, monitoreo, reporte y debida diligencia. Esa clasificación es necesaria. Permite ordenar el sistema, asignar responsabilidades y establecer mecanismos de supervisión. Pero el riesgo de lavado de dinero no se limita únicamente a las actividades formalmente reguladas.</p>
+        <p data-i18n="art1.s1p2">El dinero ilícito no busca entrar únicamente por bancos o aseguradoras. Busca entrar por donde existan oportunidades: compra de bienes, inversión en proyectos, contratación de servicios, adquisición de activos, estructuras societarias, intermediarios, operaciones en efectivo, facturación irregular, relaciones comerciales poco transparentes o negocios con débil capacidad de verificación.</p>
+        <p data-i18n="art1.s1p3">Por eso, aun cuando una empresa no esté formalmente clasificada como persona obligada, puede enfrentar riesgos reales si no cuenta con criterios mínimos para identificar quién está detrás de una operación, de dónde provienen los fondos, cuál es la lógica económica de una transacción o qué señales de alerta deberían detener una relación comercial. La diferencia es importante: ser persona obligada define un deber legal específico; estar expuesto al riesgo define una responsabilidad empresarial.</p>
 
-        <h4>2. El lavado de dinero no es un problema abstracto</h4>
-        <p>El lavado de dinero suele percibirse como un tema lejano, financiero o exclusivamente penal. Pero en la práctica, sus efectos son profundamente económicos y sociales. Cuando capitales ilícitos ingresan a la economía formal, distorsionan la competencia. Empresas legítimas compiten contra actores que no necesariamente buscan rentabilidad normal, sino colocar o integrar recursos de origen ilícito. Eso afecta precios, márgenes, inversión, acceso a financiamiento y confianza en el mercado.</p>
-        <p>También afecta al consumidor, expuesto a mercados menos sanos y a productos o servicios que pueden formar parte de estructuras más amplias de criminalidad económica. Y afecta al país: la percepción de debilidad en controles antilavado puede elevar el riesgo reputacional, encarecer relaciones financieras internacionales, dificultar la bancarización, afectar corresponsalías, reducir confianza de inversionistas y debilitar la credibilidad institucional.</p>
-        <div class="independence-note"><p><strong>Impacto empresarial.</strong> Cuando capitales ilícitos ingresan a la economía formal, no solo generan exposición regulatoria: distorsionan la competencia, reducen confianza y encarecen el crecimiento legítimo.</p></div>
+        <h4 data-i18n="art1.h4_2">2. El lavado de dinero no es un problema abstracto</h4>
+        <p data-i18n="art1.s2p1">El lavado de dinero suele percibirse como un tema lejano, financiero o exclusivamente penal. Pero en la práctica, sus efectos son profundamente económicos y sociales. Cuando capitales ilícitos ingresan a la economía formal, distorsionan la competencia. Empresas legítimas compiten contra actores que no necesariamente buscan rentabilidad normal, sino colocar o integrar recursos de origen ilícito. Eso afecta precios, márgenes, inversión, acceso a financiamiento y confianza en el mercado.</p>
+        <p data-i18n="art1.s2p2">También afecta al consumidor, expuesto a mercados menos sanos y a productos o servicios que pueden formar parte de estructuras más amplias de criminalidad económica. Y afecta al país: la percepción de debilidad en controles antilavado puede elevar el riesgo reputacional, encarecer relaciones financieras internacionales, dificultar la bancarización, afectar corresponsalías, reducir confianza de inversionistas y debilitar la credibilidad institucional.</p>
+        <div class="independence-note"><p data-i18n-html="art1.note2"><strong>Impacto empresarial.</strong> Cuando capitales ilícitos ingresan a la economía formal, no solo generan exposición regulatoria: distorsionan la competencia, reducen confianza y encarecen el crecimiento legítimo.</p></div>
 
-        <h4>3. La evolución internacional: de cumplimiento formal a enfoque basado en riesgo</h4>
-        <p>A nivel internacional, la prevención de lavado de dinero ha evolucionado de manera significativa. En una primera etapa, el foco estuvo en el sistema financiero: bancos, casas de bolsa, aseguradoras y otros intermediarios como primera línea de defensa. Con el tiempo, los estándares internacionales ampliaron la mirada hacia sectores no financieros —inmobiliario, abogados, contadores, proveedores de servicios societarios, casinos, comerciantes de metales y piedras preciosas, entre otros— y, después, hacia el enfoque basado en riesgo: no todos los clientes, productos, servicios, geografías o transacciones presentan el mismo nivel de exposición.</p>
+        <h4 data-i18n="art1.h4_3">3. La evolución internacional: de cumplimiento formal a enfoque basado en riesgo</h4>
+        <p data-i18n="art1.s3p1">A nivel internacional, la prevención de lavado de dinero ha evolucionado de manera significativa. En una primera etapa, el foco estuvo en el sistema financiero: bancos, casas de bolsa, aseguradoras y otros intermediarios como primera línea de defensa. Con el tiempo, los estándares internacionales ampliaron la mirada hacia sectores no financieros —inmobiliario, abogados, contadores, proveedores de servicios societarios, casinos, comerciantes de metales y piedras preciosas, entre otros— y, después, hacia el enfoque basado en riesgo: no todos los clientes, productos, servicios, geografías o transacciones presentan el mismo nivel de exposición.</p>
         <ul>
-          <li><strong>1989</strong> — Creación del GAFI/FATF: nacen los estándares modernos de AML.</li>
-          <li><strong>2001</strong> — El enfoque se amplía tras los atentados del 11-S para incorporar financiamiento del terrorismo.</li>
-          <li><strong>2003</strong> — Expansión a actividades y profesiones no financieras designadas (DNFBP).</li>
-          <li><strong>2012</strong> — Enfoque basado en riesgo: los controles deben ser proporcionales al riesgo.</li>
-          <li><strong>2012</strong> — Mayor énfasis en identificar beneficiario final.</li>
-          <li><strong>2019</strong> — Se fortalecen estándares para activos virtuales.</li>
-          <li><strong>2022+</strong> — Impulso a registros y mayor claridad sobre transparencia corporativa.</li>
+          <li data-i18n-html="art1.tl1"><strong>1989</strong> — Creación del GAFI/FATF: nacen los estándares modernos de AML.</li>
+          <li data-i18n-html="art1.tl2"><strong>2001</strong> — El enfoque se amplía tras los atentados del 11-S para incorporar financiamiento del terrorismo.</li>
+          <li data-i18n-html="art1.tl3"><strong>2003</strong> — Expansión a actividades y profesiones no financieras designadas (DNFBP).</li>
+          <li data-i18n-html="art1.tl4"><strong>2012</strong> — Enfoque basado en riesgo: los controles deben ser proporcionales al riesgo.</li>
+          <li data-i18n-html="art1.tl5"><strong>2012</strong> — Mayor énfasis en identificar beneficiario final.</li>
+          <li data-i18n-html="art1.tl6"><strong>2019</strong> — Se fortalecen estándares para activos virtuales.</li>
+          <li data-i18n-html="art1.tl7"><strong>2022+</strong> — Impulso a registros y mayor claridad sobre transparencia corporativa.</li>
         </ul>
-        <p>El cumplimiento moderno no debería consistir en llenar formularios por llenar formularios. Debería ayudar a tomar mejores decisiones: con quién hacer negocios, bajo qué condiciones, qué información se necesita, qué señales preocupan, cuándo escalar un caso y cuándo una oportunidad comercial no justifica el riesgo que trae consigo. La prevención efectiva no bloquea el crecimiento. Lo ordena.</p>
+        <p data-i18n="art1.s3p2">El cumplimiento moderno no debería consistir en llenar formularios por llenar formularios. Debería ayudar a tomar mejores decisiones: con quién hacer negocios, bajo qué condiciones, qué información se necesita, qué señales preocupan, cuándo escalar un caso y cuándo una oportunidad comercial no justifica el riesgo que trae consigo. La prevención efectiva no bloquea el crecimiento. Lo ordena.</p>
 
-        <h4>4. Cumplimiento no es freno: es habilitador de crecimiento</h4>
-        <p>Uno de los mayores errores en la conversación empresarial es presentar el cumplimiento como un obstáculo para vender, invertir, financiar o cerrar negocios. En realidad, cuando está bien diseñado, el cumplimiento facilita el crecimiento. Una empresa que conoce a sus clientes, documenta sus decisiones, entiende sus riesgos y puede explicar sus procesos genera mayor confianza ante bancos, inversionistas, socios, aseguradoras, auditores, reguladores y clientes sofisticados.</p>
-        <div class="independence-note gold"><p><strong>Cumplimiento como habilitador.</strong> El cumplimiento no es una pared. Es una puerta: mejores relaciones bancarias, proyectos más financiables, inversionistas más exigentes, contratos más sólidos, reputación empresarial más confiable. En mercados donde la confianza es escasa, demostrar controles puede convertirse en ventaja competitiva.</p></div>
+        <h4 data-i18n="art1.h4_4">4. Cumplimiento no es freno: es habilitador de crecimiento</h4>
+        <p data-i18n="art1.s4p1">Uno de los mayores errores en la conversación empresarial es presentar el cumplimiento como un obstáculo para vender, invertir, financiar o cerrar negocios. En realidad, cuando está bien diseñado, el cumplimiento facilita el crecimiento. Una empresa que conoce a sus clientes, documenta sus decisiones, entiende sus riesgos y puede explicar sus procesos genera mayor confianza ante bancos, inversionistas, socios, aseguradoras, auditores, reguladores y clientes sofisticados.</p>
+        <div class="independence-note gold"><p data-i18n-html="art1.note3"><strong>Cumplimiento como habilitador.</strong> El cumplimiento no es una pared. Es una puerta: mejores relaciones bancarias, proyectos más financiables, inversionistas más exigentes, contratos más sólidos, reputación empresarial más confiable. En mercados donde la confianza es escasa, demostrar controles puede convertirse en ventaja competitiva.</p></div>
 
-        <h4>5. El costo de no cumplir: multas, pérdida de confianza y daño reputacional</h4>
-        <p>A nivel internacional, las consecuencias por fallas en prevención de lavado han sido cada vez más visibles. Las sanciones no se limitan a multas: también incluyen monitores independientes, restricciones operativas, pérdida de corresponsalías, deterioro reputacional, salida de ejecutivos, investigaciones penales y costos significativos de remediación.</p>
+        <h4 data-i18n="art1.h4_5">5. El costo de no cumplir: multas, pérdida de confianza y daño reputacional</h4>
+        <p data-i18n="art1.s5p1">A nivel internacional, las consecuencias por fallas en prevención de lavado han sido cada vez más visibles. Las sanciones no se limitan a multas: también incluyen monitores independientes, restricciones operativas, pérdida de corresponsalías, deterioro reputacional, salida de ejecutivos, investigaciones penales y costos significativos de remediación.</p>
         <div class="table-wrap">
         <table class="layers">
-          <thead><tr><th>Caso (penalidad civil FinCEN)</th><th>Monto</th></tr></thead>
+          <thead><tr><th data-i18n="art1.t1th1">Caso (penalidad civil FinCEN)</th><th data-i18n="art1.t1th2">Monto</th></tr></thead>
           <tbody>
-            <tr><td>TD Bank (2024)</td><td><strong>US$1,300 millones</strong></td></tr>
-            <tr><td>Canaccord Genuity LLC (2026)</td><td>US$80 millones</td></tr>
+            <tr><td data-i18n="art1.t1r1a">TD Bank (2024)</td><td><strong data-i18n="art1.t1r1b">US$1,300 millones</strong></td></tr>
+            <tr><td data-i18n="art1.t1r2a">Canaccord Genuity LLC (2026)</td><td data-i18n="art1.t1r2b">US$80 millones</td></tr>
           </tbody>
         </table>
         </div>
-        <p style="font-size:.82rem;color:var(--ink-soft);">Montos ilustrativos de acciones FinCEN; no incluyen necesariamente todas las sanciones asociadas a cada caso. La penalidad de TD Bank fue 16.3 veces mayor a la de Canaccord Genuity.</p>
-        <p>Pero el punto más importante no es solo el monto de una sanción: es el mensaje que envía al mercado. Las autoridades, bancos corresponsales, inversionistas y contrapartes comerciales esperan que las empresas puedan demostrar controles reales, no solamente documentos formales.</p>
-        <div class="independence-note"><p><strong>Riesgo de cumplimiento meramente formal.</strong> Un manual que nadie aplica no protege. Una política que no refleja la operación real no convence. Una debida diligencia superficial no reduce riesgo. Un reporte tardío puede ser demasiado tarde.</p></div>
+        <p style="font-size:.82rem;color:var(--ink-soft);" data-i18n="art1.t1note">Montos ilustrativos de acciones FinCEN; no incluyen necesariamente todas las sanciones asociadas a cada caso. La penalidad de TD Bank fue 16.3 veces mayor a la de Canaccord Genuity.</p>
+        <p data-i18n="art1.s5p2">Pero el punto más importante no es solo el monto de una sanción: es el mensaje que envía al mercado. Las autoridades, bancos corresponsales, inversionistas y contrapartes comerciales esperan que las empresas puedan demostrar controles reales, no solamente documentos formales.</p>
+        <div class="independence-note"><p data-i18n-html="art1.note4"><strong>Riesgo de cumplimiento meramente formal.</strong> Un manual que nadie aplica no protege. Una política que no refleja la operación real no convence. Una debida diligencia superficial no reduce riesgo. Un reporte tardío puede ser demasiado tarde.</p></div>
 
-        <h4>6. ¿Qué pueden hacer las empresas que no son personas obligadas?</h4>
-        <p>Una empresa que no es persona obligada no necesita replicar el mismo nivel de controles de una institución financiera. Pero sí puede adoptar medidas proporcionales, prácticas y razonables.</p>
+        <h4 data-i18n="art1.h4_6">6. ¿Qué pueden hacer las empresas que no son personas obligadas?</h4>
+        <p data-i18n="art1.s6p1">Una empresa que no es persona obligada no necesita replicar el mismo nivel de controles de una institución financiera. Pero sí puede adoptar medidas proporcionales, prácticas y razonables.</p>
         <div class="table-wrap">
         <table class="layers">
-          <thead><tr><th style="width:26%;">Área</th><th>Pregunta clave</th></tr></thead>
+          <thead><tr><th style="width:26%;" data-i18n="art1.t2th1">Área</th><th data-i18n="art1.t2th2">Pregunta clave</th></tr></thead>
           <tbody>
-            <tr><td>Cliente / contraparte</td><td>¿Sé realmente quién está detrás de la relación comercial?</td></tr>
-            <tr><td>Beneficiario final</td><td>¿Entiendo quién controla o se beneficia de la estructura?</td></tr>
-            <tr><td>Lógica económica</td><td>¿La operación tiene sentido comercial?</td></tr>
-            <tr><td>Origen de fondos</td><td>¿El origen de fondos es razonablemente verificable?</td></tr>
-            <tr><td>Señales de alerta</td><td>¿Existen elementos que deberían escalarse antes de continuar?</td></tr>
-            <tr><td>Evidencia</td><td>¿Tengo documentación mínima para explicar mi decisión?</td></tr>
-            <tr><td>Escalamiento</td><td>¿Mi equipo sabe cuándo detener o elevar una preocupación?</td></tr>
+            <tr><td data-i18n="art1.t2r1a">Cliente / contraparte</td><td data-i18n="art1.t2r1b">¿Sé realmente quién está detrás de la relación comercial?</td></tr>
+            <tr><td data-i18n="art1.t2r2a">Beneficiario final</td><td data-i18n="art1.t2r2b">¿Entiendo quién controla o se beneficia de la estructura?</td></tr>
+            <tr><td data-i18n="art1.t2r3a">Lógica económica</td><td data-i18n="art1.t2r3b">¿La operación tiene sentido comercial?</td></tr>
+            <tr><td data-i18n="art1.t2r4a">Origen de fondos</td><td data-i18n="art1.t2r4b">¿El origen de fondos es razonablemente verificable?</td></tr>
+            <tr><td data-i18n="art1.t2r5a">Señales de alerta</td><td data-i18n="art1.t2r5b">¿Existen elementos que deberían escalarse antes de continuar?</td></tr>
+            <tr><td data-i18n="art1.t2r6a">Evidencia</td><td data-i18n="art1.t2r6b">¿Tengo documentación mínima para explicar mi decisión?</td></tr>
+            <tr><td data-i18n="art1.t2r7a">Escalamiento</td><td data-i18n="art1.t2r7b">¿Mi equipo sabe cuándo detener o elevar una preocupación?</td></tr>
           </tbody>
         </table>
         </div>
-        <p>Estas preguntas no son burocracia. Son gestión de riesgo. Para muchas empresas, el primer paso no debería ser crear un programa complejo, sino implementar una arquitectura mínima de prevención: criterios de aceptación de clientes, matriz simple de riesgo, revisión de beneficiario final, señales de alerta, documentación básica y proceso de escalamiento. El objetivo no es convertir a toda empresa en banco. El objetivo es evitar que empresas legítimas sean utilizadas como vehículo para actividades ilícitas.</p>
+        <p data-i18n="art1.s6p2">Estas preguntas no son burocracia. Son gestión de riesgo. Para muchas empresas, el primer paso no debería ser crear un programa complejo, sino implementar una arquitectura mínima de prevención: criterios de aceptación de clientes, matriz simple de riesgo, revisión de beneficiario final, señales de alerta, documentación básica y proceso de escalamiento. El objetivo no es convertir a toda empresa en banco. El objetivo es evitar que empresas legítimas sean utilizadas como vehículo para actividades ilícitas.</p>
 
-        <h4>7. La oportunidad para Guatemala</h4>
-        <p>La aprobación de una nueva ley antilavado en Guatemala debe verse como algo más que una actualización normativa. Es una oportunidad para elevar la conversación empresarial. El país necesita atraer inversión, fortalecer su reputación financiera, proteger su sistema económico y demostrar capacidad institucional frente a estándares internacionales. Pero esa tarea no le corresponde únicamente al Estado o al sistema financiero: también requiere que el sector privado entienda que la prevención de lavado forma parte de la competitividad del país.</p>
-        <div class="independence-note gold"><p><strong>La verdadera pregunta.</strong> ¿Qué tipo de mercado queremos construir? Uno donde el cumplimiento se percibe como castigo, o uno donde la transparencia se convierte en ventaja. Uno donde la prevención se activa solo por obligación, o uno donde las empresas entienden que proteger su reputación también protege su crecimiento.</p></div>
+        <h4 data-i18n="art1.h4_7">7. La oportunidad para Guatemala</h4>
+        <p data-i18n="art1.s7p1">La aprobación de una nueva ley antilavado en Guatemala debe verse como algo más que una actualización normativa. Es una oportunidad para elevar la conversación empresarial. El país necesita atraer inversión, fortalecer su reputación financiera, proteger su sistema económico y demostrar capacidad institucional frente a estándares internacionales. Pero esa tarea no le corresponde únicamente al Estado o al sistema financiero: también requiere que el sector privado entienda que la prevención de lavado forma parte de la competitividad del país.</p>
+        <div class="independence-note gold"><p data-i18n-html="art1.note5"><strong>La verdadera pregunta.</strong> ¿Qué tipo de mercado queremos construir? Uno donde el cumplimiento se percibe como castigo, o uno donde la transparencia se convierte en ventaja. Uno donde la prevención se activa solo por obligación, o uno donde las empresas entienden que proteger su reputación también protege su crecimiento.</p></div>
 
-        <h4>Conclusión</h4>
-        <p>La figura de persona obligada seguirá siendo central en la regulación antilavado. Pero la conversación empresarial no debería terminar ahí.</p>
-        <div class="independence-note"><p><strong>En síntesis.</strong> No ser persona obligada no significa no tener riesgo. No tener obligación formal no significa no tener responsabilidad comercial. No estar supervisado directamente no significa estar aislado de las expectativas de bancos, inversionistas, clientes, proveedores y autoridades.</p></div>
-        <p>La prevención de lavado de dinero no es solamente una exigencia legal. Es una forma de proteger el negocio, al consumidor y al país. El cumplimiento bien diseñado no bloquea el crecimiento: lo hace más sostenible. Y en una economía que necesita confianza para crecer, esa puede ser una de las ventajas competitivas más importantes.</p>
-        <p style="font-weight:700;color:var(--navy);">El cumplimiento no bloquea el crecimiento; lo protege, lo ordena y lo facilita.</p>
+        <h4 data-i18n="art1.conclh">Conclusión</h4>
+        <p data-i18n="art1.conclp1">La figura de persona obligada seguirá siendo central en la regulación antilavado. Pero la conversación empresarial no debería terminar ahí.</p>
+        <div class="independence-note"><p data-i18n-html="art1.note6"><strong>En síntesis.</strong> No ser persona obligada no significa no tener riesgo. No tener obligación formal no significa no tener responsabilidad comercial. No estar supervisado directamente no significa estar aislado de las expectativas de bancos, inversionistas, clientes, proveedores y autoridades.</p></div>
+        <p data-i18n="art1.conclp2">La prevención de lavado de dinero no es solamente una exigencia legal. Es una forma de proteger el negocio, al consumidor y al país. El cumplimiento bien diseñado no bloquea el crecimiento: lo hace más sostenible. Y en una economía que necesita confianza para crecer, esa puede ser una de las ventajas competitivas más importantes.</p>
+        <p style="font-weight:700;color:var(--navy);" data-i18n="art1.conclp3">El cumplimiento no bloquea el crecimiento; lo protege, lo ordena y lo facilita.</p>
 
-        <div class="article-byline">Insight Paper · Gemino Advisory · Guatemala, junio de 2026</div>
+        <div class="article-byline" data-i18n="art1.byline">Insight Paper · Gemino Advisory · Guatemala, junio de 2026</div>
       </div>
 
       <!-- ARTÍCULO 2 -->
       <div class="article" id="articulo-cumplimiento-inversion">
-        <h3>Cumplimiento, inversión y confianza<br><span style="font-size:.95rem;color:var(--ink-soft);font-weight:400;">Una conversación que Guatemala ya está lista para tener</span></h3>
+        <h3 data-i18n-html="art2.h3">Cumplimiento, inversión y confianza<br><span style="font-size:.95rem;color:var(--ink-soft);font-weight:400;">Una conversación que Guatemala ya está lista para tener</span></h3>
 
-        <p>En los últimos meses he tenido muchas conversaciones con empresarios, desarrolladores e inversionistas que comparten una inquietud común: cómo navegar el nuevo entorno regulatorio sin frenar el crecimiento ni asumir riesgos innecesarios.</p>
-        <p>Es una preocupación legítima. Guatemala está evolucionando rápidamente en materia de cumplimiento, prevención de delitos financieros y estándares de transparencia. Pero esta evolución no debería verse como una amenaza, sino como una oportunidad para hacer las cosas mejor, con mayor previsibilidad y confianza.</p>
+        <p data-i18n="art2.p1">En los últimos meses he tenido muchas conversaciones con empresarios, desarrolladores e inversionistas que comparten una inquietud común: cómo navegar el nuevo entorno regulatorio sin frenar el crecimiento ni asumir riesgos innecesarios.</p>
+        <p data-i18n="art2.p2">Es una preocupación legítima. Guatemala está evolucionando rápidamente en materia de cumplimiento, prevención de delitos financieros y estándares de transparencia. Pero esta evolución no debería verse como una amenaza, sino como una oportunidad para hacer las cosas mejor, con mayor previsibilidad y confianza.</p>
 
-        <h4>1. El cumplimiento está cambiando de naturaleza</h4>
-        <p>Durante años, el cumplimiento fue percibido como un requisito formal: políticas, manuales, reportes. Hoy, el enfoque es distinto. Las autoridades, el sistema financiero y los inversionistas internacionales están poniendo más atención en cómo funcionan realmente los controles, no solo en si existen. Esto no significa mayor carga innecesaria, sino algo más razonable: entender mejor los riesgos reales del negocio, aplicar controles proporcionales y evitar sorpresas que afecten operaciones, financiamiento o reputación.</p>
+        <h4 data-i18n="art2.h4_1">1. El cumplimiento está cambiando de naturaleza</h4>
+        <p data-i18n="art2.s1p">Durante años, el cumplimiento fue percibido como un requisito formal: políticas, manuales, reportes. Hoy, el enfoque es distinto. Las autoridades, el sistema financiero y los inversionistas internacionales están poniendo más atención en cómo funcionan realmente los controles, no solo en si existen. Esto no significa mayor carga innecesaria, sino algo más razonable: entender mejor los riesgos reales del negocio, aplicar controles proporcionales y evitar sorpresas que afecten operaciones, financiamiento o reputación.</p>
 
-        <h4>2. Inversión y bancabilidad: dos caras de la misma moneda</h4>
-        <p>Cada vez es más claro que la calidad del cumplimiento impacta directamente en la capacidad de atraer capital. En sectores como inmobiliario, infraestructura, servicios profesionales y comercio internacional, la trazabilidad de fondos, la identificación adecuada de contrapartes y la claridad en estructuras societarias ya no son un "extra", sino parte del lenguaje normal del negocio. Cuando estos elementos están bien trabajados desde el inicio, los proyectos avanzan con menos fricción, menos retrasos y mayor confianza por parte de bancos e inversionistas.</p>
+        <h4 data-i18n="art2.h4_2">2. Inversión y bancabilidad: dos caras de la misma moneda</h4>
+        <p data-i18n="art2.s2p">Cada vez es más claro que la calidad del cumplimiento impacta directamente en la capacidad de atraer capital. En sectores como inmobiliario, infraestructura, servicios profesionales y comercio internacional, la trazabilidad de fondos, la identificación adecuada de contrapartes y la claridad en estructuras societarias ya no son un "extra", sino parte del lenguaje normal del negocio. Cuando estos elementos están bien trabajados desde el inicio, los proyectos avanzan con menos fricción, menos retrasos y mayor confianza por parte de bancos e inversionistas.</p>
 
-        <h4>3. De la norma al criterio</h4>
-        <p>Uno de los errores más comunes es pensar que el cumplimiento es solo "seguir la norma". En la práctica, lo que marca la diferencia es el criterio con el que se interpreta y se aplica. Dos empresas pueden cumplir la misma regulación y tener resultados muy distintos: una vive apagando incendios, la otra opera con tranquilidad. La diferencia no está en la ley, sino en la estrategia de cumplimiento.</p>
+        <h4 data-i18n="art2.h4_3">3. De la norma al criterio</h4>
+        <p data-i18n="art2.s3p">Uno de los errores más comunes es pensar que el cumplimiento es solo "seguir la norma". En la práctica, lo que marca la diferencia es el criterio con el que se interpreta y se aplica. Dos empresas pueden cumplir la misma regulación y tener resultados muy distintos: una vive apagando incendios, la otra opera con tranquilidad. La diferencia no está en la ley, sino en la estrategia de cumplimiento.</p>
 
-        <h4>4. Acompañamiento, no improvisación</h4>
-        <p>En este nuevo contexto, muchas organizaciones se están dando cuenta de algo importante: el cumplimiento ya no se puede improvisar ni delegar sin dirección clara. Lo que mejor funciona es integrar cumplimiento con la estrategia del negocio, alinear a gerencia, finanzas y operaciones, y tomar decisiones informadas antes de que los riesgos se materialicen. Cuando eso ocurre, el cumplimiento deja de ser una carga y se convierte en un habilitador del crecimiento.</p>
+        <h4 data-i18n="art2.h4_4">4. Acompañamiento, no improvisación</h4>
+        <p data-i18n="art2.s4p">En este nuevo contexto, muchas organizaciones se están dando cuenta de algo importante: el cumplimiento ya no se puede improvisar ni delegar sin dirección clara. Lo que mejor funciona es integrar cumplimiento con la estrategia del negocio, alinear a gerencia, finanzas y operaciones, y tomar decisiones informadas antes de que los riesgos se materialicen. Cuando eso ocurre, el cumplimiento deja de ser una carga y se convierte en un habilitador del crecimiento.</p>
 
-        <h4>Reflexión final</h4>
-        <p>Guatemala está dando pasos importantes hacia un entorno más robusto, transparente y confiable. Las empresas que entiendan este momento no solo estarán mejor preparadas, sino mejor posicionadas para crecer, atraer inversión y construir valor sostenible.</p>
-        <p style="font-weight:700;color:var(--navy);">El reto no es cumplir más. El reto es cumplir mejor, con visión y con acompañamiento adecuado.</p>
+        <h4 data-i18n="art2.reflh">Reflexión final</h4>
+        <p data-i18n="art2.reflp1">Guatemala está dando pasos importantes hacia un entorno más robusto, transparente y confiable. Las empresas que entiendan este momento no solo estarán mejor preparadas, sino mejor posicionadas para crecer, atraer inversión y construir valor sostenible.</p>
+        <p style="font-weight:700;color:var(--navy);" data-i18n="art2.reflp2">El reto no es cumplir más. El reto es cumplir mejor, con visión y con acompañamiento adecuado.</p>
 
-        <div class="article-byline">Daniel Gemino · Director y Consultor Principal · Gemino Advisory</div>
+        <div class="article-byline" data-i18n="art2.byline">Daniel Gemino · Director y Consultor Principal · Gemino Advisory</div>
       </div>
     </div>
   </section>
@@ -206,45 +216,301 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "rec.h1": "Recursos y pensamiento técnico",
+    "rec.lead": "Análisis de autoría propia sobre el Decreto 15-2026, GAFILAT y la relación entre cumplimiento, inversión y confianza institucional.",
+    "rec.card1h": "Más allá de ser \"Persona Obligada\"",
+    "rec.card1p": "Por qué la prevención de lavado fortalece el crecimiento, la reputación y la sostenibilidad empresarial. Insight Paper, Guatemala, junio de 2026.",
+    "rec.card2h": "Cumplimiento, inversión y confianza",
+    "rec.card2p": "Una conversación que Guatemala ya está lista para tener. Artículo técnico de autoría propia.",
+    "rec.readmore": "Leer artículo completo →",
+    "art1.h3": "Más allá de ser \"persona obligada\"<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">Por qué la prevención de lavado también es una decisión empresarial</span>",
+    "art1.introh": "Introducción",
+    "art1.p1": "El mismo día en que Guatemala aprobó su nueva ley antilavado, tuve la oportunidad de escuchar una conversación entre profesionales del sector asegurador sobre los cambios regulatorios que se avecinan. La discusión era técnica, legítima y necesaria. Sin embargo, hubo un punto que me llamó especialmente la atención: buena parte de la preocupación giraba alrededor de una pregunta central: ¿Soy o no soy persona obligada?",
+    "art1.p2": "La pregunta es importante. Tiene consecuencias legales, operativas y regulatorias. Define deberes formales, reportes, manuales, controles, supervisión y posibles sanciones. Pero también puede convertirse en una trampa conceptual si reduce toda la conversación sobre prevención de lavado de dinero a una única conclusión: \"si no soy persona obligada, entonces no tengo nada de qué preocuparme\". Esa lectura es incompleta.",
+    "art1.p3": "No todos los negocios son \"personas obligadas\" en sentido legal. Pero todos los negocios pueden estar expuestos, directa o indirectamente, a riesgos de lavado de dinero, financiamiento del terrorismo, corrupción, fraude, contrabando, evasión fiscal, uso de estructuras opacas o incorporación de capitales de origen ilícito en la economía formal.",
+    "art1.p4": "La prevención de lavado no debería entenderse únicamente como una obligación regulatoria. También es una práctica de protección empresarial, reputacional y económica. En un mercado cada vez más conectado, la pregunta no debería ser solamente \"¿estoy obligado por ley?\", sino también qué tan preparado se está para gestionar la exposición al riesgo.",
+    "art1.note1": "No todos los negocios son \"personas obligadas\" en sentido legal, pero todos pueden estar expuestos a riesgos de lavado de dinero. La pregunta estratégica no es solo \"¿estoy obligado?\", sino <strong>\"¿qué tan preparado estoy para gestionar mi exposición al riesgo?\"</strong>",
+    "art1.h4_1": "1. La pregunta correcta no es solo \"¿soy persona obligada?\"",
+    "art1.s1p1": "En Guatemala, como en muchos países, la figura de persona obligada cumple una función esencial: identificar a los sectores que, por su actividad, tamaño, naturaleza o exposición, deben implementar medidas específicas de prevención, monitoreo, reporte y debida diligencia. Esa clasificación es necesaria. Permite ordenar el sistema, asignar responsabilidades y establecer mecanismos de supervisión. Pero el riesgo de lavado de dinero no se limita únicamente a las actividades formalmente reguladas.",
+    "art1.s1p2": "El dinero ilícito no busca entrar únicamente por bancos o aseguradoras. Busca entrar por donde existan oportunidades: compra de bienes, inversión en proyectos, contratación de servicios, adquisición de activos, estructuras societarias, intermediarios, operaciones en efectivo, facturación irregular, relaciones comerciales poco transparentes o negocios con débil capacidad de verificación.",
+    "art1.s1p3": "Por eso, aun cuando una empresa no esté formalmente clasificada como persona obligada, puede enfrentar riesgos reales si no cuenta con criterios mínimos para identificar quién está detrás de una operación, de dónde provienen los fondos, cuál es la lógica económica de una transacción o qué señales de alerta deberían detener una relación comercial. La diferencia es importante: ser persona obligada define un deber legal específico; estar expuesto al riesgo define una responsabilidad empresarial.",
+    "art1.h4_2": "2. El lavado de dinero no es un problema abstracto",
+    "art1.s2p1": "El lavado de dinero suele percibirse como un tema lejano, financiero o exclusivamente penal. Pero en la práctica, sus efectos son profundamente económicos y sociales. Cuando capitales ilícitos ingresan a la economía formal, distorsionan la competencia. Empresas legítimas compiten contra actores que no necesariamente buscan rentabilidad normal, sino colocar o integrar recursos de origen ilícito. Eso afecta precios, márgenes, inversión, acceso a financiamiento y confianza en el mercado.",
+    "art1.s2p2": "También afecta al consumidor, expuesto a mercados menos sanos y a productos o servicios que pueden formar parte de estructuras más amplias de criminalidad económica. Y afecta al país: la percepción de debilidad en controles antilavado puede elevar el riesgo reputacional, encarecer relaciones financieras internacionales, dificultar la bancarización, afectar corresponsalías, reducir confianza de inversionistas y debilitar la credibilidad institucional.",
+    "art1.note2": "<strong>Impacto empresarial.</strong> Cuando capitales ilícitos ingresan a la economía formal, no solo generan exposición regulatoria: distorsionan la competencia, reducen confianza y encarecen el crecimiento legítimo.",
+    "art1.h4_3": "3. La evolución internacional: de cumplimiento formal a enfoque basado en riesgo",
+    "art1.s3p1": "A nivel internacional, la prevención de lavado de dinero ha evolucionado de manera significativa. En una primera etapa, el foco estuvo en el sistema financiero: bancos, casas de bolsa, aseguradoras y otros intermediarios como primera línea de defensa. Con el tiempo, los estándares internacionales ampliaron la mirada hacia sectores no financieros —inmobiliario, abogados, contadores, proveedores de servicios societarios, casinos, comerciantes de metales y piedras preciosas, entre otros— y, después, hacia el enfoque basado en riesgo: no todos los clientes, productos, servicios, geografías o transacciones presentan el mismo nivel de exposición.",
+    "art1.tl1": "<strong>1989</strong> — Creación del GAFI/FATF: nacen los estándares modernos de AML.",
+    "art1.tl2": "<strong>2001</strong> — El enfoque se amplía tras los atentados del 11-S para incorporar financiamiento del terrorismo.",
+    "art1.tl3": "<strong>2003</strong> — Expansión a actividades y profesiones no financieras designadas (DNFBP).",
+    "art1.tl4": "<strong>2012</strong> — Enfoque basado en riesgo: los controles deben ser proporcionales al riesgo.",
+    "art1.tl5": "<strong>2012</strong> — Mayor énfasis en identificar beneficiario final.",
+    "art1.tl6": "<strong>2019</strong> — Se fortalecen estándares para activos virtuales.",
+    "art1.tl7": "<strong>2022+</strong> — Impulso a registros y mayor claridad sobre transparencia corporativa.",
+    "art1.s3p2": "El cumplimiento moderno no debería consistir en llenar formularios por llenar formularios. Debería ayudar a tomar mejores decisiones: con quién hacer negocios, bajo qué condiciones, qué información se necesita, qué señales preocupan, cuándo escalar un caso y cuándo una oportunidad comercial no justifica el riesgo que trae consigo. La prevención efectiva no bloquea el crecimiento. Lo ordena.",
+    "art1.h4_4": "4. Cumplimiento no es freno: es habilitador de crecimiento",
+    "art1.s4p1": "Uno de los mayores errores en la conversación empresarial es presentar el cumplimiento como un obstáculo para vender, invertir, financiar o cerrar negocios. En realidad, cuando está bien diseñado, el cumplimiento facilita el crecimiento. Una empresa que conoce a sus clientes, documenta sus decisiones, entiende sus riesgos y puede explicar sus procesos genera mayor confianza ante bancos, inversionistas, socios, aseguradoras, auditores, reguladores y clientes sofisticados.",
+    "art1.note3": "<strong>Cumplimiento como habilitador.</strong> El cumplimiento no es una pared. Es una puerta: mejores relaciones bancarias, proyectos más financiables, inversionistas más exigentes, contratos más sólidos, reputación empresarial más confiable. En mercados donde la confianza es escasa, demostrar controles puede convertirse en ventaja competitiva.",
+    "art1.h4_5": "5. El costo de no cumplir: multas, pérdida de confianza y daño reputacional",
+    "art1.s5p1": "A nivel internacional, las consecuencias por fallas en prevención de lavado han sido cada vez más visibles. Las sanciones no se limitan a multas: también incluyen monitores independientes, restricciones operativas, pérdida de corresponsalías, deterioro reputacional, salida de ejecutivos, investigaciones penales y costos significativos de remediación.",
+    "art1.t1th1": "Caso (penalidad civil FinCEN)",
+    "art1.t1th2": "Monto",
+    "art1.t1r1a": "TD Bank (2024)",
+    "art1.t1r1b": "US$1,300 millones",
+    "art1.t1r2a": "Canaccord Genuity LLC (2026)",
+    "art1.t1r2b": "US$80 millones",
+    "art1.t1note": "Montos ilustrativos de acciones FinCEN; no incluyen necesariamente todas las sanciones asociadas a cada caso. La penalidad de TD Bank fue 16.3 veces mayor a la de Canaccord Genuity.",
+    "art1.s5p2": "Pero el punto más importante no es solo el monto de una sanción: es el mensaje que envía al mercado. Las autoridades, bancos corresponsales, inversionistas y contrapartes comerciales esperan que las empresas puedan demostrar controles reales, no solamente documentos formales.",
+    "art1.note4": "<strong>Riesgo de cumplimiento meramente formal.</strong> Un manual que nadie aplica no protege. Una política que no refleja la operación real no convence. Una debida diligencia superficial no reduce riesgo. Un reporte tardío puede ser demasiado tarde.",
+    "art1.h4_6": "6. ¿Qué pueden hacer las empresas que no son personas obligadas?",
+    "art1.s6p1": "Una empresa que no es persona obligada no necesita replicar el mismo nivel de controles de una institución financiera. Pero sí puede adoptar medidas proporcionales, prácticas y razonables.",
+    "art1.t2th1": "Área",
+    "art1.t2th2": "Pregunta clave",
+    "art1.t2r1a": "Cliente / contraparte",
+    "art1.t2r1b": "¿Sé realmente quién está detrás de la relación comercial?",
+    "art1.t2r2a": "Beneficiario final",
+    "art1.t2r2b": "¿Entiendo quién controla o se beneficia de la estructura?",
+    "art1.t2r3a": "Lógica económica",
+    "art1.t2r3b": "¿La operación tiene sentido comercial?",
+    "art1.t2r4a": "Origen de fondos",
+    "art1.t2r4b": "¿El origen de fondos es razonablemente verificable?",
+    "art1.t2r5a": "Señales de alerta",
+    "art1.t2r5b": "¿Existen elementos que deberían escalarse antes de continuar?",
+    "art1.t2r6a": "Evidencia",
+    "art1.t2r6b": "¿Tengo documentación mínima para explicar mi decisión?",
+    "art1.t2r7a": "Escalamiento",
+    "art1.t2r7b": "¿Mi equipo sabe cuándo detener o elevar una preocupación?",
+    "art1.s6p2": "Estas preguntas no son burocracia. Son gestión de riesgo. Para muchas empresas, el primer paso no debería ser crear un programa complejo, sino implementar una arquitectura mínima de prevención: criterios de aceptación de clientes, matriz simple de riesgo, revisión de beneficiario final, señales de alerta, documentación básica y proceso de escalamiento. El objetivo no es convertir a toda empresa en banco. El objetivo es evitar que empresas legítimas sean utilizadas como vehículo para actividades ilícitas.",
+    "art1.h4_7": "7. La oportunidad para Guatemala",
+    "art1.s7p1": "La aprobación de una nueva ley antilavado en Guatemala debe verse como algo más que una actualización normativa. Es una oportunidad para elevar la conversación empresarial. El país necesita atraer inversión, fortalecer su reputación financiera, proteger su sistema económico y demostrar capacidad institucional frente a estándares internacionales. Pero esa tarea no le corresponde únicamente al Estado o al sistema financiero: también requiere que el sector privado entienda que la prevención de lavado forma parte de la competitividad del país.",
+    "art1.note5": "<strong>La verdadera pregunta.</strong> ¿Qué tipo de mercado queremos construir? Uno donde el cumplimiento se percibe como castigo, o uno donde la transparencia se convierte en ventaja. Uno donde la prevención se activa solo por obligación, o uno donde las empresas entienden que proteger su reputación también protege su crecimiento.",
+    "art1.conclh": "Conclusión",
+    "art1.conclp1": "La figura de persona obligada seguirá siendo central en la regulación antilavado. Pero la conversación empresarial no debería terminar ahí.",
+    "art1.note6": "<strong>En síntesis.</strong> No ser persona obligada no significa no tener riesgo. No tener obligación formal no significa no tener responsabilidad comercial. No estar supervisado directamente no significa estar aislado de las expectativas de bancos, inversionistas, clientes, proveedores y autoridades.",
+    "art1.conclp2": "La prevención de lavado de dinero no es solamente una exigencia legal. Es una forma de proteger el negocio, al consumidor y al país. El cumplimiento bien diseñado no bloquea el crecimiento: lo hace más sostenible. Y en una economía que necesita confianza para crecer, esa puede ser una de las ventajas competitivas más importantes.",
+    "art1.conclp3": "El cumplimiento no bloquea el crecimiento; lo protege, lo ordena y lo facilita.",
+    "art1.byline": "Insight Paper · Gemino Advisory · Guatemala, junio de 2026",
+    "art2.h3": "Cumplimiento, inversión y confianza<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">Una conversación que Guatemala ya está lista para tener</span>",
+    "art2.p1": "En los últimos meses he tenido muchas conversaciones con empresarios, desarrolladores e inversionistas que comparten una inquietud común: cómo navegar el nuevo entorno regulatorio sin frenar el crecimiento ni asumir riesgos innecesarios.",
+    "art2.p2": "Es una preocupación legítima. Guatemala está evolucionando rápidamente en materia de cumplimiento, prevención de delitos financieros y estándares de transparencia. Pero esta evolución no debería verse como una amenaza, sino como una oportunidad para hacer las cosas mejor, con mayor previsibilidad y confianza.",
+    "art2.h4_1": "1. El cumplimiento está cambiando de naturaleza",
+    "art2.s1p": "Durante años, el cumplimiento fue percibido como un requisito formal: políticas, manuales, reportes. Hoy, el enfoque es distinto. Las autoridades, el sistema financiero y los inversionistas internacionales están poniendo más atención en cómo funcionan realmente los controles, no solo en si existen. Esto no significa mayor carga innecesaria, sino algo más razonable: entender mejor los riesgos reales del negocio, aplicar controles proporcionales y evitar sorpresas que afecten operaciones, financiamiento o reputación.",
+    "art2.h4_2": "2. Inversión y bancabilidad: dos caras de la misma moneda",
+    "art2.s2p": "Cada vez es más claro que la calidad del cumplimiento impacta directamente en la capacidad de atraer capital. En sectores como inmobiliario, infraestructura, servicios profesionales y comercio internacional, la trazabilidad de fondos, la identificación adecuada de contrapartes y la claridad en estructuras societarias ya no son un \"extra\", sino parte del lenguaje normal del negocio. Cuando estos elementos están bien trabajados desde el inicio, los proyectos avanzan con menos fricción, menos retrasos y mayor confianza por parte de bancos e inversionistas.",
+    "art2.h4_3": "3. De la norma al criterio",
+    "art2.s3p": "Uno de los errores más comunes es pensar que el cumplimiento es solo \"seguir la norma\". En la práctica, lo que marca la diferencia es el criterio con el que se interpreta y se aplica. Dos empresas pueden cumplir la misma regulación y tener resultados muy distintos: una vive apagando incendios, la otra opera con tranquilidad. La diferencia no está en la ley, sino en la estrategia de cumplimiento.",
+    "art2.h4_4": "4. Acompañamiento, no improvisación",
+    "art2.s4p": "En este nuevo contexto, muchas organizaciones se están dando cuenta de algo importante: el cumplimiento ya no se puede improvisar ni delegar sin dirección clara. Lo que mejor funciona es integrar cumplimiento con la estrategia del negocio, alinear a gerencia, finanzas y operaciones, y tomar decisiones informadas antes de que los riesgos se materialicen. Cuando eso ocurre, el cumplimiento deja de ser una carga y se convierte en un habilitador del crecimiento.",
+    "art2.reflh": "Reflexión final",
+    "art2.reflp1": "Guatemala está dando pasos importantes hacia un entorno más robusto, transparente y confiable. Las empresas que entiendan este momento no solo estarán mejor preparadas, sino mejor posicionadas para crecer, atraer inversión y construir valor sostenible.",
+    "art2.reflp2": "El reto no es cumplir más. El reto es cumplir mejor, con visión y con acompañamiento adecuado.",
+    "art2.byline": "Daniel Gemino · Director y Consultor Principal · Gemino Advisory"
+  },
+  en: {
+    "rec.h1": "Resources and technical insight",
+    "rec.lead": "Original analysis on Decree 15-2026, GAFILAT, and the relationship between compliance, investment, and institutional trust.",
+    "rec.card1h": "Beyond being an \"Obligated Person\"",
+    "rec.card1p": "Why money-laundering prevention strengthens business growth, reputation, and sustainability. Insight Paper, Guatemala, June 2026.",
+    "rec.card2h": "Compliance, investment, and trust",
+    "rec.card2p": "A conversation Guatemala is now ready to have. Original technical article.",
+    "rec.readmore": "Read the full article →",
+    "art1.h3": "Beyond being an \"obligated person\"<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">Why money-laundering prevention is also a business decision</span>",
+    "art1.introh": "Introduction",
+    "art1.p1": "On the very day Guatemala passed its new anti-money-laundering law, I had the opportunity to listen to a conversation among insurance-sector professionals about the regulatory changes ahead. The discussion was technical, legitimate, and necessary. Yet one point stood out to me: much of the concern centered on a single question: Am I, or am I not, an obligated person?",
+    "art1.p2": "The question matters. It has legal, operational, and regulatory consequences. It defines formal duties, reports, manuals, controls, supervision, and possible sanctions. But it can also become a conceptual trap if it reduces the entire conversation about money-laundering prevention to a single conclusion: \"if I'm not an obligated person, then I have nothing to worry about.\" That reading is incomplete.",
+    "art1.p3": "Not every business is an \"obligated person\" in the legal sense. But every business can be exposed, directly or indirectly, to risks of money laundering, terrorist financing, corruption, fraud, smuggling, tax evasion, the use of opaque structures, or the incorporation of illicit-origin capital into the formal economy.",
+    "art1.p4": "Money-laundering prevention shouldn't be understood solely as a regulatory obligation. It's also a practice of business, reputational, and economic protection. In an increasingly connected market, the question shouldn't just be \"am I legally required to?\" but also how prepared one is to manage exposure to risk.",
+    "art1.note1": "Not every business is an \"obligated person\" in the legal sense, but every business can be exposed to money-laundering risks. The strategic question isn't just \"am I required to?\" but <strong>\"how prepared am I to manage my exposure to risk?\"</strong>",
+    "art1.h4_1": "1. The right question isn't just \"am I an obligated person?\"",
+    "art1.s1p1": "In Guatemala, as in many countries, the concept of an obligated person serves an essential function: identifying the sectors that, because of their activity, size, nature, or exposure, must implement specific measures for prevention, monitoring, reporting, and due diligence. That classification is necessary. It brings order to the system, assigns responsibilities, and establishes supervisory mechanisms. But money-laundering risk isn't limited solely to formally regulated activities.",
+    "art1.s1p2": "Illicit money doesn't seek to enter only through banks or insurers. It seeks to enter wherever opportunities exist: purchasing goods, investing in projects, contracting services, acquiring assets, corporate structures, intermediaries, cash transactions, irregular invoicing, opaque business relationships, or businesses with weak verification capacity.",
+    "art1.s1p3": "That's why, even when a company isn't formally classified as an obligated person, it can face real risks if it lacks minimum criteria to identify who is behind a transaction, where the funds come from, what the economic rationale of a transaction is, or what red flags should stop a business relationship. The distinction matters: being an obligated person defines a specific legal duty; being exposed to risk defines a business responsibility.",
+    "art1.h4_2": "2. Money laundering isn't an abstract problem",
+    "art1.s2p1": "Money laundering is often seen as a distant, purely financial, or exclusively criminal matter. But in practice, its effects are deeply economic and social. When illicit capital enters the formal economy, it distorts competition. Legitimate businesses compete against actors who aren't necessarily seeking normal profitability, but rather to place or integrate illicit-origin funds. That affects prices, margins, investment, access to financing, and market confidence.",
+    "art1.s2p2": "It also affects consumers, who are exposed to less healthy markets and to products or services that may be part of broader structures of economic crime. And it affects the country: the perception of weak anti-money-laundering controls can raise reputational risk, make international financial relationships more expensive, hinder banking access, affect correspondent relationships, reduce investor confidence, and weaken institutional credibility.",
+    "art1.note2": "<strong>Business impact.</strong> When illicit capital enters the formal economy, it doesn't just create regulatory exposure: it distorts competition, reduces trust, and makes legitimate growth more expensive.",
+    "art1.h4_3": "3. The international evolution: from formal compliance to a risk-based approach",
+    "art1.s3p1": "Internationally, money-laundering prevention has evolved significantly. In an early stage, the focus was on the financial system: banks, brokerages, insurers, and other intermediaries as the first line of defense. Over time, international standards broadened their scope toward non-financial sectors — real estate, lawyers, accountants, corporate service providers, casinos, dealers in precious metals and stones, among others — and later toward a risk-based approach: not all clients, products, services, geographies, or transactions present the same level of exposure.",
+    "art1.tl1": "<strong>1989</strong> — Creation of the FATF/GAFI: the modern AML standards are born.",
+    "art1.tl2": "<strong>2001</strong> — The scope broadens after the 9/11 attacks to incorporate terrorist financing.",
+    "art1.tl3": "<strong>2003</strong> — Expansion to designated non-financial businesses and professions (DNFBPs).",
+    "art1.tl4": "<strong>2012</strong> — Risk-based approach: controls must be proportional to risk.",
+    "art1.tl5": "<strong>2012</strong> — Greater emphasis on identifying beneficial ownership.",
+    "art1.tl6": "<strong>2019</strong> — Standards for virtual assets are strengthened.",
+    "art1.tl7": "<strong>2022+</strong> — Push for registries and greater clarity on corporate transparency.",
+    "art1.s3p2": "Modern compliance shouldn't consist of filling out forms for the sake of filling out forms. It should help make better decisions: with whom to do business, under what conditions, what information is needed, what red flags are concerning, when to escalate a case, and when a business opportunity doesn't justify the risk it carries. Effective prevention doesn't block growth. It brings order to it.",
+    "art1.h4_4": "4. Compliance isn't a brake: it's a growth enabler",
+    "art1.s4p1": "One of the biggest mistakes in the business conversation is presenting compliance as an obstacle to selling, investing, financing, or closing deals. In reality, when well designed, compliance facilitates growth. A company that knows its customers, documents its decisions, understands its risks, and can explain its processes builds greater trust with banks, investors, partners, insurers, auditors, regulators, and sophisticated clients.",
+    "art1.note3": "<strong>Compliance as an enabler.</strong> Compliance isn't a wall. It's a door: better banking relationships, more financeable projects, more demanding investors, stronger contracts, more credible business reputation. In markets where trust is scarce, demonstrating controls can become a competitive advantage.",
+    "art1.h4_5": "5. The cost of non-compliance: fines, loss of trust, and reputational damage",
+    "art1.s5p1": "Internationally, the consequences of anti-money-laundering failures have become increasingly visible. Sanctions aren't limited to fines: they also include independent monitors, operational restrictions, loss of correspondent relationships, reputational damage, executive departures, criminal investigations, and significant remediation costs.",
+    "art1.t1th1": "Case (FinCEN civil penalty)",
+    "art1.t1th2": "Amount",
+    "art1.t1r1a": "TD Bank (2024)",
+    "art1.t1r1b": "US$1.3 billion",
+    "art1.t1r2a": "Canaccord Genuity LLC (2026)",
+    "art1.t1r2b": "US$80 million",
+    "art1.t1note": "Illustrative amounts from FinCEN actions; they do not necessarily include all sanctions associated with each case. TD Bank's penalty was 16.3 times greater than Canaccord Genuity's.",
+    "art1.s5p2": "But the most important point isn't just the amount of a sanction: it's the message it sends to the market. Authorities, correspondent banks, investors, and business counterparties expect companies to be able to demonstrate real controls, not just formal documents.",
+    "art1.note4": "<strong>The risk of merely formal compliance.</strong> A manual no one follows doesn't protect. A policy that doesn't reflect actual operations isn't convincing. Superficial due diligence doesn't reduce risk. A late report can be too late.",
+    "art1.h4_6": "6. What can companies that aren't obligated persons do?",
+    "art1.s6p1": "A company that isn't an obligated person doesn't need to replicate the same level of controls as a financial institution. But it can adopt proportional, practical, and reasonable measures.",
+    "art1.t2th1": "Area",
+    "art1.t2th2": "Key question",
+    "art1.t2r1a": "Client / counterparty",
+    "art1.t2r1b": "Do I really know who is behind the business relationship?",
+    "art1.t2r2a": "Beneficial owner",
+    "art1.t2r2b": "Do I understand who controls or benefits from the structure?",
+    "art1.t2r3a": "Economic rationale",
+    "art1.t2r3b": "Does the transaction make commercial sense?",
+    "art1.t2r4a": "Source of funds",
+    "art1.t2r4b": "Is the source of funds reasonably verifiable?",
+    "art1.t2r5a": "Red flags",
+    "art1.t2r5b": "Are there elements that should be escalated before proceeding?",
+    "art1.t2r6a": "Evidence",
+    "art1.t2r6b": "Do I have minimum documentation to explain my decision?",
+    "art1.t2r7a": "Escalation",
+    "art1.t2r7b": "Does my team know when to stop or raise a concern?",
+    "art1.s6p2": "These questions aren't bureaucracy. They're risk management. For many companies, the first step shouldn't be creating a complex program, but implementing a minimum prevention architecture: customer acceptance criteria, a simple risk matrix, beneficial-owner review, red flags, basic documentation, and an escalation process. The goal isn't to turn every company into a bank. The goal is to prevent legitimate companies from being used as a vehicle for illicit activities.",
+    "art1.h4_7": "7. The opportunity for Guatemala",
+    "art1.s7p1": "The passage of a new anti-money-laundering law in Guatemala should be seen as more than a regulatory update. It's an opportunity to elevate the business conversation. The country needs to attract investment, strengthen its financial reputation, protect its economic system, and demonstrate institutional capacity against international standards. But that task doesn't fall solely to the State or the financial system: it also requires the private sector to understand that money-laundering prevention is part of the country's competitiveness.",
+    "art1.note5": "<strong>The real question.</strong> What kind of market do we want to build? One where compliance is perceived as punishment, or one where transparency becomes an advantage. One where prevention is activated only out of obligation, or one where companies understand that protecting their reputation also protects their growth.",
+    "art1.conclh": "Conclusion",
+    "art1.conclp1": "The concept of an obligated person will remain central to anti-money-laundering regulation. But the business conversation shouldn't end there.",
+    "art1.note6": "<strong>In summary.</strong> Not being an obligated person doesn't mean having no risk. Having no formal obligation doesn't mean having no business responsibility. Not being directly supervised doesn't mean being isolated from the expectations of banks, investors, clients, suppliers, and authorities.",
+    "art1.conclp2": "Money-laundering prevention isn't merely a legal requirement. It's a way of protecting the business, the consumer, and the country. Well-designed compliance doesn't block growth: it makes it more sustainable. And in an economy that needs trust to grow, that may be one of the most important competitive advantages.",
+    "art1.conclp3": "Compliance doesn't block growth; it protects it, orders it, and enables it.",
+    "art1.byline": "Insight Paper · Gemino Advisory · Guatemala, June 2026",
+    "art2.h3": "Compliance, investment, and trust<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">A conversation Guatemala is now ready to have</span>",
+    "art2.p1": "In recent months I've had many conversations with business owners, developers, and investors who share a common concern: how to navigate the new regulatory environment without slowing growth or taking on unnecessary risk.",
+    "art2.p2": "It's a legitimate concern. Guatemala is evolving rapidly in compliance, financial-crime prevention, and transparency standards. But this evolution shouldn't be seen as a threat, but as an opportunity to do things better, with greater predictability and trust.",
+    "art2.h4_1": "1. Compliance is changing in nature",
+    "art2.s1p": "For years, compliance was seen as a formal requirement: policies, manuals, reports. Today, the approach is different. Authorities, the financial system, and international investors are paying closer attention to how controls actually work, not just whether they exist. This doesn't mean an unnecessary extra burden, but something more reasonable: better understanding the business's real risks, applying proportional controls, and avoiding surprises that affect operations, financing, or reputation.",
+    "art2.h4_2": "2. Investment and bankability: two sides of the same coin",
+    "art2.s2p": "It's increasingly clear that the quality of compliance directly impacts the ability to attract capital. In sectors such as real estate, infrastructure, professional services, and international trade, fund traceability, proper counterparty identification, and clarity in corporate structures are no longer an \"extra,\" but part of the normal language of business. When these elements are well handled from the start, projects move forward with less friction, fewer delays, and greater confidence from banks and investors.",
+    "art2.h4_3": "3. From the rule to the judgment",
+    "art2.s3p": "One of the most common mistakes is thinking that compliance is only \"following the rule.\" In practice, what makes the difference is the judgment with which it's interpreted and applied. Two companies can comply with the same regulation and have very different outcomes: one lives putting out fires, the other operates with peace of mind. The difference isn't in the law, but in the compliance strategy.",
+    "art2.h4_4": "4. Guidance, not improvisation",
+    "art2.s4p": "In this new context, many organizations are realizing something important: compliance can no longer be improvised or delegated without clear direction. What works best is integrating compliance with business strategy, aligning management, finance, and operations, and making informed decisions before risks materialize. When that happens, compliance stops being a burden and becomes a growth enabler.",
+    "art2.reflh": "Final thought",
+    "art2.reflp1": "Guatemala is taking important steps toward a more robust, transparent, and trustworthy environment. Companies that understand this moment will not only be better prepared, but better positioned to grow, attract investment, and build sustainable value.",
+    "art2.reflp2": "The challenge isn't to comply more. The challenge is to comply better, with vision and with proper guidance.",
+    "art2.byline": "Daniel Gemino · Director and Principal Consultant · Gemino Advisory"
+  },
+  pt: {
+    "rec.h1": "Recursos e reflexão técnica",
+    "rec.lead": "Análises de autoria própria sobre o Decreto 15-2026, o GAFILAT e a relação entre compliance, investimento e confiança institucional.",
+    "rec.card1h": "Além de ser \"Pessoa Obrigada\"",
+    "rec.card1p": "Por que a prevenção à lavagem fortalece o crescimento, a reputação e a sustentabilidade empresarial. Insight Paper, Guatemala, junho de 2026.",
+    "rec.card2h": "Compliance, investimento e confiança",
+    "rec.card2p": "Uma conversa que a Guatemala já está pronta para ter. Artigo técnico de autoria própria.",
+    "rec.readmore": "Ler artigo completo →",
+    "art1.h3": "Além de ser \"pessoa obrigada\"<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">Por que a prevenção à lavagem de dinheiro também é uma decisão empresarial</span>",
+    "art1.introh": "Introdução",
+    "art1.p1": "No mesmo dia em que a Guatemala aprovou sua nova lei antilavagem, tive a oportunidade de ouvir uma conversa entre profissionais do setor de seguros sobre as mudanças regulatórias que se aproximavam. A discussão era técnica, legítima e necessária. No entanto, um ponto me chamou especialmente a atenção: boa parte da preocupação girava em torno de uma pergunta central: Sou ou não sou pessoa obrigada?",
+    "art1.p2": "A pergunta é importante. Tem consequências legais, operacionais e regulatórias. Define deveres formais, relatórios, manuais, controles, supervisão e possíveis sanções. Mas também pode se tornar uma armadilha conceitual se reduzir toda a conversa sobre prevenção à lavagem de dinheiro a uma única conclusão: \"se não sou pessoa obrigada, então não tenho com o que me preocupar\". Essa leitura é incompleta.",
+    "art1.p3": "Nem todos os negócios são \"pessoas obrigadas\" em sentido legal. Mas todos os negócios podem estar expostos, direta ou indiretamente, a riscos de lavagem de dinheiro, financiamento do terrorismo, corrupção, fraude, contrabando, sonegação fiscal, uso de estruturas opacas ou incorporação de capitais de origem ilícita na economia formal.",
+    "art1.p4": "A prevenção à lavagem não deveria ser entendida apenas como uma obrigação regulatória. Também é uma prática de proteção empresarial, reputacional e econômica. Em um mercado cada vez mais conectado, a pergunta não deveria ser apenas \"sou obrigado por lei?\", mas também o quão preparado se está para gerenciar a exposição ao risco.",
+    "art1.note1": "Nem todos os negócios são \"pessoas obrigadas\" em sentido legal, mas todos podem estar expostos a riscos de lavagem de dinheiro. A pergunta estratégica não é apenas \"sou obrigado?\", mas <strong>\"o quão preparado estou para gerenciar minha exposição ao risco?\"</strong>",
+    "art1.h4_1": "1. A pergunta certa não é apenas \"sou pessoa obrigada?\"",
+    "art1.s1p1": "Na Guatemala, como em muitos países, a figura da pessoa obrigada cumpre uma função essencial: identificar os setores que, por sua atividade, tamanho, natureza ou exposição, devem implementar medidas específicas de prevenção, monitoramento, reporte e devida diligência. Essa classificação é necessária. Permite ordenar o sistema, atribuir responsabilidades e estabelecer mecanismos de supervisão. Mas o risco de lavagem de dinheiro não se limita apenas às atividades formalmente reguladas.",
+    "art1.s1p2": "O dinheiro ilícito não busca entrar apenas por bancos ou seguradoras. Busca entrar por onde existirem oportunidades: compra de bens, investimento em projetos, contratação de serviços, aquisição de ativos, estruturas societárias, intermediários, operações em espécie, faturamento irregular, relações comerciais pouco transparentes ou negócios com fraca capacidade de verificação.",
+    "art1.s1p3": "Por isso, mesmo quando uma empresa não está formalmente classificada como pessoa obrigada, pode enfrentar riscos reais se não contar com critérios mínimos para identificar quem está por trás de uma operação, de onde vêm os fundos, qual é a lógica econômica de uma transação ou quais sinais de alerta deveriam interromper uma relação comercial. A diferença é importante: ser pessoa obrigada define um dever legal específico; estar exposto ao risco define uma responsabilidade empresarial.",
+    "art1.h4_2": "2. A lavagem de dinheiro não é um problema abstrato",
+    "art1.s2p1": "A lavagem de dinheiro costuma ser percebida como um tema distante, financeiro ou exclusivamente penal. Mas, na prática, seus efeitos são profundamente econômicos e sociais. Quando capitais ilícitos entram na economia formal, distorcem a concorrência. Empresas legítimas competem contra atores que não necessariamente buscam rentabilidade normal, mas sim colocar ou integrar recursos de origem ilícita. Isso afeta preços, margens, investimento, acesso a financiamento e confiança no mercado.",
+    "art1.s2p2": "Também afeta o consumidor, exposto a mercados menos saudáveis e a produtos ou serviços que podem fazer parte de estruturas mais amplas de criminalidade econômica. E afeta o país: a percepção de fragilidade nos controles antilavagem pode elevar o risco reputacional, encarecer relações financeiras internacionais, dificultar a bancarização, afetar correspondências bancárias, reduzir a confiança de investidores e enfraquecer a credibilidade institucional.",
+    "art1.note2": "<strong>Impacto empresarial.</strong> Quando capitais ilícitos entram na economia formal, não geram apenas exposição regulatória: distorcem a concorrência, reduzem a confiança e encarecem o crescimento legítimo.",
+    "art1.h4_3": "3. A evolução internacional: do compliance formal à abordagem baseada em risco",
+    "art1.s3p1": "Em nível internacional, a prevenção à lavagem de dinheiro evoluiu de forma significativa. Em uma primeira etapa, o foco esteve no sistema financeiro: bancos, corretoras, seguradoras e outros intermediários como primeira linha de defesa. Com o tempo, os padrões internacionais ampliaram o olhar para setores não financeiros — imobiliário, advogados, contadores, provedores de serviços societários, cassinos, comerciantes de metais e pedras preciosas, entre outros — e, depois, para a abordagem baseada em risco: nem todos os clientes, produtos, serviços, geografias ou transações apresentam o mesmo nível de exposição.",
+    "art1.tl1": "<strong>1989</strong> — Criação do GAFI/FATF: nascem os padrões modernos de AML.",
+    "art1.tl2": "<strong>2001</strong> — O enfoque se amplia após os atentados de 11 de setembro para incorporar o financiamento do terrorismo.",
+    "art1.tl3": "<strong>2003</strong> — Expansão para atividades e profissões não financeiras designadas (APNFD).",
+    "art1.tl4": "<strong>2012</strong> — Abordagem baseada em risco: os controles devem ser proporcionais ao risco.",
+    "art1.tl5": "<strong>2012</strong> — Maior ênfase na identificação do beneficiário final.",
+    "art1.tl6": "<strong>2019</strong> — Fortalecem-se os padrões para ativos virtuais.",
+    "art1.tl7": "<strong>2022+</strong> — Impulso a registros e maior clareza sobre transparência corporativa.",
+    "art1.s3p2": "O compliance moderno não deveria consistir em preencher formulários por preencher formulários. Deveria ajudar a tomar melhores decisões: com quem fazer negócios, sob quais condições, que informações são necessárias, quais sinais preocupam, quando escalar um caso e quando uma oportunidade comercial não justifica o risco que traz consigo. A prevenção efetiva não bloqueia o crescimento. Ela o ordena.",
+    "art1.h4_4": "4. Compliance não é freio: é habilitador de crescimento",
+    "art1.s4p1": "Um dos maiores erros na conversa empresarial é apresentar o compliance como um obstáculo para vender, investir, financiar ou fechar negócios. Na realidade, quando bem desenhado, o compliance facilita o crescimento. Uma empresa que conhece seus clientes, documenta suas decisões, entende seus riscos e consegue explicar seus processos gera maior confiança perante bancos, investidores, sócios, seguradoras, auditores, reguladores e clientes sofisticados.",
+    "art1.note3": "<strong>Compliance como habilitador.</strong> O compliance não é uma parede. É uma porta: melhores relações bancárias, projetos mais financiáveis, investidores mais exigentes, contratos mais sólidos, reputação empresarial mais confiável. Em mercados onde a confiança é escassa, demonstrar controles pode se tornar uma vantagem competitiva.",
+    "art1.h4_5": "5. O custo de não cumprir: multas, perda de confiança e dano reputacional",
+    "art1.s5p1": "Em nível internacional, as consequências por falhas na prevenção à lavagem têm sido cada vez mais visíveis. As sanções não se limitam a multas: também incluem monitores independentes, restrições operacionais, perda de correspondências bancárias, deterioração reputacional, saída de executivos, investigações penais e custos significativos de remediação.",
+    "art1.t1th1": "Caso (penalidade civil FinCEN)",
+    "art1.t1th2": "Valor",
+    "art1.t1r1a": "TD Bank (2024)",
+    "art1.t1r1b": "US$1,3 bilhão",
+    "art1.t1r2a": "Canaccord Genuity LLC (2026)",
+    "art1.t1r2b": "US$80 milhões",
+    "art1.t1note": "Valores ilustrativos de ações do FinCEN; não incluem necessariamente todas as sanções associadas a cada caso. A penalidade do TD Bank foi 16,3 vezes maior que a da Canaccord Genuity.",
+    "art1.s5p2": "Mas o ponto mais importante não é apenas o valor de uma sanção: é a mensagem que ela envia ao mercado. Autoridades, bancos correspondentes, investidores e contrapartes comerciais esperam que as empresas consigam demonstrar controles reais, não apenas documentos formais.",
+    "art1.note4": "<strong>Risco de compliance meramente formal.</strong> Um manual que ninguém aplica não protege. Uma política que não reflete a operação real não convence. Uma devida diligência superficial não reduz risco. Um reporte tardio pode ser tarde demais.",
+    "art1.h4_6": "6. O que podem fazer as empresas que não são pessoas obrigadas?",
+    "art1.s6p1": "Uma empresa que não é pessoa obrigada não precisa replicar o mesmo nível de controles de uma instituição financeira. Mas pode adotar medidas proporcionais, práticas e razoáveis.",
+    "art1.t2th1": "Área",
+    "art1.t2th2": "Pergunta-chave",
+    "art1.t2r1a": "Cliente / contraparte",
+    "art1.t2r1b": "Eu realmente sei quem está por trás da relação comercial?",
+    "art1.t2r2a": "Beneficiário final",
+    "art1.t2r2b": "Entendo quem controla ou se beneficia da estrutura?",
+    "art1.t2r3a": "Lógica econômica",
+    "art1.t2r3b": "A operação faz sentido comercial?",
+    "art1.t2r4a": "Origem dos fundos",
+    "art1.t2r4b": "A origem dos fundos é razoavelmente verificável?",
+    "art1.t2r5a": "Sinais de alerta",
+    "art1.t2r5b": "Existem elementos que deveriam ser escalados antes de continuar?",
+    "art1.t2r6a": "Evidência",
+    "art1.t2r6b": "Tenho documentação mínima para explicar minha decisão?",
+    "art1.t2r7a": "Escalonamento",
+    "art1.t2r7b": "Minha equipe sabe quando interromper ou levantar uma preocupação?",
+    "art1.s6p2": "Essas perguntas não são burocracia. São gestão de risco. Para muitas empresas, o primeiro passo não deveria ser criar um programa complexo, mas implementar uma arquitetura mínima de prevenção: critérios de aceitação de clientes, matriz simples de risco, revisão de beneficiário final, sinais de alerta, documentação básica e processo de escalonamento. O objetivo não é transformar toda empresa em banco. O objetivo é evitar que empresas legítimas sejam utilizadas como veículo para atividades ilícitas.",
+    "art1.h4_7": "7. A oportunidade para a Guatemala",
+    "art1.s7p1": "A aprovação de uma nova lei antilavagem na Guatemala deve ser vista como algo mais do que uma atualização normativa. É uma oportunidade para elevar a conversa empresarial. O país precisa atrair investimento, fortalecer sua reputação financeira, proteger seu sistema econômico e demonstrar capacidade institucional frente a padrões internacionais. Mas essa tarefa não cabe apenas ao Estado ou ao sistema financeiro: também exige que o setor privado entenda que a prevenção à lavagem faz parte da competitividade do país.",
+    "art1.note5": "<strong>A verdadeira pergunta.</strong> Que tipo de mercado queremos construir? Um onde o compliance é percebido como punição, ou um onde a transparência se torna vantagem. Um onde a prevenção é ativada apenas por obrigação, ou um onde as empresas entendem que proteger sua reputação também protege seu crescimento.",
+    "art1.conclh": "Conclusão",
+    "art1.conclp1": "A figura da pessoa obrigada continuará sendo central na regulação antilavagem. Mas a conversa empresarial não deveria terminar aí.",
+    "art1.note6": "<strong>Em síntese.</strong> Não ser pessoa obrigada não significa não ter risco. Não ter obrigação formal não significa não ter responsabilidade comercial. Não estar diretamente supervisionado não significa estar isolado das expectativas de bancos, investidores, clientes, fornecedores e autoridades.",
+    "art1.conclp2": "A prevenção à lavagem de dinheiro não é apenas uma exigência legal. É uma forma de proteger o negócio, o consumidor e o país. O compliance bem desenhado não bloqueia o crescimento: torna-o mais sustentável. E em uma economia que precisa de confiança para crescer, essa pode ser uma das vantagens competitivas mais importantes.",
+    "art1.conclp3": "O compliance não bloqueia o crescimento; ele o protege, o ordena e o facilita.",
+    "art1.byline": "Insight Paper · Gemino Advisory · Guatemala, junho de 2026",
+    "art2.h3": "Compliance, investimento e confiança<br><span style=\"font-size:.95rem;color:var(--ink-soft);font-weight:400;\">Uma conversa que a Guatemala já está pronta para ter</span>",
+    "art2.p1": "Nos últimos meses tive muitas conversas com empresários, incorporadores e investidores que compartilham uma preocupação comum: como navegar o novo ambiente regulatório sem frear o crescimento nem assumir riscos desnecessários.",
+    "art2.p2": "É uma preocupação legítima. A Guatemala está evoluindo rapidamente em matéria de compliance, prevenção a crimes financeiros e padrões de transparência. Mas essa evolução não deveria ser vista como uma ameaça, e sim como uma oportunidade de fazer as coisas melhor, com maior previsibilidade e confiança.",
+    "art2.h4_1": "1. O compliance está mudando de natureza",
+    "art2.s1p": "Durante anos, o compliance foi percebido como um requisito formal: políticas, manuais, relatórios. Hoje, o enfoque é outro. As autoridades, o sistema financeiro e os investidores internacionais estão prestando mais atenção em como os controles realmente funcionam, não apenas se existem. Isso não significa mais carga desnecessária, mas sim algo mais razoável: entender melhor os riscos reais do negócio, aplicar controles proporcionais e evitar surpresas que afetem operações, financiamento ou reputação.",
+    "art2.h4_2": "2. Investimento e bancabilidade: dois lados da mesma moeda",
+    "art2.s2p": "É cada vez mais claro que a qualidade do compliance impacta diretamente a capacidade de atrair capital. Em setores como imobiliário, infraestrutura, serviços profissionais e comércio internacional, a rastreabilidade de fundos, a identificação adequada de contrapartes e a clareza nas estruturas societárias já não são um \"extra\", e sim parte da linguagem normal do negócio. Quando esses elementos são bem trabalhados desde o início, os projetos avançam com menos atrito, menos atrasos e maior confiança por parte de bancos e investidores.",
+    "art2.h4_3": "3. Da norma ao critério",
+    "art2.s3p": "Um dos erros mais comuns é pensar que compliance é apenas \"seguir a norma\". Na prática, o que faz a diferença é o critério com que ela é interpretada e aplicada. Duas empresas podem cumprir a mesma regulação e ter resultados muito diferentes: uma vive apagando incêndios, a outra opera com tranquilidade. A diferença não está na lei, mas na estratégia de compliance.",
+    "art2.h4_4": "4. Acompanhamento, não improvisação",
+    "art2.s4p": "Nesse novo contexto, muitas organizações estão percebendo algo importante: o compliance já não pode ser improvisado nem delegado sem direção clara. O que funciona melhor é integrar compliance à estratégia do negócio, alinhar gerência, finanças e operações, e tomar decisões informadas antes que os riscos se materializem. Quando isso ocorre, o compliance deixa de ser um fardo e se torna um habilitador do crescimento.",
+    "art2.reflh": "Reflexão final",
+    "art2.reflp1": "A Guatemala está dando passos importantes rumo a um ambiente mais robusto, transparente e confiável. As empresas que entenderem este momento não apenas estarão mais bem preparadas, mas mais bem posicionadas para crescer, atrair investimento e construir valor sustentável.",
+    "art2.reflp2": "O desafio não é cumprir mais. O desafio é cumprir melhor, com visão e com acompanhamento adequado.",
+    "art2.byline": "Daniel Gemino · Diretor e Consultor Principal · Gemino Advisory"
   }
-})();
+});
 </script>
 
 </body>

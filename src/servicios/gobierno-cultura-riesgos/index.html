@@ -16,96 +16,106 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/servicios/">Servicios</a></p>
-      <p class="eyebrow">Línea 05 · Servicios</p>
-      <h1>Gobierno, Cultura y Gestión Integral de Riesgos</h1>
-      <p class="lead">El cumplimiento efectivo no depende únicamente de controles, sino de la capacidad institucional de sostenerlos en el tiempo.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/servicios/" data-i18n="nav.services">Servicios</a></p>
+      <p class="eyebrow" data-i18n="svcgob.eyebrow">Línea 05 · Servicios</p>
+      <h1 data-i18n="svcgob.h1">Gobierno, Cultura y Gestión Integral de Riesgos</h1>
+      <p class="lead" data-i18n="svcgob.lead">El cumplimiento efectivo no depende únicamente de controles, sino de la capacidad institucional de sostenerlos en el tiempo.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="max-width:780px;">¿La organización sostiene el cumplimiento porque lo entiende y lo vive, o porque alguien lo instaló una vez y nadie lo ha vuelto a mirar?</p>
+      <p class="lead" style="max-width:780px;" data-i18n="svcgob.intro">¿La organización sostiene el cumplimiento porque lo entiende y lo vive, o porque alguien lo instaló una vez y nadie lo ha vuelto a mirar?</p>
 
       <div class="divider"></div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Incluye</h3>
+          <h3 data-i18n="svc.includes">Incluye</h3>
           <ul class="diamond">
-            <li>Diseño de estructuras de gobernanza</li>
-            <li>Definición de roles y responsabilidades</li>
-            <li>Integración de compliance en la toma de decisiones</li>
-            <li>Programas de capacitación y cultura</li>
-            <li>Reporting estratégico a la alta dirección</li>
+            <li data-i18n="svcgob.inc1">Diseño de estructuras de gobernanza</li>
+            <li data-i18n="svcgob.inc2">Definición de roles y responsabilidades</li>
+            <li data-i18n="svcgob.inc3">Integración de compliance en la toma de decisiones</li>
+            <li data-i18n="svcgob.inc4">Programas de capacitación y cultura</li>
+            <li data-i18n="svcgob.inc5">Reporting estratégico a la alta dirección</li>
           </ul>
         </div>
         <div class="card">
-          <h3>No incluye</h3>
+          <h3 data-i18n="svc.excludes">No incluye</h3>
           <ul class="diamond">
-            <li>Diseño de controles ALD/CFT específicos (Línea 3) ni su evaluación independiente (Línea 4)</li>
-            <li>Gestión de riesgos ajenos al cumplimiento —financiero, operativo, de mercado— salvo solicitud expresa</li>
-            <li>Ejecución directa de la capacitación: la firma diseña el plan, lo imparte el cliente o un proveedor de formación</li>
+            <li data-i18n="svcgob.exc1">Diseño de controles ALD/CFT específicos (Línea 3) ni su evaluación independiente (Línea 4)</li>
+            <li data-i18n="svcgob.exc2">Gestión de riesgos ajenos al cumplimiento —financiero, operativo, de mercado— salvo solicitud expresa</li>
+            <li data-i18n="svcgob.exc3">Ejecución directa de la capacitación: la firma diseña el plan, lo imparte el cliente o un proveedor de formación</li>
           </ul>
         </div>
       </div>
 
       <div class="spec-block" style="margin-top:2.2rem;">
-        <span class="k">Metodología</span>
-        <p>Diagnóstico de la estructura de gobierno actual, diseño del framework y del modelo de reporting, definición de indicadores de madurez (compliance maturity model). Evaluamos y recomendamos; la implementación es siempre del cliente.</p>
+        <span class="k" data-i18n="svc.methodology">Metodología</span>
+        <p data-i18n="svcgob.method">Diagnóstico de la estructura de gobierno actual, diseño del framework y del modelo de reporting, definición de indicadores de madurez (compliance maturity model). Evaluamos y recomendamos; la implementación es siempre del cliente.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Entregables</span>
-        <p>Framework de gobierno de cumplimiento, modelo de reporting, plan de capacitación e indicadores de madurez (compliance maturity model).</p>
+        <span class="k" data-i18n="svc.deliverables">Entregables</span>
+        <p data-i18n="svcgob.deliv">Framework de gobierno de cumplimiento, modelo de reporting, plan de capacitación e indicadores de madurez (compliance maturity model).</p>
       </div>
       <div class="spec-block">
-        <span class="k">Para quién es</span>
-        <p>Organizaciones donde el cumplimiento ya tiene controles pero no tiene voz en las decisiones — donde el reporte a la junta es informal, o donde nadie mide si la cultura de control mejora o se estanca.</p>
+        <span class="k" data-i18n="svc.forwhom">Para quién es</span>
+        <p data-i18n="svcgob.forwhom">Organizaciones donde el cumplimiento ya tiene controles pero no tiene voz en las decisiones — donde el reporte a la junta es informal, o donde nadie mide si la cultura de control mejora o se estanca.</p>
       </div>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-outline-navy" href="/servicios/">Ver las otras líneas</a>
-      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20evaluaci%C3%B3n%20de%20gobierno%20y%20cultura">Solicitar evaluación de gobierno y cultura</a>
+        <a class="btn btn-outline-navy" href="/servicios/" data-i18n="svc.otherlines">Ver las otras líneas</a>
+      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20evaluaci%C3%B3n%20de%20gobierno%20y%20cultura" data-i18n="svcgob.cta">Solicitar evaluación de gobierno y cultura</a>
       </div>
     </div>
   </section>
@@ -117,45 +127,82 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "svcgob.eyebrow": "Línea 05 · Servicios",
+    "svcgob.h1": "Gobierno, Cultura y Gestión Integral de Riesgos",
+    "svcgob.lead": "El cumplimiento efectivo no depende únicamente de controles, sino de la capacidad institucional de sostenerlos en el tiempo.",
+    "svcgob.intro": "¿La organización sostiene el cumplimiento porque lo entiende y lo vive, o porque alguien lo instaló una vez y nadie lo ha vuelto a mirar?",
+    "svcgob.inc1": "Diseño de estructuras de gobernanza",
+    "svcgob.inc2": "Definición de roles y responsabilidades",
+    "svcgob.inc3": "Integración de compliance en la toma de decisiones",
+    "svcgob.inc4": "Programas de capacitación y cultura",
+    "svcgob.inc5": "Reporting estratégico a la alta dirección",
+    "svcgob.exc1": "Diseño de controles ALD/CFT específicos (Línea 3) ni su evaluación independiente (Línea 4)",
+    "svcgob.exc2": "Gestión de riesgos ajenos al cumplimiento —financiero, operativo, de mercado— salvo solicitud expresa",
+    "svcgob.exc3": "Ejecución directa de la capacitación: la firma diseña el plan, lo imparte el cliente o un proveedor de formación",
+    "svcgob.method": "Diagnóstico de la estructura de gobierno actual, diseño del framework y del modelo de reporting, definición de indicadores de madurez (compliance maturity model). Evaluamos y recomendamos; la implementación es siempre del cliente.",
+    "svcgob.deliv": "Framework de gobierno de cumplimiento, modelo de reporting, plan de capacitación e indicadores de madurez (compliance maturity model).",
+    "svcgob.forwhom": "Organizaciones donde el cumplimiento ya tiene controles pero no tiene voz en las decisiones — donde el reporte a la junta es informal, o donde nadie mide si la cultura de control mejora o se estanca.",
+    "svcgob.cta": "Solicitar evaluación de gobierno y cultura"
+  },
+  en: {
+    "svcgob.eyebrow": "Line 05 · Services",
+    "svcgob.h1": "Governance, Culture and Integrated Risk Management",
+    "svcgob.lead": "Effective compliance doesn't depend solely on controls, but on the institution's capacity to sustain them over time.",
+    "svcgob.intro": "Does the organization sustain compliance because it understands and lives it, or because someone installed it once and no one has looked at it since?",
+    "svcgob.inc1": "Design of governance structures",
+    "svcgob.inc2": "Definition of roles and responsibilities",
+    "svcgob.inc3": "Integration of compliance into decision-making",
+    "svcgob.inc4": "Training and culture programs",
+    "svcgob.inc5": "Strategic reporting to senior management",
+    "svcgob.exc1": "Design of specific AML/CFT controls (Line 3) or their independent evaluation (Line 4)",
+    "svcgob.exc2": "Management of risks unrelated to compliance — financial, operational, market — unless expressly requested",
+    "svcgob.exc3": "Direct delivery of training: the firm designs the plan; the client or a training provider delivers it",
+    "svcgob.method": "Diagnostic of the current governance structure, design of the framework and reporting model, and definition of maturity indicators (compliance maturity model). We assess and recommend; implementation is always the client's.",
+    "svcgob.deliv": "Compliance governance framework, reporting model, training plan and maturity indicators (compliance maturity model).",
+    "svcgob.forwhom": "Organizations where compliance already has controls but no voice in decisions — where board reporting is informal, or where no one measures whether the control culture is improving or stagnating.",
+    "svcgob.cta": "Request a governance and culture assessment"
+  },
+  pt: {
+    "svcgob.eyebrow": "Linha 05 · Serviços",
+    "svcgob.h1": "Governança, Cultura e Gestão Integral de Riscos",
+    "svcgob.lead": "O compliance efetivo não depende apenas de controles, mas da capacidade institucional de sustentá-los ao longo do tempo.",
+    "svcgob.intro": "A organização sustenta o compliance porque o entende e o vive, ou porque alguém o instalou uma vez e ninguém voltou a olhar?",
+    "svcgob.inc1": "Desenho de estruturas de governança",
+    "svcgob.inc2": "Definição de papéis e responsabilidades",
+    "svcgob.inc3": "Integração do compliance na tomada de decisão",
+    "svcgob.inc4": "Programas de capacitação e cultura",
+    "svcgob.inc5": "Reporte estratégico à alta administração",
+    "svcgob.exc1": "Desenho de controles PLD/FT específicos (Linha 3) ou sua avaliação independente (Linha 4)",
+    "svcgob.exc2": "Gestão de riscos alheios ao compliance — financeiro, operacional, de mercado — salvo solicitação expressa",
+    "svcgob.exc3": "Execução direta da capacitação: a firma desenha o plano; o cliente ou um provedor de treinamento o ministra",
+    "svcgob.method": "Diagnóstico da estrutura de governança atual, desenho do framework e do modelo de reporte, e definição de indicadores de maturidade (compliance maturity model). Avaliamos e recomendamos; a implementação é sempre do cliente.",
+    "svcgob.deliv": "Framework de governança de compliance, modelo de reporte, plano de capacitação e indicadores de maturidade (compliance maturity model).",
+    "svcgob.forwhom": "Organizações onde o compliance já tem controles, mas não tem voz nas decisões — onde o reporte ao conselho é informal, ou onde ninguém mede se a cultura de controle melhora ou estagna.",
+    "svcgob.cta": "Solicitar avaliação de governança e cultura"
   }
-})();
+});
 </script>
 
 </body>

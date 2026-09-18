@@ -16,129 +16,139 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header" style="background:linear-gradient(180deg,var(--navy) 0%,var(--navy-dark) 100%);">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/servicios/">Servicios</a></p>
-      <p class="eyebrow">Línea 04 · Servicios <span class="pill" style="margin-left:.6rem;vertical-align:middle;">★ Línea insignia</span></p>
-      <h1>Evaluación Independiente y Efectividad del Sistema de Cumplimiento</h1>
-      <p class="lead"><strong style="color:#fff;">La efectividad no se declara: se demuestra.</strong> Muestreo estadístico, testing y re-ejecución independiente — no una revisión documental — con el mismo estándar de Quality Assurance de banca internacional.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/servicios/" data-i18n="nav.services">Servicios</a></p>
+      <p class="eyebrow" data-i18n-html="svceval.eyebrow">Línea 04 · Servicios <span class="pill" style="margin-left:.6rem;vertical-align:middle;">★ Línea insignia</span></p>
+      <h1 data-i18n="svceval.h1">Evaluación Independiente y Efectividad del Sistema de Cumplimiento</h1>
+      <p class="lead" data-i18n-html="svceval.lead"><strong style="color:#fff;">La efectividad no se declara: se demuestra.</strong> Muestreo estadístico, testing y re-ejecución independiente — no una revisión documental — con el mismo estándar de Quality Assurance de banca internacional.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="max-width:780px;">¿El control se ejecutó, sobre qué población, con qué evidencia, y con qué tasa de excepción? Es la pregunta que mide la Evaluación Mutua de GAFILAT y la que hace un banco corresponsal — no si el manual existe, sino si el programa funciona.</p>
+      <p class="lead" style="max-width:780px;" data-i18n="svceval.intro">¿El control se ejecutó, sobre qué población, con qué evidencia, y con qué tasa de excepción? Es la pregunta que mide la Evaluación Mutua de GAFILAT y la que hace un banco corresponsal — no si el manual existe, sino si el programa funciona.</p>
 
       <div class="divider"></div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Incluye</h3>
+          <h3 data-i18n="svc.includes">Incluye</h3>
           <ul class="diamond">
-            <li>Selección de muestra auditable (semilla registrada, reproducible por un tercero)</li>
-            <li>14 pruebas de población total sobre extracciones completas</li>
-            <li>Testing de expedientes con re-ejecución independiente de beneficiario final y screening</li>
-            <li>Matriz de hallazgos con causa raíz y severidad</li>
-            <li>Control de calidad por un segundo revisor, independiente del ejecutor</li>
+            <li data-i18n="svceval.inc1">Selección de muestra auditable (semilla registrada, reproducible por un tercero)</li>
+            <li data-i18n="svceval.inc2">14 pruebas de población total sobre extracciones completas</li>
+            <li data-i18n="svceval.inc3">Testing de expedientes con re-ejecución independiente de beneficiario final y screening</li>
+            <li data-i18n="svceval.inc4">Matriz de hallazgos con causa raíz y severidad</li>
+            <li data-i18n="svceval.inc5">Control de calidad por un segundo revisor, independiente del ejecutor</li>
           </ul>
         </div>
         <div class="card">
-          <h3>No incluye</h3>
+          <h3 data-i18n="svc.excludes">No incluye</h3>
           <ul class="diamond">
-            <li>Diseño del marco evaluado — regla de independencia frente a la <a href="/servicios/diseno-marco-ald-cft/" style="color:var(--navy);font-weight:700;">Línea 3</a></li>
-            <li>Certificación de cumplimiento ante la IVE o la SIB</li>
-            <li>Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna/Externa</li>
-            <li>Garantía de ausencia de hallazgos futuros</li>
+            <li data-i18n-html="svceval.exc1">Diseño del marco evaluado — regla de independencia frente a la <a href="/servicios/diseno-marco-ald-cft/" style="color:var(--navy);font-weight:700;">Línea 3</a></li>
+            <li data-i18n="svceval.exc2">Certificación de cumplimiento ante la IVE o la SIB</li>
+            <li data-i18n="svceval.exc3">Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna/Externa</li>
+            <li data-i18n="svceval.exc4">Garantía de ausencia de hallazgos futuros</li>
           </ul>
         </div>
       </div>
 
       <div class="spec-block" style="margin-top:2.2rem;">
-        <span class="k">Metodología</span>
-        <p><strong>Módulo A · Validación del diseño</strong> (3–4 semanas): mapeo de controles contra la documentación y recorridos de proceso con Oficialía de Cumplimiento, operaciones y sistemas. <strong>Módulo B · Evaluación de efectividad</strong> (5–7 semanas): diseño de muestreo, pruebas de población total, testing de expedientes con re-ejecución, causa raíz y cierre con sesión ejecutiva ante el órgano de dirección.</p>
+        <span class="k" data-i18n="svc.methodology">Metodología</span>
+        <p data-i18n-html="svceval.method"><strong>Módulo A · Validación del diseño</strong> (3–4 semanas): mapeo de controles contra la documentación y recorridos de proceso con Oficialía de Cumplimiento, operaciones y sistemas. <strong>Módulo B · Evaluación de efectividad</strong> (5–7 semanas): diseño de muestreo, pruebas de población total, testing de expedientes con re-ejecución, causa raíz y cierre con sesión ejecutiva ante el órgano de dirección.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Entregables</span>
-        <p>Executive Risk Memo (12–15 páginas) con mapa de riesgos, matriz de brechas y roadmap a 90 días / 3–6 meses / 6–12 meses, más papeles de trabajo que sustentan la muestra y el testing ejecutado.</p>
+        <span class="k" data-i18n="svc.deliverables">Entregables</span>
+        <p data-i18n="svceval.deliv">Executive Risk Memo (12–15 páginas) con mapa de riesgos, matriz de brechas y roadmap a 90 días / 3–6 meses / 6–12 meses, más papeles de trabajo que sustentan la muestra y el testing ejecutado.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Para quién es</span>
-        <p>Bancos y entidades supervisadas por la SIB, desarrolladoras y grupos inmobiliarios con estructuras multi-vehículo, y cualquier Persona Obligada que necesite una opinión oponible frente a un tercero que no acepta autodeclaración.</p>
+        <span class="k" data-i18n="svc.forwhom">Para quién es</span>
+        <p data-i18n="svceval.forwhom">Bancos y entidades supervisadas por la SIB, desarrolladoras y grupos inmobiliarios con estructuras multi-vehículo, y cualquier Persona Obligada que necesite una opinión oponible frente a un tercero que no acepta autodeclaración.</p>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.2rem;margin-bottom:.5rem;">Tres preguntas. La mayoría del mercado solo responde una.</h2>
-      <p class="lead" style="font-size:.94rem;margin-bottom:1.2rem;">La evaluación mutua de GAFILAT mide la tercera capa. La mayoría de las revisiones disponibles en el mercado local se detiene en la primera y la llama "cumplimiento".</p>
+      <h2 style="font-size:1.2rem;margin-bottom:.5rem;" data-i18n="layers.h2">Tres preguntas. La mayoría del mercado solo responde una.</h2>
+      <p class="lead" style="font-size:.94rem;margin-bottom:1.2rem;" data-i18n="layers.sub">La evaluación mutua de GAFILAT mide la tercera capa. La mayoría de las revisiones disponibles en el mercado local se detiene en la primera y la llama "cumplimiento".</p>
       <div class="table-wrap">
       <table class="layers">
-        <thead><tr><th style="width:16%;">Capa</th><th style="width:42%;">Pregunta que responde</th><th>Naturaleza del trabajo</th></tr></thead>
+        <thead><tr><th style="width:16%;" data-i18n="layers.th1">Capa</th><th style="width:42%;" data-i18n="layers.th2">Pregunta que responde</th><th data-i18n="layers.th3">Naturaleza del trabajo</th></tr></thead>
         <tbody>
-          <tr><td><strong>1 · Existencia</strong></td><td>¿El manual y las políticas están escritos y aprobados por el órgano competente?</td><td>Revisión documental</td></tr>
-          <tr><td><strong>2 · Implementación</strong></td><td>¿El control existe en la operación, y no solo en el documento?</td><td>Recorrido de procesos y entrevistas</td></tr>
-          <tr class="highlight"><td><strong>3 · Efectividad operativa</strong></td><td>¿Se ejecutó, sobre qué población, con qué evidencia, y atrapó lo que debía atrapar?</td><td>Muestreo, testing, re-performance, tasa de excepción</td></tr>
+          <tr><td><strong data-i18n="layers.r1.a">1 · Existencia</strong></td><td data-i18n="layers.r1.b">¿El manual y las políticas están escritos y aprobados por el órgano competente?</td><td data-i18n="layers.r1.c">Revisión documental</td></tr>
+          <tr><td><strong data-i18n="layers.r2.a">2 · Implementación</strong></td><td data-i18n="layers.r2.b">¿El control existe en la operación, y no solo en el documento?</td><td data-i18n="layers.r2.c">Recorrido de procesos y entrevistas</td></tr>
+          <tr class="highlight"><td><strong data-i18n="layers.r3.a">3 · Efectividad operativa</strong></td><td data-i18n="layers.r3.b">¿Se ejecutó, sobre qué población, con qué evidencia, y atrapó lo que debía atrapar?</td><td data-i18n="layers.r3.c">Muestreo, testing, re-performance, tasa de excepción</td></tr>
         </tbody>
       </table>
       </div>
 
       <div class="independence-note" style="margin-top:1.8rem;">
-        <p><strong>«El valor de una evaluación de efectividad no lo fija quien la encarga: lo fija quien la lee.»</strong> Una autoevaluación y una evaluación independiente pueden ser técnicamente idénticas y valer cosas distintas — porque lo que un banco, un supervisor o el propio órgano de dirección compran no es el análisis: es el criterio de alguien sin incentivo para suavizarlo.</p>
+        <p data-i18n-html="svceval.principle"><strong>«El valor de una evaluación de efectividad no lo fija quien la encarga: lo fija quien la lee.»</strong> Una autoevaluación y una evaluación independiente pueden ser técnicamente idénticas y valer cosas distintas — porque lo que un banco, un supervisor o el propio órgano de dirección compran no es el análisis: es el criterio de alguien sin incentivo para suavizarlo.</p>
       </div>
 
-      <h2 style="font-size:1.05rem;margin:2.2rem 0 .8rem;">La asimetría de costo del descubrimiento</h2>
+      <h2 style="font-size:1.05rem;margin:2.2rem 0 .8rem;" data-i18n="svceval.h2b">La asimetría de costo del descubrimiento</h2>
       <div class="table-wrap">
       <table class="layers">
-        <thead><tr><th style="width:34%;">Quién lo encuentra</th><th>Costo asociado</th></tr></thead>
+        <thead><tr><th style="width:34%;" data-i18n="svceval.t2th1">Quién lo encuentra</th><th data-i18n="svceval.t2th2">Costo asociado</th></tr></thead>
         <tbody>
-          <tr><td><strong>La organización</strong></td><td>Remediación, en calendario propio y con alcance controlado.</td></tr>
-          <tr><td><strong>La contraparte financiera</strong></td><td>Requerimientos de información, fricción, riesgo de de-risking, en calendario ajeno.</td></tr>
-          <tr><td><strong>El supervisor</strong></td><td>Sanción administrativa o penal, registro público, y hasta el 20% del monto de las transacciones cuando se dificultó el conocimiento de los hechos.</td></tr>
+          <tr><td><strong data-i18n="svceval.t2r1a">La organización</strong></td><td data-i18n="svceval.t2r1b">Remediación, en calendario propio y con alcance controlado.</td></tr>
+          <tr><td><strong data-i18n="svceval.t2r2a">La contraparte financiera</strong></td><td data-i18n="svceval.t2r2b">Requerimientos de información, fricción, riesgo de de-risking, en calendario ajeno.</td></tr>
+          <tr><td><strong data-i18n="svceval.t2r3a">El supervisor</strong></td><td data-i18n="svceval.t2r3b">Sanción administrativa o penal, registro público, y hasta el 20% del monto de las transacciones cuando se dificultó el conocimiento de los hechos.</td></tr>
         </tbody>
       </table>
       </div>
-      <p class="lead" style="margin-top:1.2rem;font-size:.96rem;"><strong>Esta línea no vende el hallazgo: vende el derecho a encontrarlo primero.</strong></p>
+      <p class="lead" style="margin-top:1.2rem;font-size:.96rem;" data-i18n-html="svceval.closing"><strong>Esta línea no vende el hallazgo: vende el derecho a encontrarlo primero.</strong></p>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-outline-navy" href="/metodologia-ddqr/">Ver metodología DDQR™</a>
-      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Llamada%20t%C3%A9cnica%20-%20Evaluaci%C3%B3n%20Independiente">Agendar una llamada técnica de 20 minutos</a>
+        <a class="btn btn-outline-navy" href="/metodologia-ddqr/" data-i18n="svceval.cta1">Ver metodología DDQR™</a>
+      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Llamada%20t%C3%A9cnica%20-%20Evaluaci%C3%B3n%20Independiente" data-i18n="svceval.cta2">Agendar una llamada técnica de 20 minutos</a>
       </div>
     </div>
   </section>
@@ -150,45 +160,121 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "svceval.eyebrow": "Línea 04 · Servicios <span class=\"pill\" style=\"margin-left:.6rem;vertical-align:middle;\">★ Línea insignia</span>",
+    "svceval.h1": "Evaluación Independiente y Efectividad del Sistema de Cumplimiento",
+    "svceval.lead": "<strong style=\"color:#fff;\">La efectividad no se declara: se demuestra.</strong> Muestreo estadístico, testing y re-ejecución independiente — no una revisión documental — con el mismo estándar de Quality Assurance de banca internacional.",
+    "svceval.intro": "¿El control se ejecutó, sobre qué población, con qué evidencia, y con qué tasa de excepción? Es la pregunta que mide la Evaluación Mutua de GAFILAT y la que hace un banco corresponsal — no si el manual existe, sino si el programa funciona.",
+    "svceval.inc1": "Selección de muestra auditable (semilla registrada, reproducible por un tercero)",
+    "svceval.inc2": "14 pruebas de población total sobre extracciones completas",
+    "svceval.inc3": "Testing de expedientes con re-ejecución independiente de beneficiario final y screening",
+    "svceval.inc4": "Matriz de hallazgos con causa raíz y severidad",
+    "svceval.inc5": "Control de calidad por un segundo revisor, independiente del ejecutor",
+    "svceval.exc1": "Diseño del marco evaluado — regla de independencia frente a la <a href=\"/servicios/diseno-marco-ald-cft/\" style=\"color:var(--navy);font-weight:700;\">Línea 3</a>",
+    "svceval.exc2": "Certificación de cumplimiento ante la IVE o la SIB",
+    "svceval.exc3": "Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna/Externa",
+    "svceval.exc4": "Garantía de ausencia de hallazgos futuros",
+    "svceval.method": "<strong>Módulo A · Validación del diseño</strong> (3–4 semanas): mapeo de controles contra la documentación y recorridos de proceso con Oficialía de Cumplimiento, operaciones y sistemas. <strong>Módulo B · Evaluación de efectividad</strong> (5–7 semanas): diseño de muestreo, pruebas de población total, testing de expedientes con re-ejecución, causa raíz y cierre con sesión ejecutiva ante el órgano de dirección.",
+    "svceval.deliv": "Executive Risk Memo (12–15 páginas) con mapa de riesgos, matriz de brechas y roadmap a 90 días / 3–6 meses / 6–12 meses, más papeles de trabajo que sustentan la muestra y el testing ejecutado.",
+    "svceval.forwhom": "Bancos y entidades supervisadas por la SIB, desarrolladoras y grupos inmobiliarios con estructuras multi-vehículo, y cualquier Persona Obligada que necesite una opinión oponible frente a un tercero que no acepta autodeclaración.",
+    "svceval.principle": "<strong>«El valor de una evaluación de efectividad no lo fija quien la encarga: lo fija quien la lee.»</strong> Una autoevaluación y una evaluación independiente pueden ser técnicamente idénticas y valer cosas distintas — porque lo que un banco, un supervisor o el propio órgano de dirección compran no es el análisis: es el criterio de alguien sin incentivo para suavizarlo.",
+    "svceval.h2b": "La asimetría de costo del descubrimiento",
+    "svceval.t2th1": "Quién lo encuentra",
+    "svceval.t2th2": "Costo asociado",
+    "svceval.t2r1a": "La organización",
+    "svceval.t2r1b": "Remediación, en calendario propio y con alcance controlado.",
+    "svceval.t2r2a": "La contraparte financiera",
+    "svceval.t2r2b": "Requerimientos de información, fricción, riesgo de de-risking, en calendario ajeno.",
+    "svceval.t2r3a": "El supervisor",
+    "svceval.t2r3b": "Sanción administrativa o penal, registro público, y hasta el 20% del monto de las transacciones cuando se dificultó el conocimiento de los hechos.",
+    "svceval.closing": "<strong>Esta línea no vende el hallazgo: vende el derecho a encontrarlo primero.</strong>",
+    "svceval.cta1": "Ver metodología DDQR™",
+    "svceval.cta2": "Agendar una llamada técnica de 20 minutos"
+  },
+  en: {
+    "svceval.eyebrow": "Line 04 · Services <span class=\"pill\" style=\"margin-left:.6rem;vertical-align:middle;\">★ Flagship line</span>",
+    "svceval.h1": "Independent Evaluation and Effectiveness of the Compliance System",
+    "svceval.lead": "<strong style=\"color:#fff;\">Effectiveness isn't declared: it's demonstrated.</strong> Statistical sampling, testing, and independent re-performance — not a document review — under the same Quality Assurance standard used in international banking.",
+    "svceval.intro": "Was the control executed, over what population, with what evidence, and with what exception rate? That's the question GAFILAT's mutual evaluation measures, and the one a correspondent bank asks — not whether the manual exists, but whether the program works.",
+    "svceval.inc1": "Auditable sample selection (logged seed, reproducible by a third party)",
+    "svceval.inc2": "14 full-population tests on complete extractions",
+    "svceval.inc3": "File testing with independent re-performance of beneficial ownership and screening",
+    "svceval.inc4": "Findings matrix with root cause and severity",
+    "svceval.inc5": "Quality control by a second reviewer, independent of the executor",
+    "svceval.exc1": "Design of the evaluated framework — independence rule against <a href=\"/servicios/diseno-marco-ald-cft/\" style=\"color:var(--navy);font-weight:700;\">Line 3</a>",
+    "svceval.exc2": "Compliance certification before the IVE or the SIB",
+    "svceval.exc3": "Substitution of the Compliance Office or Internal/External Audit",
+    "svceval.exc4": "Guarantee of no future findings",
+    "svceval.method": "<strong>Module A · Design validation</strong> (3–4 weeks): mapping of controls against documentation and process walkthroughs with the Compliance Office, operations, and systems. <strong>Module B · Effectiveness evaluation</strong> (5–7 weeks): sampling design, full-population testing, file testing with re-performance, root cause analysis, and closing with an executive session before the governing body.",
+    "svceval.deliv": "Executive Risk Memo (12–15 pages) with a risk map, gap matrix, and a roadmap across 90 days / 3–6 months / 6–12 months, plus working papers supporting the sample and the testing performed.",
+    "svceval.forwhom": "Banks and entities supervised by the SIB, developers and real estate groups with multi-vehicle structures, and any Obligated Person that needs an opposable opinion before a third party that does not accept self-declaration.",
+    "svceval.principle": "<strong>«The value of an effectiveness assessment isn't set by who commissions it: it's set by who reads it.»</strong> A self-assessment and an independent assessment can be technically identical and worth entirely different things — because what a bank, a supervisor, or the governing body itself is buying isn't the analysis: it's the judgment of someone with no incentive to soften it.",
+    "svceval.h2b": "The asymmetry of discovery cost",
+    "svceval.t2th1": "Who finds it",
+    "svceval.t2th2": "Associated cost",
+    "svceval.t2r1a": "The organization",
+    "svceval.t2r1b": "Remediation, on its own timeline and with controlled scope.",
+    "svceval.t2r2a": "The financial counterparty",
+    "svceval.t2r2b": "Information requests, friction, de-risking risk, on someone else's timeline.",
+    "svceval.t2r3a": "The supervisor",
+    "svceval.t2r3b": "Administrative or criminal sanction, public record, and up to 20% of the transaction amount when knowledge of the facts was hindered.",
+    "svceval.closing": "<strong>This line doesn't sell the finding: it sells the right to find it first.</strong>",
+    "svceval.cta1": "View the DDQR™ methodology",
+    "svceval.cta2": "Schedule a 20-minute technical call"
+  },
+  pt: {
+    "svceval.eyebrow": "Linha 04 · Serviços <span class=\"pill\" style=\"margin-left:.6rem;vertical-align:middle;\">★ Linha principal</span>",
+    "svceval.h1": "Avaliação Independente e Efetividade do Sistema de Compliance",
+    "svceval.lead": "<strong style=\"color:#fff;\">A efetividade não se declara: se demonstra.</strong> Amostragem estatística, testes e reexecução independente — não uma revisão documental — com o mesmo padrão de Quality Assurance de bancos internacionais.",
+    "svceval.intro": "O controle foi executado, sobre qual população, com que evidência, e com qual taxa de exceção? Essa é a pergunta que a Avaliação Mútua do GAFILAT mede e a que um banco correspondente faz — não se o manual existe, mas se o programa funciona.",
+    "svceval.inc1": "Seleção de amostra auditável (semente registrada, reproduzível por um terceiro)",
+    "svceval.inc2": "14 testes de população total sobre extrações completas",
+    "svceval.inc3": "Testes de expedientes com reexecução independente de beneficiário final e screening",
+    "svceval.inc4": "Matriz de achados com causa raiz e severidade",
+    "svceval.inc5": "Controle de qualidade por um segundo revisor, independente do executor",
+    "svceval.exc1": "Desenho do marco avaliado — regra de independência frente à <a href=\"/servicios/diseno-marco-ald-cft/\" style=\"color:var(--navy);font-weight:700;\">Linha 3</a>",
+    "svceval.exc2": "Certificação de compliance perante a IVE ou a SIB",
+    "svceval.exc3": "Substituição da Oficialidade de Compliance ou da Auditoria Interna/Externa",
+    "svceval.exc4": "Garantia de ausência de achados futuros",
+    "svceval.method": "<strong>Módulo A · Validação do desenho</strong> (3–4 semanas): mapeamento de controles frente à documentação e walkthroughs de processo com a Oficialidade de Compliance, operações e sistemas. <strong>Módulo B · Avaliação de efetividade</strong> (5–7 semanas): desenho de amostragem, testes de população total, testes de expedientes com reexecução, causa raiz e encerramento com sessão executiva perante o órgão de administração.",
+    "svceval.deliv": "Executive Risk Memo (12–15 páginas) com mapa de riscos, matriz de lacunas e roadmap em 90 dias / 3–6 meses / 6–12 meses, além de papéis de trabalho que sustentam a amostra e os testes executados.",
+    "svceval.forwhom": "Bancos e entidades supervisionadas pela SIB, incorporadoras e grupos imobiliários com estruturas multi-veículo, e qualquer Pessoa Obrigada que precise de um parecer oponível perante um terceiro que não aceita autodeclaração.",
+    "svceval.principle": "<strong>«O valor de uma avaliação de efetividade não é definido por quem a encomenda: é definido por quem a lê.»</strong> Uma autoavaliação e uma avaliação independente podem ser tecnicamente idênticas e valer coisas completamente diferentes — porque o que um banco, um supervisor ou o próprio órgão de administração compra não é a análise: é o julgamento de alguém sem incentivo para suavizá-lo.",
+    "svceval.h2b": "A assimetria do custo da descoberta",
+    "svceval.t2th1": "Quem descobre",
+    "svceval.t2th2": "Custo associado",
+    "svceval.t2r1a": "A organização",
+    "svceval.t2r1b": "Remediação, em cronograma próprio e com escopo controlado.",
+    "svceval.t2r2a": "A contraparte financeira",
+    "svceval.t2r2b": "Solicitações de informação, atrito, risco de de-risking, em cronograma alheio.",
+    "svceval.t2r3a": "O supervisor",
+    "svceval.t2r3b": "Sanção administrativa ou penal, registro público, e até 20% do valor das transações quando se dificultou o conhecimento dos fatos.",
+    "svceval.closing": "<strong>Esta linha não vende o achado: vende o direito de encontrá-lo primeiro.</strong>",
+    "svceval.cta1": "Ver metodologia DDQR™",
+    "svceval.cta2": "Agendar uma chamada técnica de 20 minutos"
   }
-})();
+});
 </script>
 
 </body>

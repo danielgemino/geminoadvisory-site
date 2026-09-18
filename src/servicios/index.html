@@ -16,114 +16,124 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="eyebrow">Servicios</p>
-      <h1>Seis líneas de trabajo, un mismo estándar de evidencia</h1>
-      <p class="lead">Gemino Advisory no vende "consultoría de cumplimiento" en abstracto. Vende seis líneas de trabajo distintas, cada una con un problema específico, un entregable concreto y un cliente típico distinto.</p>
+      <p class="eyebrow" data-i18n="svcidx.eyebrow">Servicios</p>
+      <h1 data-i18n="svcidx.h1">Seis líneas de trabajo, un mismo estándar de evidencia</h1>
+      <p class="lead" data-i18n="svcidx.lead">Gemino Advisory no vende "consultoría de cumplimiento" en abstracto. Vende seis líneas de trabajo distintas, cada una con un problema específico, un entregable concreto y un cliente típico distinto.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="margin-bottom:2.4rem;max-width:820px;">Esta página existe para que quien llega buscando algo puntual —un diagnóstico urgente, una segunda opinión independiente, ayuda para acceder a financiamiento— encuentre en segundos cuál de las seis es la suya, sin tener que leer una sola página larga que las mezcle todas.</p>
+      <p class="lead" style="margin-bottom:2.4rem;max-width:820px;" data-i18n="svcidx.intro">Esta página existe para que quien llega buscando algo puntual —un diagnóstico urgente, una segunda opinión independiente, ayuda para acceder a financiamiento— encuentre en segundos cuál de las seis es la suya, sin tener que leer una sola página larga que las mezcle todas.</p>
 
       <div class="grid-3">
         <div class="card">
           <span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">01</span>
-          <h3 style="margin-top:.9rem;">Diagnóstico de Cumplimiento y Exposición Regulatoria</h3>
-          <p>¿Es su negocio Persona Obligada bajo el Decreto 15-2026? ¿Qué tan expuesto está aunque no lo sea? Un diagnóstico ejecutivo que responde ambas preguntas con evidencia. Incluye el Risk Memo Express.</p>
-          <a class="jump-link" href="/servicios/diagnostico-exposicion-regulatoria/">Ver detalle de la línea →</a>
+          <h3 style="margin-top:.9rem;" data-i18n="svcidx.card1.h">Diagnóstico de Cumplimiento y Exposición Regulatoria</h3>
+          <p data-i18n="svcidx.card1.p">¿Es su negocio Persona Obligada bajo el Decreto 15-2026? ¿Qué tan expuesto está aunque no lo sea? Un diagnóstico ejecutivo que responde ambas preguntas con evidencia. Incluye el Risk Memo Express.</p>
+          <a class="jump-link" href="/servicios/diagnostico-exposicion-regulatoria/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
         <div class="card">
           <span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">02</span>
-          <h3 style="margin-top:.9rem;">Preparación y Adaptación a Nuevas Exigencias Regulatorias</h3>
-          <p>El Decreto 15-2026 y los compromisos de Guatemala ante GAFILAT cambian plazos, obligaciones y sanciones. Esta línea traduce esos cambios en un plan de adaptación concreto, con responsables y fechas.</p>
-          <a class="jump-link" href="/servicios/preparacion-nuevas-exigencias/">Ver detalle de la línea →</a>
+          <h3 style="margin-top:.9rem;" data-i18n="svcidx.card2.h">Preparación y Adaptación a Nuevas Exigencias Regulatorias</h3>
+          <p data-i18n="svcidx.card2.p">El Decreto 15-2026 y los compromisos de Guatemala ante GAFILAT cambian plazos, obligaciones y sanciones. Esta línea traduce esos cambios en un plan de adaptación concreto, con responsables y fechas.</p>
+          <a class="jump-link" href="/servicios/preparacion-nuevas-exigencias/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
         <div class="card">
           <span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">03</span>
-          <h3 style="margin-top:.9rem;">Diseño y Fortalecimiento del Marco ALD/CFT</h3>
-          <p>Manuales, matriz de riesgo, políticas de debida diligencia y estructura de gobierno del programa — construidos o corregidos desde cero. Esta es la línea que diseña; nunca se evalúa a sí misma.</p>
-          <a class="jump-link" href="/servicios/diseno-marco-ald-cft/">Ver detalle de la línea →</a>
+          <h3 style="margin-top:.9rem;" data-i18n="svcidx.card3.h">Diseño y Fortalecimiento del Marco ALD/CFT</h3>
+          <p data-i18n="svcidx.card3.p">Manuales, matriz de riesgo, políticas de debida diligencia y estructura de gobierno del programa — construidos o corregidos desde cero. Esta es la línea que diseña; nunca se evalúa a sí misma.</p>
+          <a class="jump-link" href="/servicios/diseno-marco-ald-cft/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
         <div class="card featured">
           <span class="badge on-navy" style="width:2.1rem;height:2.1rem;font-size:.85rem;">04</span>
-          <span class="pill" style="margin:.8rem 0 0;display:inline-block;">Línea insignia</span>
-          <h3 style="margin-top:.5rem;">Evaluación Independiente y Efectividad del Sistema de Cumplimiento</h3>
-          <p>La línea que revisa lo que otros construyeron — incluida esta misma firma, cuando el diseño fue de un tercero. Expedientes de alto riesgo, uno por uno. Metodología propia: DDQR™.</p>
-          <a class="jump-link" href="/servicios/evaluacion-independiente-efectividad/">Ver detalle de la línea →</a>
+          <span class="pill" style="margin:.8rem 0 0;display:inline-block;" data-i18n="svcidx.card4.pill">Línea insignia</span>
+          <h3 style="margin-top:.5rem;" data-i18n="svcidx.card4.h">Evaluación Independiente y Efectividad del Sistema de Cumplimiento</h3>
+          <p data-i18n="svcidx.card4.p">La línea que revisa lo que otros construyeron — incluida esta misma firma, cuando el diseño fue de un tercero. Expedientes de alto riesgo, uno por uno. Metodología propia: DDQR™.</p>
+          <a class="jump-link" href="/servicios/evaluacion-independiente-efectividad/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
         <div class="card">
           <span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">05</span>
-          <h3 style="margin-top:.9rem;">Gobierno, Cultura y Gestión Integral de Riesgos</h3>
-          <p>El cumplimiento ALD/CFT no vive aislado de cómo una organización toma decisiones, reporta a su junta y gestiona riesgo en general. Gobierno, cultura y riesgo integral como sistema, no como lista de tareas.</p>
-          <a class="jump-link" href="/servicios/gobierno-cultura-riesgos/">Ver detalle de la línea →</a>
+          <h3 style="margin-top:.9rem;" data-i18n="svcidx.card5.h">Gobierno, Cultura y Gestión Integral de Riesgos</h3>
+          <p data-i18n="svcidx.card5.p">El cumplimiento ALD/CFT no vive aislado de cómo una organización toma decisiones, reporta a su junta y gestiona riesgo en general. Gobierno, cultura y riesgo integral como sistema, no como lista de tareas.</p>
+          <a class="jump-link" href="/servicios/gobierno-cultura-riesgos/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
         <div class="card">
           <span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">06</span>
-          <h3 style="margin-top:.9rem;">Acceso a Financiamiento y Relación con Terceros</h3>
-          <p>Bancos de desarrollo, banca corresponsal e inversionistas exigen due diligence propio antes de comprometer capital. Preparamos al cliente para esa revisión externa — y lo acompañamos mientras avanza.</p>
-          <a class="jump-link" href="/servicios/acceso-financiamiento/">Ver detalle de la línea →</a>
+          <h3 style="margin-top:.9rem;" data-i18n="svcidx.card6.h">Acceso a Financiamiento y Relación con Terceros</h3>
+          <p data-i18n="svcidx.card6.p">Bancos de desarrollo, banca corresponsal e inversionistas exigen due diligence propio antes de comprometer capital. Preparamos al cliente para esa revisión externa — y lo acompañamos mientras avanza.</p>
+          <a class="jump-link" href="/servicios/acceso-financiamiento/" data-i18n="svcidx.jumplink">Ver detalle de la línea →</a>
         </div>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.4rem;margin-bottom:.6rem;">Qué queda cuando terminamos</h2>
-      <p class="lead" style="margin-bottom:1.8rem;">No prometemos ausencia de hallazgos ni una relación abierta sin fecha de cierre. Prometemos esto:</p>
+      <h2 style="font-size:1.4rem;margin-bottom:.6rem;" data-i18n="svcidx.h2b">Qué queda cuando terminamos</h2>
+      <p class="lead" style="margin-bottom:1.8rem;" data-i18n="svcidx.lead2">No prometemos ausencia de hallazgos ni una relación abierta sin fecha de cierre. Prometemos esto:</p>
 
       <div class="grid-4">
-        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">1</span><h3 style="margin-top:.9rem;font-size:.98rem;">Una posición defendible</h3><p>Frente a un supervisor, un banco corresponsal o un inversionista, sostenida con evidencia documentada — no con una opinión verbal.</p></div>
-        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">2</span><h3 style="margin-top:.9rem;font-size:.98rem;">Evidencia, no promesas</h3><p>Papeles de trabajo, matrices y hallazgos trazables hasta su fuente, reproducibles por un tercero si hace falta.</p></div>
-        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">3</span><h3 style="margin-top:.9rem;font-size:.98rem;">Bancabilidad</h3><p>Una organización que puede explicar sus controles genera confianza donde más cuesta obtenerla: en la mesa de un comité de crédito o de aprobación.</p></div>
-        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">4</span><h3 style="margin-top:.9rem;font-size:.98rem;">Decisiones documentadas</h3><p>Cada recomendación queda registrada —quién decidió, con qué información y por qué— para sostenerla ante quien pregunte después.</p></div>
+        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">1</span><h3 style="margin-top:.9rem;font-size:.98rem;" data-i18n="svcidx.pr1.h">Una posición defendible</h3><p data-i18n="svcidx.pr1.p">Frente a un supervisor, un banco corresponsal o un inversionista, sostenida con evidencia documentada — no con una opinión verbal.</p></div>
+        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">2</span><h3 style="margin-top:.9rem;font-size:.98rem;" data-i18n="svcidx.pr2.h">Evidencia, no promesas</h3><p data-i18n="svcidx.pr2.p">Papeles de trabajo, matrices y hallazgos trazables hasta su fuente, reproducibles por un tercero si hace falta.</p></div>
+        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">3</span><h3 style="margin-top:.9rem;font-size:.98rem;" data-i18n="svcidx.pr3.h">Bancabilidad</h3><p data-i18n="svcidx.pr3.p">Una organización que puede explicar sus controles genera confianza donde más cuesta obtenerla: en la mesa de un comité de crédito o de aprobación.</p></div>
+        <div class="card"><span class="badge" style="width:2.1rem;height:2.1rem;font-size:.85rem;">4</span><h3 style="margin-top:.9rem;font-size:.98rem;" data-i18n="svcidx.pr4.h">Decisiones documentadas</h3><p data-i18n="svcidx.pr4.p">Cada recomendación queda registrada —quién decidió, con qué información y por qué— para sostenerla ante quien pregunte después.</p></div>
       </div>
 
       <div class="independence-note">
-        <p><strong>Lo que no prometemos:</strong> no garantizamos ausencia de hallazgos, no sustituimos a la Oficialía de Cumplimiento ni a la auditoría interna del cliente, y no ofrecemos una relación abierta sin alcance definido. Cada encargo cierra con fecha y entregable ciertos.</p>
+        <p data-i18n-html="svcidx.notpromise"><strong>Lo que no prometemos:</strong> no garantizamos ausencia de hallazgos, no sustituimos a la Oficialía de Cumplimiento ni a la auditoría interna del cliente, y no ofrecemos una relación abierta sin alcance definido. Cada encargo cierra con fecha y entregable ciertos.</p>
       </div>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20sobre%20l%C3%ADneas%20de%20servicio">Escribir para una consulta inicial</a>
+        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20sobre%20l%C3%ADneas%20de%20servicio" data-i18n="svcidx.cta">Escribir para una consulta inicial</a>
       </div>
     </div>
   </section>
@@ -135,45 +145,124 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "svcidx.eyebrow": "Servicios",
+    "svcidx.h1": "Seis líneas de trabajo, un mismo estándar de evidencia",
+    "svcidx.lead": "Gemino Advisory no vende \"consultoría de cumplimiento\" en abstracto. Vende seis líneas de trabajo distintas, cada una con un problema específico, un entregable concreto y un cliente típico distinto.",
+    "svcidx.intro": "Esta página existe para que quien llega buscando algo puntual —un diagnóstico urgente, una segunda opinión independiente, ayuda para acceder a financiamiento— encuentre en segundos cuál de las seis es la suya, sin tener que leer una sola página larga que las mezcle todas.",
+    "svcidx.card1.h": "Diagnóstico de Cumplimiento y Exposición Regulatoria",
+    "svcidx.card1.p": "¿Es su negocio Persona Obligada bajo el Decreto 15-2026? ¿Qué tan expuesto está aunque no lo sea? Un diagnóstico ejecutivo que responde ambas preguntas con evidencia. Incluye el Risk Memo Express.",
+    "svcidx.card2.h": "Preparación y Adaptación a Nuevas Exigencias Regulatorias",
+    "svcidx.card2.p": "El Decreto 15-2026 y los compromisos de Guatemala ante GAFILAT cambian plazos, obligaciones y sanciones. Esta línea traduce esos cambios en un plan de adaptación concreto, con responsables y fechas.",
+    "svcidx.card3.h": "Diseño y Fortalecimiento del Marco ALD/CFT",
+    "svcidx.card3.p": "Manuales, matriz de riesgo, políticas de debida diligencia y estructura de gobierno del programa — construidos o corregidos desde cero. Esta es la línea que diseña; nunca se evalúa a sí misma.",
+    "svcidx.card4.pill": "Línea insignia",
+    "svcidx.card4.h": "Evaluación Independiente y Efectividad del Sistema de Cumplimiento",
+    "svcidx.card4.p": "La línea que revisa lo que otros construyeron — incluida esta misma firma, cuando el diseño fue de un tercero. Expedientes de alto riesgo, uno por uno. Metodología propia: DDQR™.",
+    "svcidx.card5.h": "Gobierno, Cultura y Gestión Integral de Riesgos",
+    "svcidx.card5.p": "El cumplimiento ALD/CFT no vive aislado de cómo una organización toma decisiones, reporta a su junta y gestiona riesgo en general. Gobierno, cultura y riesgo integral como sistema, no como lista de tareas.",
+    "svcidx.card6.h": "Acceso a Financiamiento y Relación con Terceros",
+    "svcidx.card6.p": "Bancos de desarrollo, banca corresponsal e inversionistas exigen due diligence propio antes de comprometer capital. Preparamos al cliente para esa revisión externa — y lo acompañamos mientras avanza.",
+    "svcidx.jumplink": "Ver detalle de la línea →",
+    "svcidx.h2b": "Qué queda cuando terminamos",
+    "svcidx.lead2": "No prometemos ausencia de hallazgos ni una relación abierta sin fecha de cierre. Prometemos esto:",
+    "svcidx.pr1.h": "Una posición defendible",
+    "svcidx.pr1.p": "Frente a un supervisor, un banco corresponsal o un inversionista, sostenida con evidencia documentada — no con una opinión verbal.",
+    "svcidx.pr2.h": "Evidencia, no promesas",
+    "svcidx.pr2.p": "Papeles de trabajo, matrices y hallazgos trazables hasta su fuente, reproducibles por un tercero si hace falta.",
+    "svcidx.pr3.h": "Bancabilidad",
+    "svcidx.pr3.p": "Una organización que puede explicar sus controles genera confianza donde más cuesta obtenerla: en la mesa de un comité de crédito o de aprobación.",
+    "svcidx.pr4.h": "Decisiones documentadas",
+    "svcidx.pr4.p": "Cada recomendación queda registrada —quién decidió, con qué información y por qué— para sostenerla ante quien pregunte después.",
+    "svcidx.notpromise": "<strong>Lo que no prometemos:</strong> no garantizamos ausencia de hallazgos, no sustituimos a la Oficialía de Cumplimiento ni a la auditoría interna del cliente, y no ofrecemos una relación abierta sin alcance definido. Cada encargo cierra con fecha y entregable ciertos.",
+    "svcidx.cta": "Escribir para una consulta inicial"
+  },
+  en: {
+    "svcidx.eyebrow": "Services",
+    "svcidx.h1": "Six lines of work, one single standard of evidence",
+    "svcidx.lead": "Gemino Advisory doesn't sell abstract \"compliance consulting.\" It sells six distinct lines of work, each with a specific problem, a concrete deliverable, and a distinct typical client.",
+    "svcidx.intro": "This page exists so that anyone arriving with something specific in mind — an urgent diagnostic, an independent second opinion, help accessing financing — can find in seconds which of the six is theirs, without having to read one long page that blends them all together.",
+    "svcidx.card1.h": "Compliance Diagnostic and Regulatory Exposure Assessment",
+    "svcidx.card1.p": "Is your business an Obligated Person under Decree 15-2026? How exposed is it even if it isn't? An executive diagnostic that answers both questions with evidence. Includes the Risk Memo Express.",
+    "svcidx.card2.h": "Preparation and Adaptation to New Regulatory Requirements",
+    "svcidx.card2.p": "Decree 15-2026 and Guatemala's commitments to GAFILAT change deadlines, obligations, and penalties. This line translates those changes into a concrete adaptation plan, with owners and dates.",
+    "svcidx.card3.h": "Design and Strengthening of the AML/CFT Framework",
+    "svcidx.card3.p": "Manuals, risk matrix, due diligence policies, and program governance structure — built or corrected from scratch. This is the line that designs; it never evaluates itself.",
+    "svcidx.card4.pill": "Flagship line",
+    "svcidx.card4.h": "Independent Evaluation and Effectiveness of the Compliance System",
+    "svcidx.card4.p": "The line that reviews what others built — including this same firm, when a third party did the design. High-risk files, one by one. Proprietary methodology: DDQR™.",
+    "svcidx.card5.h": "Governance, Culture and Integrated Risk Management",
+    "svcidx.card5.p": "AML/CFT compliance doesn't live in isolation from how an organization makes decisions, reports to its board, and manages risk overall. Governance, culture, and integrated risk as a system, not a task list.",
+    "svcidx.card6.h": "Access to Financing and Third-Party Relations",
+    "svcidx.card6.p": "Development banks, correspondent banking, and investors demand their own due diligence before committing capital. We prepare the client for that external review — and support them as it progresses.",
+    "svcidx.jumplink": "See the line in detail →",
+    "svcidx.h2b": "What's left when we're done",
+    "svcidx.lead2": "We don't promise an absence of findings or an open-ended relationship with no closing date. We promise this:",
+    "svcidx.pr1.h": "A defensible position",
+    "svcidx.pr1.p": "Before a supervisor, a correspondent bank, or an investor, backed by documented evidence — not a verbal opinion.",
+    "svcidx.pr2.h": "Evidence, not promises",
+    "svcidx.pr2.p": "Working papers, matrices, and findings traceable to their source, reproducible by a third party if needed.",
+    "svcidx.pr3.h": "Bankability",
+    "svcidx.pr3.p": "An organization that can explain its controls builds trust where it's hardest to earn: at the table of a credit or approval committee.",
+    "svcidx.pr4.h": "Documented decisions",
+    "svcidx.pr4.p": "Every recommendation is recorded — who decided, with what information, and why — to support it before anyone who asks later.",
+    "svcidx.notpromise": "<strong>What we don't promise:</strong> we don't guarantee an absence of findings, we don't replace the client's Compliance Office or internal audit, and we don't offer an open-ended relationship without a defined scope. Every engagement closes with a certain date and deliverable.",
+    "svcidx.cta": "Write for an initial consultation"
+  },
+  pt: {
+    "svcidx.eyebrow": "Serviços",
+    "svcidx.h1": "Seis linhas de trabalho, um mesmo padrão de evidência",
+    "svcidx.lead": "A Gemino Advisory não vende \"consultoria de compliance\" em abstrato. Vende seis linhas de trabalho distintas, cada uma com um problema específico, um entregável concreto e um cliente típico diferente.",
+    "svcidx.intro": "Esta página existe para que quem chega buscando algo específico — um diagnóstico urgente, uma segunda opinião independente, ajuda para acessar financiamento — encontre em segundos qual das seis é a sua, sem precisar ler uma única página longa que misture todas elas.",
+    "svcidx.card1.h": "Diagnóstico de Compliance e Exposição Regulatória",
+    "svcidx.card1.p": "Seu negócio é Pessoa Obrigada sob o Decreto 15-2026? O quão exposto está mesmo que não seja? Um diagnóstico executivo que responde às duas perguntas com evidências. Inclui o Risk Memo Express.",
+    "svcidx.card2.h": "Preparação e Adaptação a Novas Exigências Regulatórias",
+    "svcidx.card2.p": "O Decreto 15-2026 e os compromissos da Guatemala perante o GAFILAT mudam prazos, obrigações e sanções. Esta linha traduz essas mudanças em um plano de adaptação concreto, com responsáveis e prazos.",
+    "svcidx.card3.h": "Desenho e Fortalecimento do Marco PLD/FT",
+    "svcidx.card3.p": "Manuais, matriz de risco, políticas de devida diligência e estrutura de governança do programa — construídos ou corrigidos do zero. Esta é a linha que desenha; nunca avalia a si mesma.",
+    "svcidx.card4.pill": "Linha principal",
+    "svcidx.card4.h": "Avaliação Independente e Efetividade do Sistema de Compliance",
+    "svcidx.card4.p": "A linha que revisa o que outros construíram — incluindo esta mesma firma, quando o desenho foi de um terceiro. Expedientes de alto risco, um a um. Metodologia própria: DDQR™.",
+    "svcidx.card5.h": "Governança, Cultura e Gestão Integral de Riscos",
+    "svcidx.card5.p": "O compliance PLD/FT não vive isolado de como uma organização toma decisões, reporta ao seu conselho e gerencia riscos em geral. Governança, cultura e risco integral como sistema, não como lista de tarefas.",
+    "svcidx.card6.h": "Acesso a Financiamento e Relacionamento com Terceiros",
+    "svcidx.card6.p": "Bancos de desenvolvimento, bancos correspondentes e investidores exigem devida diligência própria antes de comprometer capital. Preparamos o cliente para essa revisão externa — e o acompanhamos enquanto ela avança.",
+    "svcidx.jumplink": "Ver detalhe da linha →",
+    "svcidx.h2b": "O que fica quando terminamos",
+    "svcidx.lead2": "Não prometemos ausência de achados nem um relacionamento aberto sem data de encerramento. Prometemos isto:",
+    "svcidx.pr1.h": "Uma posição defensável",
+    "svcidx.pr1.p": "Perante um supervisor, um banco correspondente ou um investidor, sustentada com evidência documentada — não com uma opinião verbal.",
+    "svcidx.pr2.h": "Evidência, não promessas",
+    "svcidx.pr2.p": "Papéis de trabalho, matrizes e achados rastreáveis até a fonte, reproduzíveis por um terceiro se necessário.",
+    "svcidx.pr3.h": "Bancabilidade",
+    "svcidx.pr3.p": "Uma organização que consegue explicar seus controles gera confiança onde ela é mais difícil de conseguir: na mesa de um comitê de crédito ou de aprovação.",
+    "svcidx.pr4.h": "Decisões documentadas",
+    "svcidx.pr4.p": "Cada recomendação fica registrada — quem decidiu, com que informação e por quê — para sustentá-la perante quem perguntar depois.",
+    "svcidx.notpromise": "<strong>O que não prometemos:</strong> não garantimos ausência de achados, não substituímos a Oficialidade de Compliance nem a auditoria interna do cliente, e não oferecemos um relacionamento aberto sem escopo definido. Cada projeto encerra com data e entregável certos.",
+    "svcidx.cta": "Escrever para uma consulta inicial"
   }
-})();
+});
 </script>
 
 </body>

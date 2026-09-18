@@ -16,109 +16,119 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/servicios/evaluacion-independiente-efectividad/">Línea 4 — Evaluación Independiente</a></p>
-      <p class="eyebrow">Metodología propietaria</p>
-      <h1>Metodología DDQR™</h1>
-      <p class="lead">Cómo se hace la Línea 4, en detalle técnico. DDQR™ es la metodología propia de Gemino Advisory para la evaluación independiente de la calidad de programas de debida diligencia.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/servicios/evaluacion-independiente-efectividad/" data-i18n="meto.bc2">Línea 4 — Evaluación Independiente</a></p>
+      <p class="eyebrow" data-i18n="meto.eyebrow">Metodología propietaria</p>
+      <h1 data-i18n="meto.h1">Metodología DDQR™</h1>
+      <p class="lead" data-i18n="meto.lead">Cómo se hace la Línea 4, en detalle técnico. DDQR™ es la metodología propia de Gemino Advisory para la evaluación independiente de la calidad de programas de debida diligencia.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="max-width:820px;">No es una lista de verificación: es un protocolo técnico —muestreo estadístico, testing de expedientes, re-ejecución independiente y control de calidad por un segundo revisor— diseñado para responder una sola pregunta con evidencia, no con impresión.</p>
+      <p class="lead" style="max-width:820px;" data-i18n="meto.intro">No es una lista de verificación: es un protocolo técnico —muestreo estadístico, testing de expedientes, re-ejecución independiente y control de calidad por un segundo revisor— diseñado para responder una sola pregunta con evidencia, no con impresión.</p>
 
       <div class="independence-note gold" style="font-size:1.02rem;margin-top:1.6rem;">
-        <p>¿La evidencia AML/KYC que respalda los expedientes de alto riesgo es consistente, trazable y defendible ante un tercero que no acepta autodeclaración?</p>
+        <p data-i18n="meto.q">¿La evidencia AML/KYC que respalda los expedientes de alto riesgo es consistente, trazable y defendible ante un tercero que no acepta autodeclaración?</p>
       </div>
 
       <div class="grid-2" style="margin-top:2.2rem;">
         <div>
-          <h3 style="font-size:1.02rem;margin-bottom:.7rem;">El anclaje legal</h3>
-          <p style="font-size:.93rem;color:var(--ink);margin-bottom:.8rem;">El Art. 15 del Decreto 15-2026 exige evaluar anualmente la efectividad del programa de prevención, "a través de su auditoría interna o quien haga sus veces, o los servicios de auditores especializados de su elección." DDQR™ se ejecuta bajo ese segundo supuesto: el de los auditores especializados de elección de la Persona Obligada.</p>
-          <p style="font-size:.85rem;color:var(--ink-soft);">No se confunde con el informe de aseguramiento del auditor externo de estados financieros (mismo artículo, párrafo distinto) — ese mandato ya está, por ley, en manos de quien audita los estados financieros de la entidad supervisada.</p>
+          <h3 style="font-size:1.02rem;margin-bottom:.7rem;" data-i18n="meto.legalh">El anclaje legal</h3>
+          <p style="font-size:.93rem;color:var(--ink);margin-bottom:.8rem;" data-i18n="meto.legal1">El Art. 15 del Decreto 15-2026 exige evaluar anualmente la efectividad del programa de prevención, "a través de su auditoría interna o quien haga sus veces, o los servicios de auditores especializados de su elección." DDQR™ se ejecuta bajo ese segundo supuesto: el de los auditores especializados de elección de la Persona Obligada.</p>
+          <p style="font-size:.85rem;color:var(--ink-soft);" data-i18n="meto.legal2">No se confunde con el informe de aseguramiento del auditor externo de estados financieros (mismo artículo, párrafo distinto) — ese mandato ya está, por ley, en manos de quien audita los estados financieros de la entidad supervisada.</p>
         </div>
         <div>
-          <h3 style="font-size:1.02rem;margin-bottom:.7rem;">Alcance típico de un ciclo DDQR™</h3>
+          <h3 style="font-size:1.02rem;margin-bottom:.7rem;" data-i18n="meto.scopeh">Alcance típico de un ciclo DDQR™</h3>
           <ul class="diamond">
-            <li>Muestra de 25 a 40 expedientes, seleccionados bajo criterio de riesgo</li>
-            <li>Duración estimada: 4 semanas</li>
-            <li>Revisión documental basada en evidencia entregada por la institución — sin contacto con clientes, reguladores o terceros externos</li>
+            <li data-i18n="meto.scope1">Muestra de 25 a 40 expedientes, seleccionados bajo criterio de riesgo</li>
+            <li data-i18n="meto.scope2">Duración estimada: 4 semanas</li>
+            <li data-i18n="meto.scope3">Revisión documental basada en evidencia entregada por la institución — sin contacto con clientes, reguladores o terceros externos</li>
           </ul>
         </div>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:1.1rem;">Siete áreas de revisión</h2>
+      <h2 style="font-size:1.25rem;margin-bottom:1.1rem;" data-i18n="meto.areash">Siete áreas de revisión</h2>
       <div class="sector-pills" style="margin-bottom:.5rem;">
-        <span>KYC / CDD / EDD</span>
-        <span>Beneficiario final y estructura societaria</span>
-        <span>Personas Expuestas Políticamente (PEP)</span>
-        <span>Screening, sanciones y listas restrictivas</span>
-        <span>Medios adversos (adverse media)</span>
-        <span>Narrativa de riesgo</span>
-        <span>Evidencia para comités</span>
+        <span data-i18n="meto.area1">KYC / CDD / EDD</span>
+        <span data-i18n="meto.area2">Beneficiario final y estructura societaria</span>
+        <span data-i18n="meto.area3">Personas Expuestas Políticamente (PEP)</span>
+        <span data-i18n="meto.area4">Screening, sanciones y listas restrictivas</span>
+        <span data-i18n="meto.area5">Medios adversos (adverse media)</span>
+        <span data-i18n="meto.area6">Narrativa de riesgo</span>
+        <span data-i18n="meto.area7">Evidencia para comités</span>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:.5rem;">Modelo de interacción</h2>
-      <p class="lead" style="font-size:.94rem;margin-bottom:1rem;">Cuatro momentos fijos, más consultas puntuales durante la revisión — nunca una "caja negra" de cuatro semanas sin visibilidad.</p>
+      <h2 style="font-size:1.25rem;margin-bottom:.5rem;" data-i18n="meto.interh">Modelo de interacción</h2>
+      <p class="lead" style="font-size:.94rem;margin-bottom:1rem;" data-i18n="meto.interlead">Cuatro momentos fijos, más consultas puntuales durante la revisión — nunca una "caja negra" de cuatro semanas sin visibilidad.</p>
       <div class="timeline">
-        <div class="timeline-item"><span class="yr">01</span><h4>Reunión de kick-off</h4><p>Define alcance, muestra y punto de contacto técnico designado por la institución.</p></div>
-        <div class="timeline-item"><span class="yr">02</span><h4>Check-ins semanales de 30 minutos</h4><p>Más consultas puntuales durante la revisión, sin interrumpir el trabajo de campo.</p></div>
-        <div class="timeline-item"><span class="yr">03</span><h4>Reunión de validación preliminar</h4><p>Hallazgos preliminares revisados con Oficialía de Cumplimiento antes del cierre.</p></div>
-        <div class="timeline-item"><span class="yr">04</span><h4>Sesión ejecutiva de cierre</h4><p>Presentación de resultados ante Alta Gerencia, Comité o el órgano designado por la institución.</p></div>
+        <div class="timeline-item"><span class="yr">01</span><h4 data-i18n="meto.step1h">Reunión de kick-off</h4><p data-i18n="meto.step1p">Define alcance, muestra y punto de contacto técnico designado por la institución.</p></div>
+        <div class="timeline-item"><span class="yr">02</span><h4 data-i18n="meto.step2h">Check-ins semanales de 30 minutos</h4><p data-i18n="meto.step2p">Más consultas puntuales durante la revisión, sin interrumpir el trabajo de campo.</p></div>
+        <div class="timeline-item"><span class="yr">03</span><h4 data-i18n="meto.step3h">Reunión de validación preliminar</h4><p data-i18n="meto.step3p">Hallazgos preliminares revisados con Oficialía de Cumplimiento antes del cierre.</p></div>
+        <div class="timeline-item"><span class="yr">04</span><h4 data-i18n="meto.step4h">Sesión ejecutiva de cierre</h4><p data-i18n="meto.step4p">Presentación de resultados ante Alta Gerencia, Comité o el órgano designado por la institución.</p></div>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:1.1rem;">Cuatro niveles de severidad</h2>
+      <h2 style="font-size:1.25rem;margin-bottom:1.1rem;" data-i18n="meto.sevh">Cuatro niveles de severidad</h2>
       <div class="table-wrap">
       <table class="layers">
-        <thead><tr><th style="width:14%;">Nivel</th><th>Definición</th></tr></thead>
+        <thead><tr><th style="width:14%;" data-i18n="meto.sevth1">Nivel</th><th data-i18n="meto.sevth2">Definición</th></tr></thead>
         <tbody>
-          <tr><td><span class="pill pill-crit">Crítico</span></td><td>Puede afectar de forma material la razonabilidad del expediente, la trazabilidad del beneficiario final, la identificación de PEP/sanciones o la evidencia requerida para control interno.</td></tr>
-          <tr><td><span class="pill pill-alto">Alto</span></td><td>Evidencia inconsistencia, debilidad documental o brecha frente a política interna, sin invalidar necesariamente el expediente.</td></tr>
-          <tr><td><span class="pill pill-medio">Medio</span></td><td>Oportunidad de fortalecimiento, estandarización o mejora de narrativa.</td></tr>
-          <tr><td><span class="pill pill-bajo">Bajo</span></td><td>Ajuste menor de forma, documentación complementaria o mejora de presentación.</td></tr>
+          <tr><td><span class="pill pill-crit" data-i18n="meto.critlabel">Crítico</span></td><td data-i18n="meto.critdef">Puede afectar de forma material la razonabilidad del expediente, la trazabilidad del beneficiario final, la identificación de PEP/sanciones o la evidencia requerida para control interno.</td></tr>
+          <tr><td><span class="pill pill-alto" data-i18n="meto.altolabel">Alto</span></td><td data-i18n="meto.altodef">Evidencia inconsistencia, debilidad documental o brecha frente a política interna, sin invalidar necesariamente el expediente.</td></tr>
+          <tr><td><span class="pill pill-medio" data-i18n="meto.mediolabel">Medio</span></td><td data-i18n="meto.mediodef">Oportunidad de fortalecimiento, estandarización o mejora de narrativa.</td></tr>
+          <tr><td><span class="pill pill-bajo" data-i18n="meto.bajolabel">Bajo</span></td><td data-i18n="meto.bajodef">Ajuste menor de forma, documentación complementaria o mejora de presentación.</td></tr>
         </tbody>
       </table>
       </div>
@@ -127,32 +137,32 @@
 
       <div class="grid-2">
         <div>
-          <h3 style="font-size:1.02rem;margin-bottom:.7rem;">Seis entregables</h3>
+          <h3 style="font-size:1.02rem;margin-bottom:.7rem;" data-i18n="meto.delivh">Seis entregables</h3>
           <ul class="diamond">
-            <li>Reporte Ejecutivo de Evaluación Independiente</li>
-            <li>Matriz de Hallazgos</li>
-            <li>Error Taxonomy</li>
-            <li>Heatmap AML/KYC</li>
-            <li>Plan de Remediación a 30/60/90 días</li>
-            <li>Sesión de Cierre Ejecutiva</li>
+            <li data-i18n="meto.deliv1">Reporte Ejecutivo de Evaluación Independiente</li>
+            <li data-i18n="meto.deliv2">Matriz de Hallazgos</li>
+            <li data-i18n="meto.deliv3">Error Taxonomy</li>
+            <li data-i18n="meto.deliv4">Heatmap AML/KYC</li>
+            <li data-i18n="meto.deliv5">Plan de Remediación a 30/60/90 días</li>
+            <li data-i18n="meto.deliv6">Sesión de Cierre Ejecutiva</li>
           </ul>
         </div>
         <div>
-          <h3 style="font-size:1.02rem;margin-bottom:.7rem;">Límites declarados</h3>
-          <p style="font-size:.9rem;color:var(--ink-soft);margin-bottom:.7rem;">Los resultados de un ciclo DDQR™ están limitados por la muestra seleccionada, la información disponible al momento de la revisión, las políticas y criterios internos compartidos por la institución, el alcance acordado y el tiempo definido para la ejecución.</p>
-          <p style="font-size:.85rem;color:var(--ink-soft);">DDQR™ es de naturaleza técnica y consultiva. No constituye auditoría externa regulatoria, certificación de cumplimiento, opinión legal ni sustitución de las funciones internas de la organización.</p>
+          <h3 style="font-size:1.02rem;margin-bottom:.7rem;" data-i18n="meto.limh">Límites declarados</h3>
+          <p style="font-size:.9rem;color:var(--ink-soft);margin-bottom:.7rem;" data-i18n="meto.lim1">Los resultados de un ciclo DDQR™ están limitados por la muestra seleccionada, la información disponible al momento de la revisión, las políticas y criterios internos compartidos por la institución, el alcance acordado y el tiempo definido para la ejecución.</p>
+          <p style="font-size:.85rem;color:var(--ink-soft);" data-i18n="meto.lim2">DDQR™ es de naturaleza técnica y consultiva. No constituye auditoría externa regulatoria, certificación de cumplimiento, opinión legal ni sustitución de las funciones internas de la organización.</p>
         </div>
       </div>
 
       <div class="independence-note" style="margin-top:1.8rem;">
-        <p>DDQR™ es la metodología que sostiene la <a href="/servicios/evaluacion-independiente-efectividad/" style="color:var(--navy);font-weight:700;">Línea 4 — Evaluación Independiente y Efectividad del Sistema de Cumplimiento</a>, incluida la regla de independencia frente a la Línea 3.</p>
+        <p data-i18n-html="meto.footernote">DDQR™ es la metodología que sostiene la <a href="/servicios/evaluacion-independiente-efectividad/" style="color:var(--navy);font-weight:700;">Línea 4 — Evaluación Independiente y Efectividad del Sistema de Cumplimiento</a>, incluida la regla de independencia frente a la Línea 3.</p>
       </div>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20sobre%20metodolog%C3%ADa%20DDQR">Consultar sobre un ciclo DDQR™</a>
+        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20sobre%20metodolog%C3%ADa%20DDQR" data-i18n="meto.cta">Consultar sobre un ciclo DDQR™</a>
       </div>
     </div>
   </section>
@@ -164,45 +174,196 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "meto.bc2": "Línea 4 — Evaluación Independiente",
+    "meto.eyebrow": "Metodología propietaria",
+    "meto.h1": "Metodología DDQR™",
+    "meto.lead": "Cómo se hace la Línea 4, en detalle técnico. DDQR™ es la metodología propia de Gemino Advisory para la evaluación independiente de la calidad de programas de debida diligencia.",
+    "meto.intro": "No es una lista de verificación: es un protocolo técnico —muestreo estadístico, testing de expedientes, re-ejecución independiente y control de calidad por un segundo revisor— diseñado para responder una sola pregunta con evidencia, no con impresión.",
+    "meto.q": "¿La evidencia AML/KYC que respalda los expedientes de alto riesgo es consistente, trazable y defendible ante un tercero que no acepta autodeclaración?",
+    "meto.legalh": "El anclaje legal",
+    "meto.legal1": "El Art. 15 del Decreto 15-2026 exige evaluar anualmente la efectividad del programa de prevención, \"a través de su auditoría interna o quien haga sus veces, o los servicios de auditores especializados de su elección.\" DDQR™ se ejecuta bajo ese segundo supuesto: el de los auditores especializados de elección de la Persona Obligada.",
+    "meto.legal2": "No se confunde con el informe de aseguramiento del auditor externo de estados financieros (mismo artículo, párrafo distinto) — ese mandato ya está, por ley, en manos de quien audita los estados financieros de la entidad supervisada.",
+    "meto.scopeh": "Alcance típico de un ciclo DDQR™",
+    "meto.scope1": "Muestra de 25 a 40 expedientes, seleccionados bajo criterio de riesgo",
+    "meto.scope2": "Duración estimada: 4 semanas",
+    "meto.scope3": "Revisión documental basada en evidencia entregada por la institución — sin contacto con clientes, reguladores o terceros externos",
+    "meto.areash": "Siete áreas de revisión",
+    "meto.area1": "KYC / CDD / EDD",
+    "meto.area2": "Beneficiario final y estructura societaria",
+    "meto.area3": "Personas Expuestas Políticamente (PEP)",
+    "meto.area4": "Screening, sanciones y listas restrictivas",
+    "meto.area5": "Medios adversos (adverse media)",
+    "meto.area6": "Narrativa de riesgo",
+    "meto.area7": "Evidencia para comités",
+    "meto.interh": "Modelo de interacción",
+    "meto.interlead": "Cuatro momentos fijos, más consultas puntuales durante la revisión — nunca una \"caja negra\" de cuatro semanas sin visibilidad.",
+    "meto.step1h": "Reunión de kick-off",
+    "meto.step1p": "Define alcance, muestra y punto de contacto técnico designado por la institución.",
+    "meto.step2h": "Check-ins semanales de 30 minutos",
+    "meto.step2p": "Más consultas puntuales durante la revisión, sin interrumpir el trabajo de campo.",
+    "meto.step3h": "Reunión de validación preliminar",
+    "meto.step3p": "Hallazgos preliminares revisados con Oficialía de Cumplimiento antes del cierre.",
+    "meto.step4h": "Sesión ejecutiva de cierre",
+    "meto.step4p": "Presentación de resultados ante Alta Gerencia, Comité o el órgano designado por la institución.",
+    "meto.sevh": "Cuatro niveles de severidad",
+    "meto.sevth1": "Nivel",
+    "meto.sevth2": "Definición",
+    "meto.critlabel": "Crítico",
+    "meto.critdef": "Puede afectar de forma material la razonabilidad del expediente, la trazabilidad del beneficiario final, la identificación de PEP/sanciones o la evidencia requerida para control interno.",
+    "meto.altolabel": "Alto",
+    "meto.altodef": "Evidencia inconsistencia, debilidad documental o brecha frente a política interna, sin invalidar necesariamente el expediente.",
+    "meto.mediolabel": "Medio",
+    "meto.mediodef": "Oportunidad de fortalecimiento, estandarización o mejora de narrativa.",
+    "meto.bajolabel": "Bajo",
+    "meto.bajodef": "Ajuste menor de forma, documentación complementaria o mejora de presentación.",
+    "meto.delivh": "Seis entregables",
+    "meto.deliv1": "Reporte Ejecutivo de Evaluación Independiente",
+    "meto.deliv2": "Matriz de Hallazgos",
+    "meto.deliv3": "Error Taxonomy",
+    "meto.deliv4": "Heatmap AML/KYC",
+    "meto.deliv5": "Plan de Remediación a 30/60/90 días",
+    "meto.deliv6": "Sesión de Cierre Ejecutiva",
+    "meto.limh": "Límites declarados",
+    "meto.lim1": "Los resultados de un ciclo DDQR™ están limitados por la muestra seleccionada, la información disponible al momento de la revisión, las políticas y criterios internos compartidos por la institución, el alcance acordado y el tiempo definido para la ejecución.",
+    "meto.lim2": "DDQR™ es de naturaleza técnica y consultiva. No constituye auditoría externa regulatoria, certificación de cumplimiento, opinión legal ni sustitución de las funciones internas de la organización.",
+    "meto.footernote": "DDQR™ es la metodología que sostiene la <a href=\"/servicios/evaluacion-independiente-efectividad/\" style=\"color:var(--navy);font-weight:700;\">Línea 4 — Evaluación Independiente y Efectividad del Sistema de Cumplimiento</a>, incluida la regla de independencia frente a la Línea 3.",
+    "meto.cta": "Consultar sobre un ciclo DDQR™"
+  },
+  en: {
+    "meto.bc2": "Line 4 — Independent Evaluation",
+    "meto.eyebrow": "Proprietary methodology",
+    "meto.h1": "DDQR™ Methodology",
+    "meto.lead": "How Line 4 is carried out, in technical detail. DDQR™ is Gemino Advisory's own methodology for the independent evaluation of due-diligence program quality.",
+    "meto.intro": "It isn't a checklist: it's a technical protocol — statistical sampling, file testing, independent re-performance, and quality control by a second reviewer — designed to answer a single question with evidence, not impression.",
+    "meto.q": "Is the AML/KYC evidence backing high-risk files consistent, traceable, and defensible before a third party that does not accept self-declaration?",
+    "meto.legalh": "The legal anchor",
+    "meto.legal1": "Article 15 of Decree 15-2026 requires an annual evaluation of the prevention program's effectiveness, \"through its internal audit or equivalent function, or the services of specialized auditors of its choice.\" DDQR™ operates under that second scenario: the Obligated Person's specialized auditors of choice.",
+    "meto.legal2": "It should not be confused with the assurance report of the external financial statement auditor (same article, different paragraph) — that mandate already rests, by law, with whoever audits the supervised entity's financial statements.",
+    "meto.scopeh": "Typical scope of a DDQR™ cycle",
+    "meto.scope1": "A sample of 25 to 40 files, selected on a risk basis",
+    "meto.scope2": "Estimated duration: 4 weeks",
+    "meto.scope3": "Documentary review based on evidence provided by the institution — no contact with clients, regulators, or external third parties",
+    "meto.areash": "Seven review areas",
+    "meto.area1": "KYC / CDD / EDD",
+    "meto.area2": "Beneficial ownership and corporate structure",
+    "meto.area3": "Politically Exposed Persons (PEPs)",
+    "meto.area4": "Screening, sanctions, and restrictive lists",
+    "meto.area5": "Adverse media",
+    "meto.area6": "Risk narrative",
+    "meto.area7": "Evidence for committees",
+    "meto.interh": "Interaction model",
+    "meto.interlead": "Four fixed touchpoints, plus ad hoc queries during the review — never a four-week \"black box\" with no visibility.",
+    "meto.step1h": "Kick-off meeting",
+    "meto.step1p": "Defines scope, sample, and the technical point of contact designated by the institution.",
+    "meto.step2h": "30-minute weekly check-ins",
+    "meto.step2p": "Additional ad hoc queries during the review, without interrupting fieldwork.",
+    "meto.step3h": "Preliminary validation meeting",
+    "meto.step3p": "Preliminary findings reviewed with the Compliance Office before closing.",
+    "meto.step4h": "Executive closing session",
+    "meto.step4p": "Presentation of results before Senior Management, a Committee, or the body designated by the institution.",
+    "meto.sevh": "Four severity levels",
+    "meto.sevth1": "Level",
+    "meto.sevth2": "Definition",
+    "meto.critlabel": "Critical",
+    "meto.critdef": "Can materially affect the reasonableness of the file, beneficial-owner traceability, PEP/sanctions identification, or the evidence required for internal control.",
+    "meto.altolabel": "High",
+    "meto.altodef": "Evidence of inconsistency, documentary weakness, or a gap against internal policy, without necessarily invalidating the file.",
+    "meto.mediolabel": "Medium",
+    "meto.mediodef": "Opportunity for strengthening, standardization, or narrative improvement.",
+    "meto.bajolabel": "Low",
+    "meto.bajodef": "Minor formatting adjustment, supplementary documentation, or presentation improvement.",
+    "meto.delivh": "Six deliverables",
+    "meto.deliv1": "Independent Evaluation Executive Report",
+    "meto.deliv2": "Findings Matrix",
+    "meto.deliv3": "Error Taxonomy",
+    "meto.deliv4": "AML/KYC Heatmap",
+    "meto.deliv5": "30/60/90-Day Remediation Plan",
+    "meto.deliv6": "Executive Closing Session",
+    "meto.limh": "Stated limitations",
+    "meto.lim1": "The results of a DDQR™ cycle are limited by the selected sample, the information available at the time of the review, the internal policies and criteria shared by the institution, the agreed scope, and the time defined for execution.",
+    "meto.lim2": "DDQR™ is technical and advisory in nature. It does not constitute a regulatory external audit, a compliance certification, a legal opinion, or a substitute for the organization's internal functions.",
+    "meto.footernote": "DDQR™ is the methodology underpinning <a href=\"/servicios/evaluacion-independiente-efectividad/\" style=\"color:var(--navy);font-weight:700;\">Line 4 — Independent Evaluation and Effectiveness of the Compliance System</a>, including the independence rule against Line 3.",
+    "meto.cta": "Ask about a DDQR™ cycle"
+  },
+  pt: {
+    "meto.bc2": "Linha 4 — Avaliação Independente",
+    "meto.eyebrow": "Metodologia proprietária",
+    "meto.h1": "Metodologia DDQR™",
+    "meto.lead": "Como se executa a Linha 4, em detalhe técnico. A DDQR™ é a metodologia própria da Gemino Advisory para a avaliação independente da qualidade de programas de devida diligência.",
+    "meto.intro": "Não é uma lista de verificação: é um protocolo técnico — amostragem estatística, testes de expedientes, reexecução independente e controle de qualidade por um segundo revisor — desenhado para responder a uma única pergunta com evidências, não com impressão.",
+    "meto.q": "A evidência AML/KYC que sustenta os expedientes de alto risco é consistente, rastreável e defensável perante um terceiro que não aceita autodeclaração?",
+    "meto.legalh": "A base legal",
+    "meto.legal1": "O Art. 15 do Decreto 15-2026 exige avaliar anualmente a efetividade do programa de prevenção, \"por meio de sua auditoria interna ou quem a substitua, ou os serviços de auditores especializados de sua escolha.\" A DDQR™ é executada sob essa segunda hipótese: a dos auditores especializados de escolha da Pessoa Obrigada.",
+    "meto.legal2": "Não se confunde com o relatório de asseguração do auditor externo de demonstrações financeiras (mesmo artigo, parágrafo distinto) — esse mandato já está, por lei, nas mãos de quem audita as demonstrações financeiras da entidade supervisionada.",
+    "meto.scopeh": "Escopo típico de um ciclo DDQR™",
+    "meto.scope1": "Amostra de 25 a 40 expedientes, selecionados sob critério de risco",
+    "meto.scope2": "Duração estimada: 4 semanas",
+    "meto.scope3": "Revisão documental baseada em evidências entregues pela instituição — sem contato com clientes, reguladores ou terceiros externos",
+    "meto.areash": "Sete áreas de revisão",
+    "meto.area1": "KYC / CDD / EDD",
+    "meto.area2": "Beneficiário final e estrutura societária",
+    "meto.area3": "Pessoas Expostas Politicamente (PEP)",
+    "meto.area4": "Screening, sanções e listas restritivas",
+    "meto.area5": "Mídia adversa (adverse media)",
+    "meto.area6": "Narrativa de risco",
+    "meto.area7": "Evidência para comitês",
+    "meto.interh": "Modelo de interação",
+    "meto.interlead": "Quatro momentos fixos, além de consultas pontuais durante a revisão — nunca uma \"caixa-preta\" de quatro semanas sem visibilidade.",
+    "meto.step1h": "Reunião de kick-off",
+    "meto.step1p": "Define escopo, amostra e ponto de contato técnico designado pela instituição.",
+    "meto.step2h": "Check-ins semanais de 30 minutos",
+    "meto.step2p": "Consultas pontuais adicionais durante a revisão, sem interromper o trabalho de campo.",
+    "meto.step3h": "Reunião de validação preliminar",
+    "meto.step3p": "Achados preliminares revisados com a Oficialidade de Compliance antes do encerramento.",
+    "meto.step4h": "Sessão executiva de encerramento",
+    "meto.step4p": "Apresentação dos resultados à Alta Gerência, Comitê ou órgão designado pela instituição.",
+    "meto.sevh": "Quatro níveis de severidade",
+    "meto.sevth1": "Nível",
+    "meto.sevth2": "Definição",
+    "meto.critlabel": "Crítico",
+    "meto.critdef": "Pode afetar de forma material a razoabilidade do expediente, a rastreabilidade do beneficiário final, a identificação de PEP/sanções ou a evidência exigida para controle interno.",
+    "meto.altolabel": "Alto",
+    "meto.altodef": "Evidencia inconsistência, fragilidade documental ou lacuna frente à política interna, sem necessariamente invalidar o expediente.",
+    "meto.mediolabel": "Médio",
+    "meto.mediodef": "Oportunidade de fortalecimento, padronização ou melhoria de narrativa.",
+    "meto.bajolabel": "Baixo",
+    "meto.bajodef": "Ajuste menor de forma, documentação complementar ou melhoria de apresentação.",
+    "meto.delivh": "Seis entregáveis",
+    "meto.deliv1": "Relatório Executivo de Avaliação Independente",
+    "meto.deliv2": "Matriz de Achados",
+    "meto.deliv3": "Error Taxonomy",
+    "meto.deliv4": "Heatmap AML/KYC",
+    "meto.deliv5": "Plano de Remediação em 30/60/90 dias",
+    "meto.deliv6": "Sessão Executiva de Encerramento",
+    "meto.limh": "Limites declarados",
+    "meto.lim1": "Os resultados de um ciclo DDQR™ são limitados pela amostra selecionada, pela informação disponível no momento da revisão, pelas políticas e critérios internos compartilhados pela instituição, pelo escopo acordado e pelo tempo definido para a execução.",
+    "meto.lim2": "A DDQR™ tem natureza técnica e consultiva. Não constitui auditoria externa regulatória, certificação de compliance, parecer jurídico nem substituição das funções internas da organização.",
+    "meto.footernote": "A DDQR™ é a metodologia que sustenta a <a href=\"/servicios/evaluacion-independiente-efectividad/\" style=\"color:var(--navy);font-weight:700;\">Linha 4 — Avaliação Independente e Efetividade do Sistema de Compliance</a>, incluindo a regra de independência frente à Linha 3.",
+    "meto.cta": "Consultar sobre um ciclo DDQR™"
   }
-})();
+});
 </script>
 
 </body>

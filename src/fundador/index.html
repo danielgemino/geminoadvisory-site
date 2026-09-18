@@ -16,47 +16,57 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/#fundador">Fundador</a></p>
-      <p class="eyebrow">Fundador</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/#fundador" data-i18n="nav.founder">Fundador</a></p>
+      <p class="eyebrow" data-i18n="nav.founder">Fundador</p>
       <h1>Daniel Gemino</h1>
-      <p class="lead">Un modelo lean y senior: sin capas intermedias entre su organización y quien firma el criterio técnico.</p>
+      <p class="lead" data-i18n="fund.lead">Un modelo lean y senior: sin capas intermedias entre su organización y quien firma el criterio técnico.</p>
     </div>
   </div>
 
@@ -66,63 +76,63 @@
         <div>
           <img class="founder-photo" src="/profile.png" alt="Daniel Gemino, Director y Consultor Principal de Gemino Advisory">
           <p class="founder-name">Daniel Gemino</p>
-          <p class="founder-role">Director &amp; Consultor Principal</p>
+          <p class="founder-role" data-i18n="founder.role">Director &amp; Consultor Principal</p>
         </div>
         <div class="founder-bio">
-          <p>Daniel Gemino es el fundador de Gemino Advisory y un especialista en cumplimiento regulatorio, gestión de riesgo financiero y gobernanza corporativa, con más de una década de experiencia en banca internacional y consultoría de primer nivel — incluyendo <strong>Deutsche Bank, KPMG, SMBC Group</strong> (vía Experis · ManpowerGroup), <strong>Natixis Corporate &amp; Investment Banking</strong> e <strong>ING Wholesale Bank</strong>, además de investigación regulatoria en el <strong>NYDFS</strong> (Departamento de Servicios Financieros del Estado de Nueva York).</p>
-          <p>Cuenta con formación jurídica — Bachelor of Laws (equivalente a LL.B.) por <strong>Cândido Mendes University</strong> (Río de Janeiro, Brasil) y un <strong>LL.M. en Derecho Bancario y Cumplimiento Corporativo de Fordham University School of Law</strong> (Nueva York) — y ha liderado equipos multidisciplinarios de hasta 70 profesionales en la evaluación de estructuras corporativas complejas y el desarrollo de marcos de Quality Assurance en entornos altamente supervisados.</p>
-          <p>Su experiencia incluye la interacción directa con áreas de Cumplimiento, Auditoría Interna y alta gerencia en procesos de decisión regulatoria y reputacional. Lidera personalmente los proyectos de la firma, garantizando independencia técnica, confidencialidad y estándares de trabajo consistentes con firmas advisory internacionales.</p>
+          <p data-i18n-html="fund.bio1">Daniel Gemino es el fundador de Gemino Advisory y un especialista en cumplimiento regulatorio, gestión de riesgo financiero y gobernanza corporativa, con más de una década de experiencia en banca internacional y consultoría de primer nivel — incluyendo <strong>Deutsche Bank, KPMG, SMBC Group</strong> (vía Experis · ManpowerGroup), <strong>Natixis Corporate &amp; Investment Banking</strong> e <strong>ING Wholesale Bank</strong>, además de investigación regulatoria en el <strong>NYDFS</strong> (Departamento de Servicios Financieros del Estado de Nueva York).</p>
+          <p data-i18n-html="fund.bio2">Cuenta con formación jurídica — Bachelor of Laws (equivalente a LL.B.) por <strong>Cândido Mendes University</strong> (Río de Janeiro, Brasil) y un <strong>LL.M. en Derecho Bancario y Cumplimiento Corporativo de Fordham University School of Law</strong> (Nueva York) — y ha liderado equipos multidisciplinarios de hasta 70 profesionales en la evaluación de estructuras corporativas complejas y el desarrollo de marcos de Quality Assurance en entornos altamente supervisados.</p>
+          <p data-i18n="fund.bio3">Su experiencia incluye la interacción directa con áreas de Cumplimiento, Auditoría Interna y alta gerencia en procesos de decisión regulatoria y reputacional. Lidera personalmente los proyectos de la firma, garantizando independencia técnica, confidencialidad y estándares de trabajo consistentes con firmas advisory internacionales.</p>
 
           <div class="credential-chips">
             <span>LL.M. Fordham University</span>
-            <span>LL.B. Cândido Mendes (Río de Janeiro)</span>
-            <span>Ciudadano estadounidense y brasileño</span>
-            <span>Español · Inglés · Português</span>
+            <span data-i18n="fund.chip2">LL.B. Cândido Mendes (Río de Janeiro)</span>
+            <span data-i18n="fund.chip3">Ciudadano estadounidense y brasileño</span>
+            <span data-i18n="founder.chip3">Español · Inglés · Português</span>
             <span>Guatemala City</span>
           </div>
 
           <div class="founder-quote">
-            <p>«No se trata de tener políticas, se trata de demostrar que funcionan.»</p>
-            <span>— Daniel Gemino, Director &amp; Consultor Principal</span>
+            <p data-i18n="founder.quote">«No se trata de tener políticas, se trata de demostrar que funcionan.»</p>
+            <span data-i18n="founder.quoteattr">— Daniel Gemino, Director &amp; Consultor Principal</span>
           </div>
         </div>
       </div>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:.3rem;">Trayectoria</h2>
-      <p class="lead" style="font-size:.92rem;margin-bottom:1.4rem;">Fuente: currículum vitae actualizado a junio de 2026.</p>
+      <h2 style="font-size:1.25rem;margin-bottom:.3rem;" data-i18n="fund.trajh">Trayectoria</h2>
+      <p class="lead" style="font-size:.92rem;margin-bottom:1.4rem;" data-i18n="fund.trajsub">Fuente: currículum vitae actualizado a junio de 2026.</p>
       <div class="timeline">
-        <div class="timeline-item"><span class="yr">Jul 2024 – Dic 2025</span><h4>Senior KYC Consultant — Experis (ManpowerGroup), cliente SMBC Group</h4><p>Evaluación de gobernanza, propiedad, transparencia y estructuras de riesgo de clientes corporativos internacionales.</p></div>
-        <div class="timeline-item"><span class="yr">Oct 2022 – Ago 2023</span><h4>Senior Specialist, Financial Services — KPMG US</h4><p>Iniciativas de transformación regulatoria y de gobernanza para el sector financiero; gestión de equipos de hasta 12 profesionales.</p></div>
-        <div class="timeline-item"><span class="yr">Jun 2022 – Oct 2022</span><h4>KYC Quality Assurance Officer — Deutsche Bank</h4><p>Funciones de gobernanza y aseguramiento de calidad sobre programas globales de cumplimiento regulatorio y gestión de riesgo.</p></div>
-        <div class="timeline-item"><span class="yr">Feb 2020 – Jun 2022</span><h4>KYC Periodic Review Manager — Deutsche Bank</h4><p>Dirección de equipos de hasta 70 profesionales en múltiples jurisdicciones; consistencia de controles y estándares de documentación.</p></div>
-        <div class="timeline-item"><span class="yr">Oct 2018 – Sep 2019</span><h4>KYC Advisor — Natixis Corporate &amp; Investment Banking</h4><p>Enlace entre áreas de negocio y funciones de control; análisis de brechas y fortalecimiento de marcos de cumplimiento.</p></div>
-        <div class="timeline-item"><span class="yr">May 2017 – Oct 2018</span><h4>KYC Analyst — ING Wholesale Bank</h4><p>Debida diligencia de clientes, estándares de documentación y controles operativos.</p></div>
-        <div class="timeline-item"><span class="yr">May 2016 – Ago 2016</span><h4>Legal Intern — New York State Department of Financial Services (NYDFS)</h4><p>Investigación legal y regulatoria en supervisión bancaria y regulación del sector financiero.</p></div>
+        <div class="timeline-item"><span class="yr">Jul 2024 – Dic 2025</span><h4 data-i18n="fund.job1role">Senior KYC Consultant — Experis (ManpowerGroup), cliente SMBC Group</h4><p data-i18n="fund.job1p">Evaluación de gobernanza, propiedad, transparencia y estructuras de riesgo de clientes corporativos internacionales.</p></div>
+        <div class="timeline-item"><span class="yr">Oct 2022 – Ago 2023</span><h4 data-i18n="fund.job2role">Senior Specialist, Financial Services — KPMG US</h4><p data-i18n="fund.job2p">Iniciativas de transformación regulatoria y de gobernanza para el sector financiero; gestión de equipos de hasta 12 profesionales.</p></div>
+        <div class="timeline-item"><span class="yr">Jun 2022 – Oct 2022</span><h4 data-i18n="fund.job3role">KYC Quality Assurance Officer — Deutsche Bank</h4><p data-i18n="fund.job3p">Funciones de gobernanza y aseguramiento de calidad sobre programas globales de cumplimiento regulatorio y gestión de riesgo.</p></div>
+        <div class="timeline-item"><span class="yr">Feb 2020 – Jun 2022</span><h4 data-i18n="fund.job4role">KYC Periodic Review Manager — Deutsche Bank</h4><p data-i18n="fund.job4p">Dirección de equipos de hasta 70 profesionales en múltiples jurisdicciones; consistencia de controles y estándares de documentación.</p></div>
+        <div class="timeline-item"><span class="yr">Oct 2018 – Sep 2019</span><h4 data-i18n="fund.job5role">KYC Advisor — Natixis Corporate &amp; Investment Banking</h4><p data-i18n="fund.job5p">Enlace entre áreas de negocio y funciones de control; análisis de brechas y fortalecimiento de marcos de cumplimiento.</p></div>
+        <div class="timeline-item"><span class="yr">May 2017 – Oct 2018</span><h4 data-i18n="fund.job6role">KYC Analyst — ING Wholesale Bank</h4><p data-i18n="fund.job6p">Debida diligencia de clientes, estándares de documentación y controles operativos.</p></div>
+        <div class="timeline-item"><span class="yr">May 2016 – Ago 2016</span><h4 data-i18n="fund.job7role">Legal Intern — New York State Department of Financial Services (NYDFS)</h4><p data-i18n="fund.job7p">Investigación legal y regulatoria en supervisión bancaria y regulación del sector financiero.</p></div>
       </div>
-      <p style="font-size:.78rem;color:var(--ink-soft);max-width:760px;margin-top:.6rem;font-style:italic;">Instituciones donde Daniel Gemino ejerció profesionalmente. No constituyen clientes de Gemino Advisory ni implican patrocinio, afiliación o endoso alguno. Todas las marcas y nombres comerciales pertenecen a sus respectivos titulares.</p>
+      <p style="font-size:.78rem;color:var(--ink-soft);max-width:760px;margin-top:.6rem;font-style:italic;" data-i18n="fund.disclaimer">Instituciones donde Daniel Gemino ejerció profesionalmente. No constituyen clientes de Gemino Advisory ni implican patrocinio, afiliación o endoso alguno. Todas las marcas y nombres comerciales pertenecen a sus respectivos titulares.</p>
 
       <div class="divider"></div>
 
-      <h2 style="font-size:1.25rem;margin-bottom:.4rem;">Por qué un modelo boutique</h2>
-      <p class="lead" style="font-size:.94rem;margin-bottom:1.4rem;">Contratar a una Big-4 es una opción legítima y, en algunos casos, la correcta. La comparación honesta:</p>
+      <h2 style="font-size:1.25rem;margin-bottom:.4rem;" data-i18n="fund.boutiqueh">Por qué un modelo boutique</h2>
+      <p class="lead" style="font-size:.94rem;margin-bottom:1.4rem;" data-i18n="fund.boutiquesub">Contratar a una Big-4 es una opción legítima y, en algunos casos, la correcta. La comparación honesta:</p>
       <div class="grid-2">
         <div class="card">
-          <h3>Cuándo una Big-4 es la opción correcta</h3>
+          <h3 data-i18n="fund.bigfourh">Cuándo una Big-4 es la opción correcta</h3>
           <ul class="diamond">
-            <li>Se necesita una marca que un banco corresponsal reconozca sin preguntar.</li>
-            <li>El alcance requiere volumen de horas y un equipo grande trabajando en paralelo.</li>
-            <li>Existe un mandato de auditoría externa de estados financieros que ya trae consigo el informe de aseguramiento del Art. 15.</li>
+            <li data-i18n="fund.bigfour1">Se necesita una marca que un banco corresponsal reconozca sin preguntar.</li>
+            <li data-i18n="fund.bigfour2">El alcance requiere volumen de horas y un equipo grande trabajando en paralelo.</li>
+            <li data-i18n="fund.bigfour3">Existe un mandato de auditoría externa de estados financieros que ya trae consigo el informe de aseguramiento del Art. 15.</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Qué ofrece Gemino Advisory de forma distinta</h3>
+          <h3 data-i18n="fund.geminoh">Qué ofrece Gemino Advisory de forma distinta</h3>
           <ul class="diamond">
-            <li>Un solo interlocutor senior de principio a fin — quien vende el proyecto es quien lo ejecuta.</li>
-            <li>Tiempos de respuesta de días, no de semanas, y sin equipo junior aprendiendo con el presupuesto del cliente.</li>
-            <li>Experiencia adquirida desde dentro de bancos supervisados internacionalmente, no solo desde la consultoría.</li>
-            <li>Fee fijo, alcance cerrado, cronograma definido — sin renovación automática ni compromiso posterior.</li>
+            <li data-i18n="fund.gemino1">Un solo interlocutor senior de principio a fin — quien vende el proyecto es quien lo ejecuta.</li>
+            <li data-i18n="fund.gemino2">Tiempos de respuesta de días, no de semanas, y sin equipo junior aprendiendo con el presupuesto del cliente.</li>
+            <li data-i18n="fund.gemino3">Experiencia adquirida desde dentro de bancos supervisados internacionalmente, no solo desde la consultoría.</li>
+            <li data-i18n="fund.gemino4">Fee fijo, alcance cerrado, cronograma definido — sin renovación automática ni compromiso posterior.</li>
           </ul>
         </div>
       </div>
@@ -131,7 +141,7 @@
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20directa%20con%20Daniel%20Gemino">Escribir directamente a Daniel Gemino</a>
+        <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Consulta%20directa%20con%20Daniel%20Gemino" data-i18n="fund.cta">Escribir directamente a Daniel Gemino</a>
       </div>
     </div>
   </section>
@@ -143,45 +153,139 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "fund.lead": "Un modelo lean y senior: sin capas intermedias entre su organización y quien firma el criterio técnico.",
+    "fund.bio1": "Daniel Gemino es el fundador de Gemino Advisory y un especialista en cumplimiento regulatorio, gestión de riesgo financiero y gobernanza corporativa, con más de una década de experiencia en banca internacional y consultoría de primer nivel — incluyendo <strong>Deutsche Bank, KPMG, SMBC Group</strong> (vía Experis · ManpowerGroup), <strong>Natixis Corporate &amp; Investment Banking</strong> e <strong>ING Wholesale Bank</strong>, además de investigación regulatoria en el <strong>NYDFS</strong> (Departamento de Servicios Financieros del Estado de Nueva York).",
+    "fund.bio2": "Cuenta con formación jurídica — Bachelor of Laws (equivalente a LL.B.) por <strong>Cândido Mendes University</strong> (Río de Janeiro, Brasil) y un <strong>LL.M. en Derecho Bancario y Cumplimiento Corporativo de Fordham University School of Law</strong> (Nueva York) — y ha liderado equipos multidisciplinarios de hasta 70 profesionales en la evaluación de estructuras corporativas complejas y el desarrollo de marcos de Quality Assurance en entornos altamente supervisados.",
+    "fund.bio3": "Su experiencia incluye la interacción directa con áreas de Cumplimiento, Auditoría Interna y alta gerencia en procesos de decisión regulatoria y reputacional. Lidera personalmente los proyectos de la firma, garantizando independencia técnica, confidencialidad y estándares de trabajo consistentes con firmas advisory internacionales.",
+    "fund.chip2": "LL.B. Cândido Mendes (Río de Janeiro)",
+    "fund.chip3": "Ciudadano estadounidense y brasileño",
+    "fund.trajh": "Trayectoria",
+    "fund.trajsub": "Fuente: currículum vitae actualizado a junio de 2026.",
+    "fund.job1role": "Senior KYC Consultant — Experis (ManpowerGroup), cliente SMBC Group",
+    "fund.job1p": "Evaluación de gobernanza, propiedad, transparencia y estructuras de riesgo de clientes corporativos internacionales.",
+    "fund.job2role": "Senior Specialist, Financial Services — KPMG US",
+    "fund.job2p": "Iniciativas de transformación regulatoria y de gobernanza para el sector financiero; gestión de equipos de hasta 12 profesionales.",
+    "fund.job3role": "KYC Quality Assurance Officer — Deutsche Bank",
+    "fund.job3p": "Funciones de gobernanza y aseguramiento de calidad sobre programas globales de cumplimiento regulatorio y gestión de riesgo.",
+    "fund.job4role": "KYC Periodic Review Manager — Deutsche Bank",
+    "fund.job4p": "Dirección de equipos de hasta 70 profesionales en múltiples jurisdicciones; consistencia de controles y estándares de documentación.",
+    "fund.job5role": "KYC Advisor — Natixis Corporate &amp; Investment Banking",
+    "fund.job5p": "Enlace entre áreas de negocio y funciones de control; análisis de brechas y fortalecimiento de marcos de cumplimiento.",
+    "fund.job6role": "KYC Analyst — ING Wholesale Bank",
+    "fund.job6p": "Debida diligencia de clientes, estándares de documentación y controles operativos.",
+    "fund.job7role": "Legal Intern — New York State Department of Financial Services (NYDFS)",
+    "fund.job7p": "Investigación legal y regulatoria en supervisión bancaria y regulación del sector financiero.",
+    "fund.disclaimer": "Instituciones donde Daniel Gemino ejerció profesionalmente. No constituyen clientes de Gemino Advisory ni implican patrocinio, afiliación o endoso alguno. Todas las marcas y nombres comerciales pertenecen a sus respectivos titulares.",
+    "fund.boutiqueh": "Por qué un modelo boutique",
+    "fund.boutiquesub": "Contratar a una Big-4 es una opción legítima y, en algunos casos, la correcta. La comparación honesta:",
+    "fund.bigfourh": "Cuándo una Big-4 es la opción correcta",
+    "fund.bigfour1": "Se necesita una marca que un banco corresponsal reconozca sin preguntar.",
+    "fund.bigfour2": "El alcance requiere volumen de horas y un equipo grande trabajando en paralelo.",
+    "fund.bigfour3": "Existe un mandato de auditoría externa de estados financieros que ya trae consigo el informe de aseguramiento del Art. 15.",
+    "fund.geminoh": "Qué ofrece Gemino Advisory de forma distinta",
+    "fund.gemino1": "Un solo interlocutor senior de principio a fin — quien vende el proyecto es quien lo ejecuta.",
+    "fund.gemino2": "Tiempos de respuesta de días, no de semanas, y sin equipo junior aprendiendo con el presupuesto del cliente.",
+    "fund.gemino3": "Experiencia adquirida desde dentro de bancos supervisados internacionalmente, no solo desde la consultoría.",
+    "fund.gemino4": "Fee fijo, alcance cerrado, cronograma definido — sin renovación automática ni compromiso posterior.",
+    "fund.cta": "Escribir directamente a Daniel Gemino"
+  },
+  en: {
+    "fund.lead": "A lean, senior model: no layers between your organization and the person who signs off on the technical judgment.",
+    "fund.bio1": "Daniel Gemino is the founder of Gemino Advisory and a specialist in regulatory compliance, financial risk management, and corporate governance, with more than a decade of experience in international banking and top-tier consulting — including <strong>Deutsche Bank, KPMG, SMBC Group</strong> (via Experis · ManpowerGroup), <strong>Natixis Corporate &amp; Investment Banking</strong>, and <strong>ING Wholesale Bank</strong>, plus regulatory research at the <strong>NYDFS</strong> (New York State Department of Financial Services).",
+    "fund.bio2": "He holds a legal background — a Bachelor of Laws (LL.B. equivalent) from <strong>Cândido Mendes University</strong> (Rio de Janeiro, Brazil) and an <strong>LL.M. in Banking and Corporate Compliance Law from Fordham University School of Law</strong> (New York) — and has led multidisciplinary teams of up to 70 professionals evaluating complex corporate structures and building Quality Assurance frameworks in highly supervised environments.",
+    "fund.bio3": "His experience includes direct interaction with Compliance, Internal Audit, and senior management on regulatory and reputational decision processes. He personally leads the firm's projects, ensuring technical independence, confidentiality, and work standards consistent with international advisory firms.",
+    "fund.chip2": "LL.B. Cândido Mendes (Rio de Janeiro)",
+    "fund.chip3": "U.S. and Brazilian citizen",
+    "fund.trajh": "Track record",
+    "fund.trajsub": "Source: curriculum vitae updated as of June 2026.",
+    "fund.job1role": "Senior KYC Consultant — Experis (ManpowerGroup), SMBC Group client",
+    "fund.job1p": "Assessment of governance, ownership, transparency, and risk structures for international corporate clients.",
+    "fund.job2role": "Senior Specialist, Financial Services — KPMG US",
+    "fund.job2p": "Regulatory and governance transformation initiatives for the financial sector; managed teams of up to 12 professionals.",
+    "fund.job3role": "KYC Quality Assurance Officer — Deutsche Bank",
+    "fund.job3p": "Governance and quality assurance functions over global regulatory compliance and risk management programs.",
+    "fund.job4role": "KYC Periodic Review Manager — Deutsche Bank",
+    "fund.job4p": "Led teams of up to 70 professionals across multiple jurisdictions; ensured consistency of controls and documentation standards.",
+    "fund.job5role": "KYC Advisor — Natixis Corporate &amp; Investment Banking",
+    "fund.job5p": "Liaison between business areas and control functions; gap analysis and strengthening of compliance frameworks.",
+    "fund.job6role": "KYC Analyst — ING Wholesale Bank",
+    "fund.job6p": "Client due diligence, documentation standards, and operational controls.",
+    "fund.job7role": "Legal Intern — New York State Department of Financial Services (NYDFS)",
+    "fund.job7p": "Legal and regulatory research on bank supervision and financial-sector regulation.",
+    "fund.disclaimer": "Institutions where Daniel Gemino held professional roles. They are not clients of Gemino Advisory and do not imply sponsorship, affiliation, or endorsement of any kind. All trademarks and trade names belong to their respective owners.",
+    "fund.boutiqueh": "Why a boutique model",
+    "fund.boutiquesub": "Hiring a Big-4 is a legitimate option and, in some cases, the right one. The honest comparison:",
+    "fund.bigfourh": "When a Big-4 is the right choice",
+    "fund.bigfour1": "You need a brand that a correspondent bank recognizes without question.",
+    "fund.bigfour2": "The scope requires a large volume of hours and a big team working in parallel.",
+    "fund.bigfour3": "There's an external financial-statement audit mandate that already comes with the Article 15 assurance report.",
+    "fund.geminoh": "What Gemino Advisory offers differently",
+    "fund.gemino1": "A single senior point of contact from start to finish — whoever sells the project is the one who executes it.",
+    "fund.gemino2": "Response times measured in days, not weeks, with no junior team learning on the client's budget.",
+    "fund.gemino3": "Experience gained from inside internationally supervised banks, not just from consulting.",
+    "fund.gemino4": "Fixed fee, closed scope, defined timeline — no automatic renewal or ongoing commitment afterward.",
+    "fund.cta": "Write directly to Daniel Gemino"
+  },
+  pt: {
+    "fund.lead": "Um modelo enxuto e sênior: sem camadas intermediárias entre sua organização e quem assina o parecer técnico.",
+    "fund.bio1": "Daniel Gemino é o fundador da Gemino Advisory e um especialista em compliance regulatório, gestão de risco financeiro e governança corporativa, com mais de uma década de experiência em bancos internacionais e consultoria de primeira linha — incluindo <strong>Deutsche Bank, KPMG, SMBC Group</strong> (via Experis · ManpowerGroup), <strong>Natixis Corporate &amp; Investment Banking</strong> e <strong>ING Wholesale Bank</strong>, além de pesquisa regulatória no <strong>NYDFS</strong> (Departamento de Serviços Financeiros do Estado de Nova York).",
+    "fund.bio2": "Tem formação jurídica — Bacharelado em Direito (equivalente a LL.B.) pela <strong>Cândido Mendes University</strong> (Rio de Janeiro, Brasil) e um <strong>LL.M. em Direito Bancário e Compliance Corporativo pela Fordham University School of Law</strong> (Nova York) — e liderou equipes multidisciplinares de até 70 profissionais na avaliação de estruturas corporativas complexas e no desenvolvimento de frameworks de Quality Assurance em ambientes altamente supervisionados.",
+    "fund.bio3": "Sua experiência inclui interação direta com áreas de Compliance, Auditoria Interna e alta gerência em processos de decisão regulatória e reputacional. Lidera pessoalmente os projetos da firma, garantindo independência técnica, confidencialidade e padrões de trabalho consistentes com firmas advisory internacionais.",
+    "fund.chip2": "LL.B. Cândido Mendes (Rio de Janeiro)",
+    "fund.chip3": "Cidadão americano e brasileiro",
+    "fund.trajh": "Trajetória",
+    "fund.trajsub": "Fonte: currículo atualizado em junho de 2026.",
+    "fund.job1role": "Senior KYC Consultant — Experis (ManpowerGroup), cliente SMBC Group",
+    "fund.job1p": "Avaliação de governança, propriedade, transparência e estruturas de risco de clientes corporativos internacionais.",
+    "fund.job2role": "Senior Specialist, Financial Services — KPMG US",
+    "fund.job2p": "Iniciativas de transformação regulatória e de governança para o setor financeiro; gestão de equipes de até 12 profissionais.",
+    "fund.job3role": "KYC Quality Assurance Officer — Deutsche Bank",
+    "fund.job3p": "Funções de governança e garantia de qualidade sobre programas globais de compliance regulatório e gestão de risco.",
+    "fund.job4role": "KYC Periodic Review Manager — Deutsche Bank",
+    "fund.job4p": "Direção de equipes de até 70 profissionais em múltiplas jurisdições; consistência de controles e padrões de documentação.",
+    "fund.job5role": "KYC Advisor — Natixis Corporate &amp; Investment Banking",
+    "fund.job5p": "Elo entre áreas de negócio e funções de controle; análise de lacunas e fortalecimento de frameworks de compliance.",
+    "fund.job6role": "KYC Analyst — ING Wholesale Bank",
+    "fund.job6p": "Devida diligência de clientes, padrões de documentação e controles operacionais.",
+    "fund.job7role": "Legal Intern — New York State Department of Financial Services (NYDFS)",
+    "fund.job7p": "Pesquisa jurídica e regulatória em supervisão bancária e regulação do setor financeiro.",
+    "fund.disclaimer": "Instituições onde Daniel Gemino atuou profissionalmente. Não constituem clientes da Gemino Advisory nem implicam patrocínio, afiliação ou endosso de qualquer tipo. Todas as marcas e nomes comerciais pertencem aos seus respectivos titulares.",
+    "fund.boutiqueh": "Por que um modelo boutique",
+    "fund.boutiquesub": "Contratar uma Big-4 é uma opção legítima e, em alguns casos, a correta. A comparação honesta:",
+    "fund.bigfourh": "Quando uma Big-4 é a opção certa",
+    "fund.bigfour1": "É preciso uma marca que um banco correspondente reconheça sem perguntar.",
+    "fund.bigfour2": "O escopo exige volume de horas e uma equipe grande trabalhando em paralelo.",
+    "fund.bigfour3": "Existe um mandato de auditoria externa de demonstrações financeiras que já traz consigo o relatório de asseguração do Art. 15.",
+    "fund.geminoh": "O que a Gemino Advisory oferece de forma diferente",
+    "fund.gemino1": "Um único interlocutor sênior do início ao fim — quem vende o projeto é quem o executa.",
+    "fund.gemino2": "Tempos de resposta de dias, não de semanas, e sem equipe júnior aprendendo com o orçamento do cliente.",
+    "fund.gemino3": "Experiência adquirida de dentro de bancos supervisionados internacionalmente, não apenas da consultoria.",
+    "fund.gemino4": "Fee fixo, escopo fechado, cronograma definido — sem renovação automática nem compromisso posterior.",
+    "fund.cta": "Escrever diretamente para Daniel Gemino"
   }
-})();
+});
 </script>
 
 </body>

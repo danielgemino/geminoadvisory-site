@@ -16,97 +16,107 @@
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<a class="skip-link" href="#contenido" data-i18n="skip.link">Saltar al contenido</a>
 
 <header class="site-nav">
   <div class="nav-inner">
     <a href="/" aria-label="Gemino Advisory — inicio">
       <img class="brand-logo" src="/logo.png" alt="Gemino Advisory">
     </a>
-    <nav class="links" aria-label="Navegación principal">
-      <a href="/servicios/">Servicios</a>
-      <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-      <a href="/#diferenciadores">Diferenciadores</a>
-      <a href="/fundador/">Fundador</a>
-      <a href="/recursos/">Recursos</a>
-      <a href="/#contacto">Contacto</a>
+    <nav class="links" aria-label="Navegación principal" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+      <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+      <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+      <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+      <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+      </div>
+      <a class="btn btn-navy" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" data-i18n-attr="aria-label" data-i18n="nav.openmenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
-  <a href="/servicios/">Servicios</a>
-  <a href="/metodologia-ddqr/">Metodología DDQR™</a>
-  <a href="/#diferenciadores">Diferenciadores</a>
-  <a href="/fundador/">Fundador</a>
-  <a href="/recursos/">Recursos</a>
-  <a href="/#contacto">Contacto</a>
-  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo">Agendar diagnóstico</a>
+  <div class="lang-toggle lang-toggle-mobile" role="group" aria-label="Idioma / Language">
+    <button type="button" class="lang-btn active" data-lang-btn="es">ES</button>
+    <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+    <button type="button" class="lang-btn" data-lang-btn="pt">PT</button>
+  </div>
+  <a href="/servicios/" data-i18n="nav.services">Servicios</a>
+  <a href="/metodologia-ddqr/" data-i18n="nav.ddqr">Metodología DDQR™</a>
+  <a href="/#diferenciadores" data-i18n="nav.why">Diferenciadores</a>
+  <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+  <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+  <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+  <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20de%20diagn%C3%B3stico%20ejecutivo" data-i18n="nav.cta">Agendar diagnóstico</a>
 </div>
 
 <main id="contenido">
 
   <div class="page-header">
     <div class="container">
-      <p class="breadcrumb"><a href="/">Inicio</a> / <a href="/servicios/">Servicios</a></p>
-      <p class="eyebrow">Línea 01 · Servicios</p>
-      <h1>Diagnóstico de Cumplimiento y Exposición Regulatoria</h1>
-      <p class="lead">La primera pregunta no se responde con una opinión: se responde con evidencia, en días, no en meses.</p>
+      <p class="breadcrumb"><a href="/" data-i18n="breadcrumb.home">Inicio</a> / <a href="/servicios/" data-i18n="nav.services">Servicios</a></p>
+      <p class="eyebrow" data-i18n="svcdiag.eyebrow">Línea 01 · Servicios</p>
+      <h1 data-i18n="svcdiag.h1">Diagnóstico de Cumplimiento y Exposición Regulatoria</h1>
+      <p class="lead" data-i18n="svcdiag.lead">La primera pregunta no se responde con una opinión: se responde con evidencia, en días, no en meses.</p>
     </div>
   </div>
 
   <section>
     <div class="container">
-      <p class="lead" style="max-width:780px;">¿Es mi negocio Persona Obligada bajo el Decreto 15-2026 — y, sea cual sea la respuesta, qué tan expuesto está frente a lavado de dinero, financiamiento del terrorismo o de la proliferación?</p>
+      <p class="lead" style="max-width:780px;" data-i18n="svcdiag.intro">¿Es mi negocio Persona Obligada bajo el Decreto 15-2026 — y, sea cual sea la respuesta, qué tan expuesto está frente a lavado de dinero, financiamiento del terrorismo o de la proliferación?</p>
 
       <div class="divider"></div>
 
       <div class="grid-2">
         <div class="card">
-          <h3>Incluye</h3>
+          <h3 data-i18n="svc.includes">Incluye</h3>
           <ul class="diamond">
-            <li>Identificación de obligaciones regulatorias aplicables frente al Art. 3 del Decreto 15-2026</li>
-            <li>Evaluación de riesgo inherente sobre 24 factores en seis categorías (cliente/contraparte, beneficiario final y estructura societaria, producto/actividad, canal de vinculación, geografía/jurisdicciones, comportamiento transaccional y uso de efectivo)</li>
-            <li>Análisis de brechas frente a GAFI y normativa local, con evaluación preliminar de 16 controles de referencia</li>
-            <li>Clasificación de riesgos y prioridades en semáforo ejecutivo</li>
+            <li data-i18n="svcdiag.inc1">Identificación de obligaciones regulatorias aplicables frente al Art. 3 del Decreto 15-2026</li>
+            <li data-i18n="svcdiag.inc2">Evaluación de riesgo inherente sobre 24 factores en seis categorías (cliente/contraparte, beneficiario final y estructura societaria, producto/actividad, canal de vinculación, geografía/jurisdicciones, comportamiento transaccional y uso de efectivo)</li>
+            <li data-i18n="svcdiag.inc3">Análisis de brechas frente a GAFI y normativa local, con evaluación preliminar de 16 controles de referencia</li>
+            <li data-i18n="svcdiag.inc4">Clasificación de riesgos y prioridades en semáforo ejecutivo</li>
           </ul>
         </div>
         <div class="card">
-          <h3>No incluye</h3>
+          <h3 data-i18n="svc.excludes">No incluye</h3>
           <ul class="diamond">
-            <li>Auditoría externa de estados financieros ni dictamen legal</li>
-            <li>Certificación de cumplimiento ante la IVE o la SIB</li>
-            <li>Investigación forense, penal o fiscal</li>
-            <li>Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna</li>
-            <li>Implementación de las recomendaciones ni garantía de ausencia de hallazgos futuros</li>
+            <li data-i18n="svcdiag.exc1">Auditoría externa de estados financieros ni dictamen legal</li>
+            <li data-i18n="svcdiag.exc2">Certificación de cumplimiento ante la IVE o la SIB</li>
+            <li data-i18n="svcdiag.exc3">Investigación forense, penal o fiscal</li>
+            <li data-i18n="svcdiag.exc4">Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna</li>
+            <li data-i18n="svcdiag.exc5">Implementación de las recomendaciones ni garantía de ausencia de hallazgos futuros</li>
           </ul>
         </div>
       </div>
 
       <div class="spec-block" style="margin-top:2.2rem;">
-        <span class="k">Metodología</span>
-        <p>Dos formatos según la urgencia. <strong>Risk Memo Express:</strong> respuesta ejecutiva en 48 horas hábiles, con sesión de cierre de 45 minutos. <strong>AML Readiness Diagnostic:</strong> alcance más amplio, cuando la decisión requiere más profundidad que una lectura de 48 horas. Ambos parten del mismo marco de 24 factores de riesgo inherente y 16 controles, y ambos cierran con un roadmap en tres horizontes: 0–30, 31–60 y 61–90 días.</p>
+        <span class="k" data-i18n="svc.methodology">Metodología</span>
+        <p data-i18n-html="svcdiag.method">Dos formatos según la urgencia. <strong>Risk Memo Express:</strong> respuesta ejecutiva en 48 horas hábiles, con sesión de cierre de 45 minutos. <strong>AML Readiness Diagnostic:</strong> alcance más amplio, cuando la decisión requiere más profundidad que una lectura de 48 horas. Ambos parten del mismo marco de 24 factores de riesgo inherente y 16 controles, y ambos cierran con un roadmap en tres horizontes: 0–30, 31–60 y 61–90 días.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Entregables</span>
-        <p>AML Readiness Diagnostic o Executive Risk Memo (según el formato elegido), mapa de riesgos y exposición, matriz de brechas regulatorias y plan de acción priorizado — quick wins y estructural.</p>
+        <span class="k" data-i18n="svc.deliverables">Entregables</span>
+        <p data-i18n="svcdiag.deliv">AML Readiness Diagnostic o Executive Risk Memo (según el formato elegido), mapa de riesgos y exposición, matriz de brechas regulatorias y plan de acción priorizado — quick wins y estructural.</p>
       </div>
       <div class="spec-block">
-        <span class="k">Para quién es</span>
-        <p>Empresas que necesitan saber, con certeza y rápido, si son Persona Obligada y qué tan expuestas están — antes de contratar algo más grande, antes de una reunión con un banco, o antes de que la pregunta la haga un tercero.</p>
+        <span class="k" data-i18n="svc.forwhom">Para quién es</span>
+        <p data-i18n="svcdiag.forwhom">Empresas que necesitan saber, con certeza y rápido, si son Persona Obligada y qué tan expuestas están — antes de contratar algo más grande, antes de una reunión con un banco, o antes de que la pregunta la haga un tercero.</p>
       </div>
     </div>
   </section>
   <section style="padding-top:0;">
     <div class="container center" style="max-width:640px;">
       <div class="btn-row center" style="justify-content:center;">
-        <a class="btn btn-outline-navy" href="/servicios/">Ver las otras líneas</a>
-      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20Risk%20Memo%20Express">Solicitar Risk Memo Express</a>
+        <a class="btn btn-outline-navy" href="/servicios/" data-i18n="svc.otherlines">Ver las otras líneas</a>
+      <a class="btn btn-gold" href="mailto:info@geminoadvisory.com?subject=Solicitud%20Risk%20Memo%20Express" data-i18n="svcdiag.cta">Solicitar Risk Memo Express</a>
       </div>
     </div>
   </section>
@@ -118,45 +128,85 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Gemino Advisory</p>
-        <p class="footer-addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
+        <p class="footer-addr" data-i18n-html="footer.addr">Edificio Granat, Ruta 4 6-32, Zona 4, Oficina 401<br>Ciudad de Guatemala, Guatemala</p>
       </div>
-      <nav class="footer-links" aria-label="Enlaces de pie de página">
-        <a href="/servicios/">Servicios</a>
+      <nav class="footer-links" aria-label="Enlaces de pie de página" data-i18n-attr="aria-label" data-i18n="footer.arialabel">
+        <a href="/servicios/" data-i18n="nav.services">Servicios</a>
         <a href="/metodologia-ddqr/">DDQR™</a>
-        <a href="/fundador/">Fundador</a>
-        <a href="/recursos/">Recursos</a>
-        <a href="/#contacto">Contacto</a>
+        <a href="/fundador/" data-i18n="nav.founder">Fundador</a>
+        <a href="/recursos/" data-i18n="nav.resources">Recursos</a>
+        <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="mailto:info@geminoadvisory.com">info@geminoadvisory.com</a>
       </nav>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Gemino Advisory. Todos los derechos reservados.</span>
-      <em>Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
+      <span data-i18n="footer.copyright">© 2026 Gemino Advisory. Todos los derechos reservados.</span>
+      <em data-i18n="footer.disclaimer">Contenido con fines informativos; no constituye asesoría legal. Por razones de confidencialidad, no publicamos nombres de clientes.</em>
     </div>
   </div>
 </footer>
 
+<script src="/assets/js/i18n.js"></script>
 <script>
-(function(){
-  var toggle = document.getElementById('navToggle');
-  var panel = document.getElementById('mobilePanel');
-  if(toggle && panel){
-    toggle.addEventListener('click', function(){
-      var open = panel.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      toggle.classList.toggle('is-open', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    });
-    panel.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        panel.classList.remove('open');
-        toggle.setAttribute('aria-expanded','false');
-        toggle.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
-    });
+GeminoI18N.init({
+  es: {
+    "svcdiag.eyebrow": "Línea 01 · Servicios",
+    "svcdiag.h1": "Diagnóstico de Cumplimiento y Exposición Regulatoria",
+    "svcdiag.lead": "La primera pregunta no se responde con una opinión: se responde con evidencia, en días, no en meses.",
+    "svcdiag.intro": "¿Es mi negocio Persona Obligada bajo el Decreto 15-2026 — y, sea cual sea la respuesta, qué tan expuesto está frente a lavado de dinero, financiamiento del terrorismo o de la proliferación?",
+    "svcdiag.inc1": "Identificación de obligaciones regulatorias aplicables frente al Art. 3 del Decreto 15-2026",
+    "svcdiag.inc2": "Evaluación de riesgo inherente sobre 24 factores en seis categorías (cliente/contraparte, beneficiario final y estructura societaria, producto/actividad, canal de vinculación, geografía/jurisdicciones, comportamiento transaccional y uso de efectivo)",
+    "svcdiag.inc3": "Análisis de brechas frente a GAFI y normativa local, con evaluación preliminar de 16 controles de referencia",
+    "svcdiag.inc4": "Clasificación de riesgos y prioridades en semáforo ejecutivo",
+    "svcdiag.exc1": "Auditoría externa de estados financieros ni dictamen legal",
+    "svcdiag.exc2": "Certificación de cumplimiento ante la IVE o la SIB",
+    "svcdiag.exc3": "Investigación forense, penal o fiscal",
+    "svcdiag.exc4": "Sustitución de la Oficialía de Cumplimiento o de Auditoría Interna",
+    "svcdiag.exc5": "Implementación de las recomendaciones ni garantía de ausencia de hallazgos futuros",
+    "svcdiag.method": "Dos formatos según la urgencia. <strong>Risk Memo Express:</strong> respuesta ejecutiva en 48 horas hábiles, con sesión de cierre de 45 minutos. <strong>AML Readiness Diagnostic:</strong> alcance más amplio, cuando la decisión requiere más profundidad que una lectura de 48 horas. Ambos parten del mismo marco de 24 factores de riesgo inherente y 16 controles, y ambos cierran con un roadmap en tres horizontes: 0–30, 31–60 y 61–90 días.",
+    "svcdiag.deliv": "AML Readiness Diagnostic o Executive Risk Memo (según el formato elegido), mapa de riesgos y exposición, matriz de brechas regulatorias y plan de acción priorizado — quick wins y estructural.",
+    "svcdiag.forwhom": "Empresas que necesitan saber, con certeza y rápido, si son Persona Obligada y qué tan expuestas están — antes de contratar algo más grande, antes de una reunión con un banco, o antes de que la pregunta la haga un tercero.",
+    "svcdiag.cta": "Solicitar Risk Memo Express"
+  },
+  en: {
+    "svcdiag.eyebrow": "Line 01 · Services",
+    "svcdiag.h1": "Compliance Diagnostic and Regulatory Exposure Assessment",
+    "svcdiag.lead": "The first question isn't answered with an opinion: it's answered with evidence, in days, not months.",
+    "svcdiag.intro": "Is my business an Obligated Person under Decree 15-2026 — and, whatever the answer, how exposed is it to money laundering, terrorist financing, or proliferation financing?",
+    "svcdiag.inc1": "Identification of applicable regulatory obligations under Article 3 of Decree 15-2026",
+    "svcdiag.inc2": "Inherent risk assessment across 24 factors in six categories (client/counterparty, beneficial owner and corporate structure, product/activity, onboarding channel, geography/jurisdictions, transactional behavior, and cash use)",
+    "svcdiag.inc3": "Gap analysis against FATF and local regulation, with a preliminary assessment of 16 reference controls",
+    "svcdiag.inc4": "Risk classification and priorities in an executive stoplight format",
+    "svcdiag.exc1": "External financial statement audit or legal opinion",
+    "svcdiag.exc2": "Compliance certification before the IVE or the SIB",
+    "svcdiag.exc3": "Forensic, criminal, or tax investigation",
+    "svcdiag.exc4": "Substitution of the Compliance Officer or Internal Audit function",
+    "svcdiag.exc5": "Implementation of recommendations or a guarantee of no future findings",
+    "svcdiag.method": "Two formats depending on urgency. <strong>Risk Memo Express:</strong> an executive response within 48 business hours, with a 45-minute closing session. <strong>AML Readiness Diagnostic:</strong> broader scope, when the decision requires more depth than a 48-hour read. Both start from the same framework of 24 inherent risk factors and 16 controls, and both close with a roadmap across three horizons: 0–30, 31–60, and 61–90 days.",
+    "svcdiag.deliv": "AML Readiness Diagnostic or Executive Risk Memo (depending on the chosen format), a risk and exposure map, a regulatory gap matrix, and a prioritized action plan — quick wins and structural.",
+    "svcdiag.forwhom": "Companies that need to know, with certainty and quickly, whether they are an Obligated Person and how exposed they are — before committing to something larger, before a meeting with a bank, or before a third party asks the question.",
+    "svcdiag.cta": "Request Risk Memo Express"
+  },
+  pt: {
+    "svcdiag.eyebrow": "Linha 01 · Serviços",
+    "svcdiag.h1": "Diagnóstico de Compliance e Exposição Regulatória",
+    "svcdiag.lead": "A primeira pergunta não se responde com uma opinião: se responde com evidências, em dias, não em meses.",
+    "svcdiag.intro": "Meu negócio é Pessoa Obrigada sob o Decreto 15-2026 — e, seja qual for a resposta, o quão exposto está a lavagem de dinheiro, financiamento do terrorismo ou da proliferação?",
+    "svcdiag.inc1": "Identificação das obrigações regulatórias aplicáveis frente ao Art. 3 do Decreto 15-2026",
+    "svcdiag.inc2": "Avaliação de risco inerente sobre 24 fatores em seis categorias (cliente/contraparte, beneficiário final e estrutura societária, produto/atividade, canal de vinculação, geografia/jurisdições, comportamento transacional e uso de dinheiro em espécie)",
+    "svcdiag.inc3": "Análise de lacunas frente ao GAFI e à normativa local, com avaliação preliminar de 16 controles de referência",
+    "svcdiag.inc4": "Classificação de riscos e prioridades em semáforo executivo",
+    "svcdiag.exc1": "Auditoria externa de demonstrações financeiras ou parecer jurídico",
+    "svcdiag.exc2": "Certificação de compliance perante a IVE ou a SIB",
+    "svcdiag.exc3": "Investigação forense, penal ou fiscal",
+    "svcdiag.exc4": "Substituição da Oficialidade de Compliance ou da Auditoria Interna",
+    "svcdiag.exc5": "Implementação das recomendações ou garantia de ausência de achados futuros",
+    "svcdiag.method": "Dois formatos conforme a urgência. <strong>Risk Memo Express:</strong> resposta executiva em 48 horas úteis, com sessão de encerramento de 45 minutos. <strong>AML Readiness Diagnostic:</strong> escopo mais amplo, quando a decisão exige mais profundidade do que uma leitura de 48 horas. Ambos partem do mesmo marco de 24 fatores de risco inerente e 16 controles, e ambos encerram com um roadmap em três horizontes: 0–30, 31–60 e 61–90 dias.",
+    "svcdiag.deliv": "AML Readiness Diagnostic ou Executive Risk Memo (conforme o formato escolhido), mapa de riscos e exposição, matriz de lacunas regulatórias e plano de ação priorizado — quick wins e estrutural.",
+    "svcdiag.forwhom": "Empresas que precisam saber, com certeza e rapidez, se são Pessoa Obrigada e o quão expostas estão — antes de contratar algo maior, antes de uma reunião com um banco, ou antes que a pergunta venha de um terceiro.",
+    "svcdiag.cta": "Solicitar Risk Memo Express"
   }
-})();
+});
 </script>
 
 </body>
